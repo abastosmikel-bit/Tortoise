@@ -1,0 +1,12 @@
+.lib lab_vth070
+.param MU=1.0 CI=0.70e-6 SS=0.080 RCW=400 JOFF=1e-14 VTH0=0.70 LOV=2
+.endl lab_vth070
+.lib lab_vth085
+.param MU=1.0 CI=0.70e-6 SS=0.080 RCW=400 JOFF=1e-14 VTH0=0.85 LOV=2
+.endl lab_vth085
+.lib lab_vth100
+.param MU=1.0 CI=0.70e-6 SS=0.080 RCW=400 JOFF=1e-14 VTH0=1.00 LOV=2
+.endl lab_vth100
+.lib lab_vth115
+.param MU=1.0 CI=0.70e-6 SS=0.080 RCW=400 JOFF=1e-14 VTH0=1.15 LOV=2
+.endl lab_vth115

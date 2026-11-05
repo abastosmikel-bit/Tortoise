@@ -1,0 +1,31 @@
+{
+  "title": "Tortoise: a p-type-only organic thin-film transistor time-race classifier (simulation study)",
+  "version": "v1.0",
+  "publication_date": "2026-11-05",
+  "upload_type": "software",
+  "description": "<p>Tortoise is a 6-input, 5-class linear classifier designed to be built only from p-type organic thin-film transistors (DNTT-family OTFTs on an AlOx/SAM dielectric, 134 transistors, single 3.3 V rail). Each class integrates its weighted input current onto a rail capacitor; then all rails race to a common threshold and the first to arrive latches and locks out the others. The repository holds the design (netlists, compact-model cards, specification), the simulation tooling, and the protocols, per-run data and reports of the ngspice simulation campaigns.</p><p>Simulation only: nothing has been fabricated or measured, and the dataset is synthetic. No patent has been filed or will be claimed on this design; it is published for open research use.</p><p>Licences: CERN-OHL-S-2.0 (hardware design), Apache-2.0 (code), CC-BY-4.0 (documentation, results and dataset). See LICENSES.md.</p>",
+  "creators": [
+    {
+      "name": "Lopez, Mikel",
+      "orcid": "0009-0003-6281-6566"
+    }
+  ],
+  "keywords": [
+    "organic electronics",
+    "OTFT",
+    "flexible electronics",
+    "time-domain computing",
+    "neuromorphic",
+    "ngspice"
+  ],
+  "license": "cern-ohl-s-2.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://example.org/REPLACE-WITH-REPOSITORY-URL",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Multiple licences apply: CERN-OHL-S-2.0 for the hardware design (netlists, model cards, specification), Apache-2.0 for code and scripts, CC-BY-4.0 for documentation, reports, results and the dataset. The file-by-file mapping is in REUSE.toml. Replace the repository URL placeholder before publishing."
+}

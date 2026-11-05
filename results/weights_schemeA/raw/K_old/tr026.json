@@ -1,0 +1,148 @@
+{
+ "tag": "tr026",
+ "split": "train",
+ "idx": 26,
+ "label": 3,
+ "F": [
+  [
+   9,
+   0,
+   26,
+   29,
+   5
+  ],
+  [
+   0,
+   21,
+   3,
+   12,
+   0
+  ],
+  [
+   4,
+   5,
+   0,
+   0,
+   28
+  ],
+  [
+   0,
+   17,
+   8,
+   0,
+   19
+  ],
+  [
+   9,
+   0,
+   6,
+   19,
+   6
+  ],
+  [
+   38,
+   17,
+   17,
+   0,
+   2
+  ]
+ ],
+ "weights": "old",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_old/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 167.9,
+  "returncode": 0,
+  "warnings": []
+ },
+ "n_tft": 134,
+ "x": [
+  0.517059,
+  0.511514,
+  0.389376,
+  0.593752,
+  0.433935,
+  0.459462
+ ],
+ "trip_us": {
+  "2": 1548.728,
+  "3": 1563.956
+ },
+ "first": 2,
+ "latched": [
+  2
+ ],
+ "winner": 2,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1569.006,
+ "lock_latency_us": 20.279,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 21.895,
+ "reset_level": {
+  "1": 0.89461,
+  "2": 0.89768,
+  "3": 0.8973,
+  "4": 0.89691,
+  "5": 0.89942
+ },
+ "ref_reset": 1.37606,
+ "ref_308": 1.23674,
+ "ref_309": 1.31048,
+ "ref_settle_mV_308_309": 73.737,
+ "rail_at_C2": {
+  "1": 1.50632,
+  "2": 1.56071,
+  "3": 1.55266,
+  "4": 1.53926,
+  "5": 1.5233
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 7.998,
+  "gap_reach_us": 12.619,
+  "gap_slope_us": 12.655
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 53.801,
+   "gap_reach_us": 81.345,
+   "gap_slope_us": 84.839
+  },
+  "3": {
+   "dV_mV": 7.998,
+   "gap_reach_us": 12.619,
+   "gap_slope_us": 12.655
+  },
+  "4": {
+   "dV_mV": 21.236,
+   "gap_reach_us": 30.931,
+   "gap_slope_us": 33.704
+  },
+  "5": {
+   "dV_mV": 36.98,
+   "gap_reach_us": 54.657,
+   "gap_slope_us": 58.524
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.63439,
+  "2": 0.63162,
+  "3": 0.63026,
+  "4": 0.63034,
+  "5": 0.6325
+ }
+}

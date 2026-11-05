@@ -1,0 +1,14 @@
+{
+ "corner": "lab_vth085 (NOT fitc10)",
+ "sample_X_test_idx": 81,
+ "prior": "t6L_x2_v085",
+ "tran": ".tran 100n 1408u 0 100n",
+ "n_tft": 134,
+ "wall_s": 66,
+ "trip_us": 903.799795,
+ "order": "5",
+ "latched": "5",
+ "lock_us": 918.699795,
+ "lock_latency_us": 14.899999999999983,
+ "valid": true
+}

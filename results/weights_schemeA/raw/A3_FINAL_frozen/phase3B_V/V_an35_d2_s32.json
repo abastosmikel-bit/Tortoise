@@ -1,0 +1,152 @@
+{
+ "tag": "V_an35_d2_s32",
+ "split": "test",
+ "idx": 32,
+ "label": 2,
+ "F": [
+  [
+   5,
+   0,
+   21,
+   26,
+   5
+  ],
+  [
+   0,
+   20,
+   2,
+   11,
+   0
+  ],
+  [
+   11,
+   12,
+   0,
+   10,
+   30
+  ],
+  [
+   0,
+   11,
+   14,
+   0,
+   17
+  ],
+  [
+   6,
+   0,
+   8,
+   13,
+   7
+  ],
+  [
+   36,
+   17,
+   15,
+   0,
+   0
+  ]
+ ],
+ "weights": "FINAL_frozen",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_a/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": {
+  "seed": 35002,
+  "s_vth": 0.035,
+  "paired": true
+ },
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 182.7,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 134,
+ "x": [
+  0.312732,
+  0.452497,
+  0.304301,
+  0.405299,
+  0.024635,
+  0.50864
+ ],
+ "trip_us": {
+  "2": 1705.061
+ },
+ "first": 2,
+ "latched": [
+  2
+ ],
+ "winner": 2,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1724.783,
+ "lock_latency_us": 19.722,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 21.527,
+ "reset_level": {
+  "1": 0.8947,
+  "2": 0.90187,
+  "3": 0.90699,
+  "4": 0.89395,
+  "5": 0.89705
+ },
+ "ref_reset": 1.41957,
+ "ref_308": 1.27927,
+ "ref_309": 1.35181,
+ "ref_settle_mV_308_309": 72.535,
+ "rail_at_C2": {
+  "1": 1.43116,
+  "2": 1.48433,
+  "3": 1.41043,
+  "4": 1.31432,
+  "5": 1.34961
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 61.516,
+  "gap_reach_us": 91.537,
+  "gap_slope_us": 95.057
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 66.655,
+   "gap_reach_us": 102.762,
+   "gap_slope_us": 106.706
+  },
+  "3": {
+   "dV_mV": 61.516,
+   "gap_reach_us": 91.537,
+   "gap_slope_us": 95.057
+  },
+  "4": {
+   "dV_mV": 186.101,
+   "gap_reach_us": 294.393,
+   "gap_slope_us": 297.138
+  },
+  "5": {
+   "dV_mV": 102.314,
+   "gap_reach_us": 150.771,
+   "gap_slope_us": 153.629
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.62536,
+  "2": 0.63532,
+  "3": 0.64773,
+  "4": 0.62624,
+  "5": 0.66609
+ }
+}

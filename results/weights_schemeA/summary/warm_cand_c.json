@@ -1,0 +1,81 @@
+{
+ "weights": "cand_c",
+ "timing": null,
+ "sample_train_idx": 123,
+ "sample_label": 5,
+ "sample_sw_margin": 16.503,
+ "converged": true,
+ "n_runs": 3,
+ "warm_start": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_c/warm",
+ "runs": [
+  {
+   "run": 1,
+   "tag": "ws01_tr123",
+   "prior": "/home/claude/w/sim/circuits/t6L_x2_v085",
+   "reset_level": {
+    "1": 0.89621,
+    "2": 0.89866,
+    "3": 0.8999,
+    "4": 0.90061,
+    "5": 0.89806
+   },
+   "ref_reset": 1.39158,
+   "max_delta_mV": null,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1416.283
+   },
+   "lock_latency_us": 20.533,
+   "wall_s": 180.9
+  },
+  {
+   "run": 2,
+   "tag": "ws02_tr123",
+   "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_c/ws01_tr123_end",
+   "reset_level": {
+    "1": 0.8825,
+    "2": 0.89086,
+    "3": 0.89285,
+    "4": 0.89112,
+    "5": 0.89293
+   },
+   "ref_reset": 1.37738,
+   "max_delta_mV": 13.71,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1415.844
+   },
+   "lock_latency_us": 20.72,
+   "wall_s": 200.9
+  },
+  {
+   "run": 3,
+   "tag": "ws03_tr123",
+   "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_c/ws02_tr123_end",
+   "reset_level": {
+    "1": 0.88223,
+    "2": 0.89074,
+    "3": 0.89276,
+    "4": 0.89096,
+    "5": 0.89287
+   },
+   "ref_reset": 1.37608,
+   "max_delta_mV": 0.26999999999999247,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1415.052
+   },
+   "lock_latency_us": 20.738,
+   "wall_s": 185.4
+  }
+ ]
+}

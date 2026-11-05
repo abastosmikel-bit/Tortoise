@@ -1,0 +1,147 @@
+{
+ "tag": "tr113",
+ "split": "train",
+ "idx": 113,
+ "label": 1,
+ "F": [
+  [
+   9,
+   0,
+   26,
+   29,
+   5
+  ],
+  [
+   0,
+   21,
+   3,
+   12,
+   0
+  ],
+  [
+   4,
+   5,
+   0,
+   0,
+   28
+  ],
+  [
+   0,
+   17,
+   8,
+   0,
+   19
+  ],
+  [
+   9,
+   0,
+   6,
+   19,
+   6
+  ],
+  [
+   38,
+   17,
+   17,
+   0,
+   2
+  ]
+ ],
+ "weights": "old",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_old/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 135.8,
+  "returncode": 0,
+  "warnings": []
+ },
+ "n_tft": 134,
+ "x": [
+  0.206234,
+  0.26213,
+  0.33687,
+  0.434308,
+  0.122964,
+  0.721695
+ ],
+ "trip_us": {
+  "1": 1515.883
+ },
+ "first": 1,
+ "latched": [
+  1
+ ],
+ "winner": 1,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1535.015,
+ "lock_latency_us": 19.132,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 20.751,
+ "reset_level": {
+  "1": 0.89461,
+  "2": 0.89768,
+  "3": 0.8973,
+  "4": 0.89691,
+  "5": 0.89942
+ },
+ "ref_reset": 1.37606,
+ "ref_308": 1.23674,
+ "ref_309": 1.31048,
+ "ref_settle_mV_308_309": 73.737,
+ "rail_at_C2": {
+  "1": 1.57692,
+  "2": 1.49685,
+  "3": 1.42483,
+  "4": 1.23455,
+  "5": 1.39754
+ },
+ "runner_up": 2,
+ "gap": {
+  "dV_mV": 79.444,
+  "gap_reach_us": 121.745,
+  "gap_slope_us": 125.349
+ },
+ "gaps": {
+  "2": {
+   "dV_mV": 79.444,
+   "gap_reach_us": 121.745,
+   "gap_slope_us": 125.349
+  },
+  "3": {
+   "dV_mV": 151.324,
+   "gap_reach_us": 235.176,
+   "gap_slope_us": 238.136
+  },
+  "4": {
+   "dV_mV": 341.621,
+   "gap_reach_us": 534.957,
+   "gap_slope_us": 537.166
+  },
+  "5": {
+   "dV_mV": 178.655,
+   "gap_reach_us": 278.252,
+   "gap_slope_us": 281.067
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.62978,
+  "2": 0.63407,
+  "3": 0.63543,
+  "4": 0.6359,
+  "5": 0.63559
+ }
+}

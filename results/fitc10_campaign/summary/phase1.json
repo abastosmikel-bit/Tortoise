@@ -1,0 +1,184 @@
+{
+ "n": 90,
+ "correct": 62,
+ "accuracy": 0.6889,
+ "accuracy_wilson95": [
+  0.5872,
+  0.7751
+ ],
+ "valid": 87,
+ "validity": 0.9667,
+ "validity_wilson95": [
+  0.9065,
+  0.9886
+ ],
+ "failures": {
+  "multi_latched": 3
+ },
+ "confusion": {
+  "rows": "label 1..5",
+  "cols": "SPICE class 1..5, invalid",
+  "matrix": [
+   [
+    16,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   [
+    3,
+    15,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    6,
+    2,
+    5,
+    2,
+    1,
+    2
+   ],
+   [
+    1,
+    2,
+    1,
+    8,
+    6,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    18,
+    0
+   ]
+  ]
+ },
+ "spice_vs_schemeA": {
+  "agree": 87,
+  "n": 90,
+  "agreement": 0.9667,
+  "disagreements": [
+   {
+    "idx": 24,
+    "label": 1,
+    "spice": "invalid(multi_latched)",
+    "schemeA": 1,
+    "sA_gap_us": 6.37
+   },
+   {
+    "idx": 25,
+    "label": 3,
+    "spice": "invalid(multi_latched)",
+    "schemeA": 2,
+    "sA_gap_us": 1.8
+   },
+   {
+    "idx": 42,
+    "label": 3,
+    "spice": "invalid(multi_latched)",
+    "schemeA": 4,
+    "sA_gap_us": 9.29
+   }
+  ]
+ },
+ "schemeA_accuracy_same_samples": 0.7,
+ "software_accuracy_same_samples": 0.7,
+ "gap_vs_lock": {
+  "n_valid": 87,
+  "runner_up_gap_us": {
+   "p0": 10.742,
+   "p5": 27.51,
+   "p25": 57.187,
+   "p50": 102.968,
+   "p75": 182.328,
+   "p95": 255.855,
+   "p100": 303.693
+  },
+  "runner_up_gap_mV": {
+   "p0": 6.828,
+   "p5": 18.514,
+   "p25": 38.077,
+   "p50": 66.739,
+   "p75": 116.752,
+   "p95": 163.3,
+   "p100": 193.6
+  },
+  "lock_latency_us": {
+   "p0": 16.761,
+   "p5": 16.771,
+   "p25": 16.823,
+   "p50": 17.049,
+   "p75": 17.464,
+   "p95": 18.287,
+   "p100": 18.784
+  },
+  "margin_gap_minus_latency_us": {
+   "p0": -6.718,
+   "p5": 9.692,
+   "p25": 39.662,
+   "p50": 85.712,
+   "p75": 165.478,
+   "p95": 239.057,
+   "p100": 286.918
+  },
+  "n_gap_below_latency": 3,
+  "gap_below_latency": [
+   {
+    "idx": 17,
+    "gap_us": 11.587,
+    "lat_us": 17.508,
+    "label": 4,
+    "spice": 4
+   },
+   {
+    "idx": 31,
+    "gap_us": 10.742,
+    "lat_us": 17.45,
+    "label": 2,
+    "spice": 2
+   },
+   {
+    "idx": 37,
+    "gap_us": 10.894,
+    "lat_us": 17.612,
+    "label": 4,
+    "spice": 1
+   }
+  ],
+  "n_second_class_tripped_but_not_latched": 3,
+  "gap_definition": "time for the runner-up rail to reach the level the first tripper's rail had at its trip (fallback: slope extrapolation)"
+ },
+ "gap_model_vs_spice": {
+  "n": 87,
+  "pearson_r": 0.9999,
+  "median_ratio_spice_over_model": 0.8427,
+  "note": "schemeA is lab-calibrated; only the ratio/ordering is meaningful"
+ },
+ "race_time_from_C2_us": {
+  "p0": 922.591,
+  "p5": 1059.771,
+  "p25": 1203.468,
+  "p50": 1300.19,
+  "p75": 1381.99,
+  "p95": 1506.599,
+  "p100": 1583.13
+ },
+ "n_trip_in_C1": 0,
+ "wall_s": {
+  "p0": 97.5,
+  "p5": 99.49,
+  "p25": 101.6,
+  "p50": 103.65,
+  "p75": 105.4,
+  "p95": 134.025,
+  "p100": 183.5
+ }
+}

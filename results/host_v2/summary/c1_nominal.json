@@ -1,0 +1,821 @@
+{
+ "v2": {
+  "n": 90,
+  "correct": 62,
+  "accuracy_wilson95": [
+   0.5872,
+   0.7751
+  ],
+  "valid": 87,
+  "validity_wilson95": [
+   0.9065,
+   0.9886
+  ],
+  "failures": {
+   "multi_latched": 3
+  },
+  "trips_in_C1": 0,
+  "strict_correct": 62,
+  "race_us_median": 1626.4,
+  "race_us_range": [
+   1251.2,
+   1903.9
+  ],
+  "lock_latency_us_median": 23.93
+ },
+ "v1": {
+  "n": 90,
+  "correct": 62,
+  "accuracy_wilson95": [
+   0.5872,
+   0.7751
+  ],
+  "valid": 87,
+  "validity_wilson95": [
+   0.9065,
+   0.9886
+  ],
+  "failures": {
+   "multi_latched": 3
+  },
+  "trips_in_C1": 0,
+  "strict_correct": 62,
+  "race_us_median": null,
+  "race_us_range": null,
+  "lock_latency_us_median": 19.21
+ },
+ "paired_v2_vs_v1": {
+  "n": 90,
+  "both": 62,
+  "only_first": 0,
+  "only_second": 0,
+  "neither": 28,
+  "mcnemar_p": 1.0
+ },
+ "outcome_changes": [],
+ "confusion_v2": {
+  "1": {
+   "1": 16,
+   "2": 1,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "invalid": 1
+  },
+  "2": {
+   "1": 3,
+   "2": 15,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "invalid": 0
+  },
+  "3": {
+   "1": 6,
+   "2": 2,
+   "3": 5,
+   "4": 2,
+   "5": 1,
+   "invalid": 2
+  },
+  "4": {
+   "1": 1,
+   "2": 2,
+   "3": 1,
+   "4": 8,
+   "5": 6,
+   "invalid": 0
+  },
+  "5": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 18,
+   "invalid": 0
+  }
+ },
+ "v1_O12_same_as_v2": 90,
+ "calibration": {
+  "vhat": 0.65,
+  "err_mV": 0.0,
+  "mu_hat": 1.0,
+  "mu_err_rel": 0.0,
+  "k": 1.0,
+  "levels": [
+   1.82,
+   2.4
+  ],
+  "race_t_us": [
+   908.384,
+   1905.812
+  ],
+  "race_err_mV": 0.0,
+  "flag": false,
+  "note": "nominal die = design-time die: estimates equal the design constants by construction"
+ },
+ "energy_v2": {
+  "total_net_nJ": {
+   "n": 90,
+   "median": 587.935,
+   "min": 499.325,
+   "max": 654.708,
+   "p5": 531.026,
+   "p95": 635.953,
+   "mean": 586.573
+  },
+  "total_host33_nJ": {
+   "n": 90,
+   "median": 595.042,
+   "min": 506.415,
+   "max": 661.855,
+   "p5": 538.128,
+   "p95": 643.084,
+   "mean": 593.703
+  },
+  "total_pos_nJ": {
+   "n": 90,
+   "median": 593.243,
+   "min": 504.615,
+   "max": 660.055,
+   "p5": 536.33,
+   "p95": 641.286,
+   "mean": 591.904
+  },
+  "by_source_net_nJ": {
+   "VDD": {
+    "n": 90,
+    "median": 586.097,
+    "min": 497.481,
+    "max": 652.89,
+    "p5": 529.184,
+    "p95": 634.129,
+    "mean": 584.746
+   },
+   "VR1": {
+    "n": 90,
+    "median": 0.329,
+    "min": 0.326,
+    "max": 0.334,
+    "p5": 0.326,
+    "p95": 0.332,
+    "mean": 0.329
+   },
+   "VR2": {
+    "n": 90,
+    "median": 0.187,
+    "min": 0.184,
+    "max": 0.189,
+    "p5": 0.185,
+    "p95": 0.188,
+    "mean": 0.186
+   },
+   "VR3": {
+    "n": 90,
+    "median": 0.191,
+    "min": 0.189,
+    "max": 0.193,
+    "p5": 0.189,
+    "p95": 0.192,
+    "mean": 0.191
+   },
+   "VR4": {
+    "n": 90,
+    "median": 0.221,
+    "min": 0.218,
+    "max": 0.226,
+    "p5": 0.219,
+    "p95": 0.223,
+    "mean": 0.221
+   },
+   "VR5": {
+    "n": 90,
+    "median": 0.202,
+    "min": 0.199,
+    "max": 0.205,
+    "p5": 0.2,
+    "p95": 0.205,
+    "mean": 0.202
+   },
+   "VR6": {
+    "n": 90,
+    "median": 0.35,
+    "min": 0.346,
+    "max": 0.354,
+    "p5": 0.347,
+    "p95": 0.352,
+    "mean": 0.349
+   },
+   "V_RSTR": {
+    "n": 90,
+    "median": 0.239,
+    "min": 0.231,
+    "max": 0.253,
+    "p5": 0.233,
+    "p95": 0.249,
+    "mean": 0.24
+   },
+   "V_RSTB": {
+    "n": 90,
+    "median": 0.043,
+    "min": 0.038,
+    "max": 0.043,
+    "p5": 0.042,
+    "p95": 0.043,
+    "mean": 0.043
+   },
+   "V_PHIB": {
+    "n": 90,
+    "median": 0.067,
+    "min": 0.067,
+    "max": 0.067,
+    "p5": 0.067,
+    "p95": 0.067,
+    "mean": 0.067
+   },
+   "V_PHI": {
+    "n": 90,
+    "median": -0.002,
+    "min": -0.002,
+    "max": -0.002,
+    "p5": -0.002,
+    "p95": -0.002,
+    "mean": -0.002
+   }
+  },
+  "by_source_host33_nJ": {
+   "VDD": {
+    "n": 90,
+    "median": 587.987,
+    "min": 499.389,
+    "max": 654.783,
+    "p5": 531.092,
+    "p95": 636.02,
+    "mean": 586.649
+   },
+   "VR1": {
+    "n": 90,
+    "median": 1.318,
+    "min": 1.31,
+    "max": 1.329,
+    "p5": 1.312,
+    "p95": 1.326,
+    "mean": 1.319
+   },
+   "VR2": {
+    "n": 90,
+    "median": 0.774,
+    "min": 0.766,
+    "max": 0.785,
+    "p5": 0.769,
+    "p95": 0.783,
+    "mean": 0.775
+   },
+   "VR3": {
+    "n": 90,
+    "median": 0.789,
+    "min": 0.784,
+    "max": 0.802,
+    "p5": 0.785,
+    "p95": 0.799,
+    "mean": 0.79
+   },
+   "VR4": {
+    "n": 90,
+    "median": 0.909,
+    "min": 0.898,
+    "max": 0.92,
+    "p5": 0.9,
+    "p95": 0.917,
+    "mean": 0.909
+   },
+   "VR5": {
+    "n": 90,
+    "median": 0.832,
+    "min": 0.829,
+    "max": 0.853,
+    "p5": 0.83,
+    "p95": 0.848,
+    "mean": 0.835
+   },
+   "VR6": {
+    "n": 90,
+    "median": 1.399,
+    "min": 1.389,
+    "max": 1.414,
+    "p5": 1.391,
+    "p95": 1.41,
+    "mean": 1.399
+   },
+   "V_RSTR": {
+    "n": 90,
+    "median": 0.741,
+    "min": 0.741,
+    "max": 0.747,
+    "p5": 0.741,
+    "p95": 0.741,
+    "mean": 0.741
+   },
+   "V_RSTB": {
+    "n": 90,
+    "median": 0.079,
+    "min": 0.079,
+    "max": 0.079,
+    "p5": 0.079,
+    "p95": 0.079,
+    "mean": 0.079
+   },
+   "V_PHIB": {
+    "n": 90,
+    "median": 0.201,
+    "min": 0.2,
+    "max": 0.201,
+    "p5": 0.201,
+    "p95": 0.201,
+    "mean": 0.201
+   },
+   "V_PHI": {
+    "n": 90,
+    "median": 0.006,
+    "min": 0.006,
+    "max": 0.006,
+    "p5": 0.006,
+    "p95": 0.006,
+    "mean": 0.006
+   }
+  },
+  "by_phase_net_nJ": {
+   "reset": {
+    "n": 90,
+    "median": 90.091,
+    "min": 90.091,
+    "max": 90.091,
+    "p5": 90.091,
+    "p95": 90.091,
+    "mean": 90.091
+   },
+   "calibration": {
+    "n": 90,
+    "median": 6.078,
+    "min": 6.078,
+    "max": 6.078,
+    "p5": 6.078,
+    "p95": 6.078,
+    "mean": 6.078
+   },
+   "C1": {
+    "n": 90,
+    "median": 68.668,
+    "min": 62.549,
+    "max": 74.673,
+    "p5": 64.129,
+    "p95": 72.914,
+    "mean": 68.473
+   },
+   "C2_race": {
+    "n": 90,
+    "median": 415.519,
+    "min": 321.012,
+    "max": 485.384,
+    "p5": 355.533,
+    "p95": 467.107,
+    "mean": 412.996
+   },
+   "post_lock": {
+    "n": 90,
+    "median": 8.971,
+    "min": 8.102,
+    "max": 8.999,
+    "p5": 8.831,
+    "p95": 8.993,
+    "mean": 8.936
+   },
+   "total": {
+    "n": 90,
+    "median": 587.935,
+    "min": 499.325,
+    "max": 654.708,
+    "p5": 531.026,
+    "p95": 635.953,
+    "mean": 586.573
+   }
+  },
+  "phase_duration_us": {
+   "reset": {
+    "n": 90,
+    "median": 301.0,
+    "min": 301.0,
+    "max": 301.0,
+    "p5": 301.0,
+    "p95": 301.0,
+    "mean": 301.0
+   },
+   "calibration": {
+    "n": 90,
+    "median": 11.5,
+    "min": 11.5,
+    "max": 11.5,
+    "p5": 11.5,
+    "p95": 11.5,
+    "mean": 11.5
+   },
+   "C1": {
+    "n": 90,
+    "median": 195.0,
+    "min": 195.0,
+    "max": 195.0,
+    "p5": 195.0,
+    "p95": 195.0,
+    "mean": 195.0
+   },
+   "C2_race": {
+    "n": 90,
+    "median": 1650.293,
+    "min": 1275.06,
+    "max": 1928.168,
+    "p5": 1412.404,
+    "p95": 1855.297,
+    "mean": 1640.531
+   },
+   "post_lock": {
+    "n": 90,
+    "median": 36.272,
+    "min": 35.107,
+    "max": 36.421,
+    "p5": 35.74,
+    "p95": 36.378,
+    "mean": 36.176
+   },
+   "total": {
+    "n": 90,
+    "median": 2194.11,
+    "min": 1818.912,
+    "max": 2471.577,
+    "p5": 1956.304,
+    "p95": 2399.019,
+    "mean": 2184.207
+   }
+  },
+  "by_block5_net_nJ": {
+   "crossbar": {
+    "n": 90,
+    "median": 66.587,
+    "min": 61.135,
+    "max": 69.875,
+    "p5": 62.529,
+    "p95": 69.395,
+    "mean": 66.245
+   },
+   "rails_reset": {
+    "n": 90,
+    "median": 0.167,
+    "min": 0.159,
+    "max": 0.181,
+    "p5": 0.16,
+    "p95": 0.177,
+    "mean": 0.168
+   },
+   "comparators": {
+    "n": 90,
+    "median": 1.299,
+    "min": 1.234,
+    "max": 1.548,
+    "p5": 1.25,
+    "p95": 1.379,
+    "mean": 1.308
+   },
+   "latch_lock": {
+    "n": 90,
+    "median": 178.912,
+    "min": 150.344,
+    "max": 200.016,
+    "p5": 160.808,
+    "p95": 194.509,
+    "mean": 178.133
+   },
+   "reference": {
+    "n": 90,
+    "median": 342.322,
+    "min": 285.232,
+    "max": 384.354,
+    "p5": 306.125,
+    "p95": 373.435,
+    "mean": 340.712
+   },
+   "spares": {
+    "n": 90,
+    "median": 0.008,
+    "min": 0.008,
+    "max": 0.008,
+    "p5": 0.008,
+    "p95": 0.008,
+    "mean": 0.008
+   }
+  },
+  "by_group_net_nJ": {
+   "comp": {
+    "n": 90,
+    "median": 1.299,
+    "min": 1.234,
+    "max": 1.548,
+    "p5": 1.25,
+    "p95": 1.379,
+    "mean": 1.308
+   },
+   "dummy": {
+    "n": 90,
+    "median": 0.675,
+    "min": 0.674,
+    "max": 0.679,
+    "p5": 0.674,
+    "p95": 0.677,
+    "mean": 0.675
+   },
+   "latch": {
+    "n": 90,
+    "median": 151.652,
+    "min": 125.827,
+    "max": 170.721,
+    "p5": 135.287,
+    "p95": 165.748,
+    "mean": 150.941
+   },
+   "lock": {
+    "n": 90,
+    "median": 27.262,
+    "min": 24.516,
+    "max": 29.295,
+    "p5": 25.52,
+    "p95": 28.761,
+    "mean": 27.192
+   },
+   "lshift": {
+    "n": 90,
+    "median": 326.557,
+    "min": 272.066,
+    "max": 366.666,
+    "p5": 292.01,
+    "p95": 356.25,
+    "mean": 325.015
+   },
+   "rreset": {
+    "n": 90,
+    "median": 0.167,
+    "min": 0.159,
+    "max": 0.181,
+    "p5": 0.16,
+    "p95": 0.177,
+    "mean": 0.168
+   },
+   "sampler": {
+    "n": 90,
+    "median": 0.068,
+    "min": 0.068,
+    "max": 0.068,
+    "p5": 0.068,
+    "p95": 0.068,
+    "mean": 0.068
+   },
+   "servo": {
+    "n": 90,
+    "median": 15.023,
+    "min": 12.424,
+    "max": 16.945,
+    "p5": 13.376,
+    "p95": 16.443,
+    "mean": 14.955
+   },
+   "spare": {
+    "n": 90,
+    "median": 0.008,
+    "min": 0.008,
+    "max": 0.008,
+    "p5": 0.008,
+    "p95": 0.008,
+    "mean": 0.008
+   },
+   "xbar": {
+    "n": 90,
+    "median": 66.587,
+    "min": 61.135,
+    "max": 69.875,
+    "p5": 62.529,
+    "p95": 69.395,
+    "mean": 66.245
+   }
+  },
+  "by_phase_block5_net_nJ_median": {
+   "reset": {
+    "crossbar": 0.223,
+    "rails_reset": 0.0,
+    "comparators": 0.941,
+    "latch_lock": 33.773,
+    "reference": 55.146,
+    "spares": 0.008
+   },
+   "calibration": {
+    "crossbar": 2.102,
+    "rails_reset": 0.304,
+    "comparators": -0.004,
+    "latch_lock": 1.207,
+    "reference": 2.468,
+    "spares": 0.0
+   },
+   "C1": {
+    "crossbar": 24.383,
+    "rails_reset": -0.038,
+    "comparators": 0.019,
+    "latch_lock": 15.36,
+    "reference": 28.943,
+    "spares": 0.0
+   },
+   "C2_race": {
+    "crossbar": 39.119,
+    "rails_reset": -0.096,
+    "comparators": 0.344,
+    "latch_lock": 125.579,
+    "reference": 250.587,
+    "spares": 0.0
+   },
+   "post_lock": {
+    "crossbar": 0.85,
+    "rails_reset": -0.002,
+    "comparators": -0.001,
+    "latch_lock": 2.991,
+    "reference": 5.134,
+    "spares": 0.0
+   },
+   "total": {
+    "crossbar": 66.587,
+    "rails_reset": 0.167,
+    "comparators": 1.299,
+    "latch_lock": 178.912,
+    "reference": 342.322,
+    "spares": 0.008
+   }
+  },
+  "vls_to_comparator_senses_nJ": {
+   "n": 90,
+   "median": 31.405,
+   "min": 24.035,
+   "max": 36.707,
+   "p5": 26.806,
+   "p95": 35.318,
+   "mean": 31.125
+  },
+  "mean_power_by_phase_uW_median": {
+   "reset": 299.31,
+   "calibration": 528.52,
+   "C1": 352.14,
+   "C2_race": 251.75,
+   "post_lock": 247.32,
+   "total": 268.58
+  },
+  "closure_max_rel": 2.6589230711878694e-08
+ },
+ "energy_v2_vs_t_read": {
+  "slope_nJ_per_us": 0.2365,
+  "intercept_nJ": 70.04,
+  "r": 0.9987
+ },
+ "energy_v1_baseline_nJ": {
+  "n": 90,
+  "median": 713.931,
+  "min": 683.863,
+  "max": 716.816,
+  "p5": 710.654,
+  "p95": 715.967,
+  "mean": 713.124
+ },
+ "energy_v1_O12_nJ": {
+  "n": 90,
+  "median": 684.366,
+  "min": 591.025,
+  "max": 754.468,
+  "p5": 624.439,
+  "p95": 734.832,
+  "mean": 682.795
+ },
+ "t_read_us": {
+  "n": 90,
+  "median": 2194.11,
+  "min": 1818.912,
+  "max": 2471.577,
+  "p5": 1956.304,
+  "p95": 2399.019,
+  "mean": 2184.207
+ },
+ "calibration_session_energy_nJ": {
+  "a1_VDD": 1918.4,
+  "races_estimated": [
+   419.1,
+   655.0
+  ],
+  "total": 2992.5,
+  "note": "race energies estimated from the C1 fit E vs t_read (races not instrumented)"
+ },
+ "energy_per_classification_with_calibration_nJ": {
+  "1": 3580.4,
+  "10": 887.2,
+  "100": 617.9,
+  "1000": 590.9,
+  "10000": 588.2
+ },
+ "chain": {
+  "n": 10,
+  "same_outcome": 10,
+  "rows": [
+   {
+    "step": 0,
+    "idx": 30,
+    "chain": 3,
+    "independent": 3,
+    "max_trip_shift_us": 0.0,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": null
+   },
+   {
+    "step": 1,
+    "idx": 31,
+    "chain": 2,
+    "independent": 2,
+    "max_trip_shift_us": 0.001,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": 0.0
+   },
+   {
+    "step": 2,
+    "idx": 32,
+    "chain": 2,
+    "independent": 2,
+    "max_trip_shift_us": 0.002,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": null
+   },
+   {
+    "step": 3,
+    "idx": 33,
+    "chain": 2,
+    "independent": 2,
+    "max_trip_shift_us": 0.003,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": null
+   },
+   {
+    "step": 4,
+    "idx": 34,
+    "chain": 5,
+    "independent": 5,
+    "max_trip_shift_us": 0.002,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": null
+   },
+   {
+    "step": 5,
+    "idx": 35,
+    "chain": 3,
+    "independent": 3,
+    "max_trip_shift_us": 0.001,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": 0.002
+   },
+   {
+    "step": 6,
+    "idx": 36,
+    "chain": 1,
+    "independent": 1,
+    "max_trip_shift_us": 0.002,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": null
+   },
+   {
+    "step": 7,
+    "idx": 37,
+    "chain": 1,
+    "independent": 1,
+    "max_trip_shift_us": 0.003,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": 0.001
+   },
+   {
+    "step": 8,
+    "idx": 38,
+    "chain": 4,
+    "independent": 4,
+    "max_trip_shift_us": 0.0,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": null
+   },
+   {
+    "step": 9,
+    "idx": 39,
+    "chain": 5,
+    "independent": 5,
+    "max_trip_shift_us": 0.001,
+    "rail_reset_shift_mV": 0.0,
+    "gap_shift_us": null
+   }
+  ],
+  "v1_chain": 10
+ }
+}

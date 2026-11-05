@@ -1,0 +1,33 @@
+{
+ "mc_zero": {
+  "trip_us": {
+   "5": 1706.833
+  },
+  "latched": [
+   5
+  ],
+  "lock_latency_us": 18.647,
+  "runner_up": 3,
+  "gap": {
+   "dV_mV": 21.01,
+   "gap_reach_us": 30.988,
+   "gap_slope_us": 33.227
+  }
+ },
+ "nominal": {
+  "trip_us": {
+   "5": 1706.833
+  },
+  "latched": [
+   5
+  ],
+  "lock_latency_us": 18.647,
+  "runner_up": 3,
+  "gap": {
+   "dV_mV": 21.01,
+   "gap_reach_us": 30.988,
+   "gap_slope_us": 33.227
+  }
+ },
+ "identical": true
+}

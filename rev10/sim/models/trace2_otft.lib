@@ -1,0 +1,11 @@
+* trace2_otft.lib - parameter corners for trace2_otft.sub (see MODEL_NOTES.md)
+
+* lab: anchored to published flexible DNTT TFTs with thin AlOx/SAM dielectric
+.lib lab
+.param MU=1.0 CI=0.70e-6 SS=0.080 RCW=400 JOFF=1e-14 VTH0=1.25 LOV=2
+.endl lab
+
+* printed: pessimistic low-cost corner. ASSUMED values, not from a specific paper
+.lib printed
+.param MU=0.30 CI=0.30e-6 SS=0.200 RCW=5000 JOFF=1e-12 VTH0=1.25 LOV=5
+.endl printed

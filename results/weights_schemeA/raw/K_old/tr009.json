@@ -1,0 +1,147 @@
+{
+ "tag": "tr009",
+ "split": "train",
+ "idx": 9,
+ "label": 2,
+ "F": [
+  [
+   9,
+   0,
+   26,
+   29,
+   5
+  ],
+  [
+   0,
+   21,
+   3,
+   12,
+   0
+  ],
+  [
+   4,
+   5,
+   0,
+   0,
+   28
+  ],
+  [
+   0,
+   17,
+   8,
+   0,
+   19
+  ],
+  [
+   9,
+   0,
+   6,
+   19,
+   6
+  ],
+  [
+   38,
+   17,
+   17,
+   0,
+   2
+  ]
+ ],
+ "weights": "old",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_old/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 151.5,
+  "returncode": 0,
+  "warnings": []
+ },
+ "n_tft": 134,
+ "x": [
+  0.325563,
+  0.763156,
+  0.623112,
+  0.852568,
+  0.157172,
+  0.362183
+ ],
+ "trip_us": {
+  "2": 1294.94
+ },
+ "first": 2,
+ "latched": [
+  2
+ ],
+ "winner": 2,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1314.168,
+ "lock_latency_us": 19.228,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 20.847,
+ "reset_level": {
+  "1": 0.89461,
+  "2": 0.89768,
+  "3": 0.8973,
+  "4": 0.89691,
+  "5": 0.89942
+ },
+ "ref_reset": 1.37606,
+ "ref_308": 1.23674,
+ "ref_309": 1.31048,
+ "ref_settle_mV_308_309": 73.737,
+ "rail_at_C2": {
+  "1": 1.38768,
+  "2": 1.71687,
+  "3": 1.45959,
+  "4": 1.4067,
+  "5": 1.67018
+ },
+ "runner_up": 5,
+ "gap": {
+  "dV_mV": 46.241,
+  "gap_reach_us": 69.161,
+  "gap_slope_us": 73.29
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 328.646,
+   "gap_reach_us": 514.587,
+   "gap_slope_us": 516.645
+  },
+  "3": {
+   "dV_mV": 256.627,
+   "gap_reach_us": 401.129,
+   "gap_slope_us": 403.491
+  },
+  "4": {
+   "dV_mV": 309.558,
+   "gap_reach_us": 484.517,
+   "gap_slope_us": 486.654
+  },
+  "5": {
+   "dV_mV": 46.241,
+   "gap_reach_us": 69.161,
+   "gap_slope_us": 73.29
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.63599,
+  "2": 0.62987,
+  "3": 0.6359,
+  "4": 0.63597,
+  "5": 0.63181
+ }
+}

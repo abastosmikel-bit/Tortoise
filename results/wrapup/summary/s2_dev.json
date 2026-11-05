@@ -1,0 +1,244 @@
+[
+ {
+  "tag": "S2dev_R10.1_v0450_tr123",
+  "variant": "R10.1",
+  "vth": 0.45,
+  "mode": "W",
+  "read": [],
+  "failure": "none_latched",
+  "race_us": 1563.416,
+  "t_read_us": 2131.116,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_R10.1_v0490_tr123",
+  "variant": "R10.1",
+  "vth": 0.49,
+  "mode": "W",
+  "read": [],
+  "failure": "none_latched",
+  "race_us": 1510.383,
+  "t_read_us": 2078.083,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_R10.1_v0650_tr123",
+  "variant": "R10.1",
+  "vth": 0.65,
+  "mode": "G",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1382.81,
+  "t_read_us": 1950.51,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L60_v0450_tr123",
+  "variant": "dev-X80L60",
+  "vth": 0.45,
+  "mode": "W",
+  "read": [],
+  "failure": "none_latched",
+  "race_us": 1534.848,
+  "t_read_us": 2102.548,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L60_v0490_tr123",
+  "variant": "dev-X80L60",
+  "vth": 0.49,
+  "mode": "W",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1119.567,
+  "t_read_us": 1687.267,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L60_v0650_tr123",
+  "variant": "dev-X80L60",
+  "vth": 0.65,
+  "mode": "G",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1382.808,
+  "t_read_us": 1950.508,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L20_v0450_tr123",
+  "variant": "dev-X80L20",
+  "vth": 0.45,
+  "mode": "W",
+  "read": [],
+  "failure": "none_latched",
+  "race_us": 1059.766,
+  "t_read_us": 1627.466,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L20_v0490_tr123",
+  "variant": "dev-X80L20",
+  "vth": 0.49,
+  "mode": "W",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1118.692,
+  "t_read_us": 1686.392,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L20_v0650_tr123",
+  "variant": "dev-X80L20",
+  "vth": 0.65,
+  "mode": "G",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1382.829,
+  "t_read_us": 1950.529,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-PkL10_v0450_tr123",
+  "variant": "dev-PkL10",
+  "vth": 0.45,
+  "mode": "W",
+  "read": [],
+  "failure": "none_latched",
+  "race_us": 1501.553,
+  "t_read_us": 2069.253,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-PkL10_v0490_tr123",
+  "variant": "dev-PkL10",
+  "vth": 0.49,
+  "mode": "W",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1119.365,
+  "t_read_us": 1687.065,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-PkL10_v0650_tr123",
+  "variant": "dev-PkL10",
+  "vth": 0.65,
+  "mode": "G",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1382.81,
+  "t_read_us": 1950.51,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-XI2L60_v0450_tr123",
+  "variant": "dev-XI2L60",
+  "vth": 0.45,
+  "mode": "W",
+  "read": [],
+  "failure": "none_latched",
+  "race_us": 1561.661,
+  "t_read_us": 2129.361,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-XI2L60_v0490_tr123",
+  "variant": "dev-XI2L60",
+  "vth": 0.49,
+  "mode": "W",
+  "read": [],
+  "failure": "none_latched",
+  "race_us": 1301.069,
+  "t_read_us": 1868.769,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-XI2L60_v0650_tr123",
+  "variant": "dev-XI2L60",
+  "vth": 0.65,
+  "mode": "G",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1382.8,
+  "t_read_us": 1950.5,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L20-X83W400_v0450_tr123",
+  "variant": "dev-X80L20-X83W400",
+  "vth": 0.45,
+  "mode": "W",
+  "read": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "failure": "stuck_latched",
+  "race_us": null,
+  "t_read_us": 380.268,
+  "first": null,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L20-X83W400_v0490_tr123",
+  "variant": "dev-X80L20-X83W400",
+  "vth": 0.49,
+  "mode": "W",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1080.65,
+  "t_read_us": 1648.35,
+  "first": 5,
+  "label": 5
+ },
+ {
+  "tag": "S2dev_dev-X80L20-X83W400_v0650_tr123",
+  "variant": "dev-X80L20-X83W400",
+  "vth": 0.65,
+  "mode": "G",
+  "read": [
+   5
+  ],
+  "failure": null,
+  "race_us": 1369.354,
+  "t_read_us": 1931.685,
+  "first": 5,
+  "label": 5
+ }
+]

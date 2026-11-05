@@ -1,0 +1,276 @@
+{
+ "anchor_20mV": {
+  "assumption": "size-scaled V_th only: sigma_Vth = anchor * sqrt(780 um^2/(W*L)); mu and R_C nominal",
+  "n_dies_complete": 5,
+  "accuracy_median": 0.65,
+  "accuracy_worst_die": 0.55,
+  "accuracy_best_die": 0.7,
+  "validity_median": 0.95,
+  "validity_worst_die": 0.95,
+  "dominant_class_share_median": 0.3158,
+  "pooled": {
+   "n": 100,
+   "correct": 64,
+   "accuracy": 0.64,
+   "accuracy_wilson95": [
+    0.5424,
+    0.7273
+   ],
+   "valid": 95,
+   "validity": 0.95,
+   "validity_wilson95": [
+    0.8882,
+    0.9785
+   ],
+   "failures": {
+    "multi_latched": 5
+   }
+  },
+  "dies": {
+   "1": {
+    "n": 20,
+    "correct": 13,
+    "accuracy": 0.65,
+    "accuracy_wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 5,
+    "dominant_class_share": 0.3158
+   },
+   "2": {
+    "n": 20,
+    "correct": 13,
+    "accuracy": 0.65,
+    "accuracy_wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 1,
+    "dominant_class_share": 0.2632
+   },
+   "3": {
+    "n": 20,
+    "correct": 14,
+    "accuracy": 0.7,
+    "accuracy_wilson95": [
+     0.481,
+     0.8545
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 1,
+    "dominant_class_share": 0.3158
+   },
+   "4": {
+    "n": 20,
+    "correct": 11,
+    "accuracy": 0.55,
+    "accuracy_wilson95": [
+     0.3421,
+     0.7418
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 2,
+    "dominant_class_share": 0.2632
+   },
+   "5": {
+    "n": 20,
+    "correct": 13,
+    "accuracy": 0.65,
+    "accuracy_wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 2,
+    "dominant_class_share": 0.3158
+   }
+  }
+ },
+ "anchor_35mV": {
+  "assumption": "size-scaled V_th only: sigma_Vth = anchor * sqrt(780 um^2/(W*L)); mu and R_C nominal",
+  "n_dies_complete": 5,
+  "accuracy_median": 0.6,
+  "accuracy_worst_die": 0.45,
+  "accuracy_best_die": 0.65,
+  "validity_median": 0.95,
+  "validity_worst_die": 0.85,
+  "dominant_class_share_median": 0.35,
+  "pooled": {
+   "n": 100,
+   "correct": 57,
+   "accuracy": 0.57,
+   "accuracy_wilson95": [
+    0.4722,
+    0.6627
+   ],
+   "valid": 94,
+   "validity": 0.94,
+   "validity_wilson95": [
+    0.8752,
+    0.9722
+   ],
+   "failures": {
+    "multi_latched": 6
+   }
+  },
+  "dies": {
+   "1": {
+    "n": 20,
+    "correct": 9,
+    "accuracy": 0.45,
+    "accuracy_wilson95": [
+     0.2582,
+     0.6579
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 3,
+    "dominant_class_share": 0.3684
+   },
+   "2": {
+    "n": 20,
+    "correct": 13,
+    "accuracy": 0.65,
+    "accuracy_wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 5,
+    "dominant_class_share": 0.35
+   },
+   "3": {
+    "n": 20,
+    "correct": 13,
+    "accuracy": 0.65,
+    "accuracy_wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "valid": 18,
+    "validity": 0.9,
+    "validity_wilson95": [
+     0.699,
+     0.9721
+    ],
+    "failures": {
+     "multi_latched": 2
+    },
+    "dominant_class": 1,
+    "dominant_class_share": 0.2778
+   },
+   "4": {
+    "n": 20,
+    "correct": 10,
+    "accuracy": 0.5,
+    "accuracy_wilson95": [
+     0.2993,
+     0.7007
+    ],
+    "valid": 17,
+    "validity": 0.85,
+    "validity_wilson95": [
+     0.6396,
+     0.9476
+    ],
+    "failures": {
+     "multi_latched": 3
+    },
+    "dominant_class": 2,
+    "dominant_class_share": 0.4118
+   },
+   "5": {
+    "n": 20,
+    "correct": 12,
+    "accuracy": 0.6,
+    "accuracy_wilson95": [
+     0.3866,
+     0.7812
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 2,
+    "dominant_class_share": 0.3
+   }
+  }
+ },
+ "pairs": {
+  "vs_3BP_same_vth_draws": {
+   "n": 200,
+   "v_correct": 121,
+   "other_correct": 21,
+   "same_outcome": 41,
+   "v_valid": 189,
+   "other_valid": 32
+  },
+  "vs_flat20_same_random_numbers": {
+   "n": 100,
+   "v_correct": 64,
+   "other_correct": 39,
+   "same_outcome": 50,
+   "v_valid": 95,
+   "other_valid": 95
+  }
+ }
+}

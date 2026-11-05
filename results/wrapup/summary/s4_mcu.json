@@ -1,0 +1,137 @@
+{
+ "sources": {
+  "MSP430": {
+   "part": "TI MSP430FR2433 (SLASE59F, rev. Dec 2019)",
+   "file": "prior_art/lookups/20261030T122833Z_url_msp430fr2433_datasheet.pdf",
+   "V": 3.0,
+   "I_active_8MHz_RAM_uA": 818.0,
+   "I_active_8MHz_FRAM100_uA": 625.0,
+   "I_LPM0_8MHz_uA": 342.0,
+   "I_LPM0_1MHz_uA": 166.0,
+   "I_LPM3_VLO_uA": 0.98,
+   "I_LPM4_uA": 0.49,
+   "I_LPM45_uA": 0.016,
+   "t_wake_LPM3_us": 10.0,
+   "t_wake_LPM45_us": 1000.0,
+   "I_ADC_uA": 207.0,
+   "t_sample_us": 2.0,
+   "t_convert_us": 2.67,
+   "f_MHz": 8.0,
+   "package": "DSBGA-24 (YQW) 2.29 mm x 2.34 mm",
+   "package_mm2": 5.3586
+  },
+  "MSPM0": {
+   "part": "TI MSPM0L1306 (SLASEX0D, rev. Jan 2024)",
+   "file": "prior_art/lookups/20261030T122919Z_url_mspm0l1306_datasheet.pdf",
+   "V": 3.3,
+   "I_run_32MHz_mA": 2.3,
+   "I_standby_uA": 1.0,
+   "I_shutdown_uA": 0.061,
+   "t_wake_standby_us": 15.0,
+   "I_ADC_uA": 454.0,
+   "t_conv_us": 1.0,
+   "f_MHz": 32.0,
+   "package": "WQFN-16 (RTR) 3 mm x 2 mm",
+   "package_mm2": 6.0
+  },
+  "cycles_assumption": {
+   "low": 500,
+   "nominal": 1000,
+   "high": 3000
+  }
+ },
+ "mcu_per_classification_nJ": {
+  "MSP430FR2433": {
+   "low": {
+    "wake_nJ": 24.539999999999992,
+    "adc_nJ": 86.1615,
+    "compute_nJ": 153.37499999999997,
+    "total_nJ": 264.07649999999995,
+    "busy_us": 100.52
+   },
+   "nominal": {
+    "wake_nJ": 24.539999999999992,
+    "adc_nJ": 86.1615,
+    "compute_nJ": 306.74999999999994,
+    "total_nJ": 417.45149999999995,
+    "busy_us": 163.01999999999998
+   },
+   "high": {
+    "wake_nJ": 24.539999999999992,
+    "adc_nJ": 86.1615,
+    "compute_nJ": 920.2499999999999,
+    "total_nJ": 1030.9514999999997,
+    "busy_us": 413.02
+   }
+  },
+  "MSPM0L1306": {
+   "low": {
+    "wake_nJ": 113.84999999999998,
+    "adc_nJ": 54.529199999999996,
+    "compute_nJ": 118.59374999999999,
+    "total_nJ": 286.97294999999997,
+    "busy_us": 36.625
+   },
+   "nominal": {
+    "wake_nJ": 113.84999999999998,
+    "adc_nJ": 54.529199999999996,
+    "compute_nJ": 237.18749999999997,
+    "total_nJ": 405.56669999999997,
+    "busy_us": 52.25
+   },
+   "high": {
+    "wake_nJ": 113.84999999999998,
+    "adc_nJ": 54.529199999999996,
+    "compute_nJ": 711.5625,
+    "total_nJ": 879.9417,
+    "busy_us": 114.75
+   }
+  }
+ },
+ "mcu_standby": {
+  "MSP430FR2433_LPM3_uW": 2.94,
+  "MSP430FR2433_LPM4_uW": 1.47,
+  "MSP430FR2433_LPM45_uW": 0.048,
+  "MSPM0L1306_standby_uW": 3.3,
+  "MSPM0L1306_shutdown_uW": 0.20129999999999998
+ },
+ "trace2": {
+  "die_energy_nJ_median": 587.935,
+  "source_die": "H2-02, results/host_v2/summary/c1_nominal.json",
+  "host_busy_us_median": 2194.11,
+  "source_busy": "results/host_v2/summary/c1_nominal.json t_read_us (median)",
+  "calibration_session_nJ": 2992.5,
+  "die_standby_uW": 0.0,
+  "host_floor_during_classification_nJ": {
+   "LPM0_1MHz_timer_only": 1092.66678,
+   "LPM0_8MHz": 2251.15686,
+   "note": "MSP430FR2433 kept in LPM0 with its clock running for the median read time; excludes the analog drivers for V1/V2 (two DAC levels on 6-7 rows), the power switch, the I_DD meter and the 6 ADC conversions the host needs anyway to form x"
+  },
+  "host_adc_and_wake_nJ": 110.7015,
+  "system_floor_nJ": 1791.3032799999999,
+  "area": {
+   "n_tft": 134,
+   "tft_channel_mm2": 0.301,
+   "capacitors_pF": 11152.8,
+   "capacitor_mm2": 1.593,
+   "active_mm2_lower_bound": 1.894,
+   "note": "channel area of every TFT (W x L) + every capacitor at C_i = 0.70 uF/cm^2; no overlap, contacts, spacing, routing, pads; a lower bound on the die area, not a layout"
+  },
+  "host_lines": {
+   "driven": 10,
+   "outputs": 5,
+   "supply": 1,
+   "note": "SPEC 4.1: VDD, row1-6, rstr, rstb, phib, phi; na1-5"
+  }
+ },
+ "comparison": {
+  "mcu_nominal_total_nJ": {
+   "MSP430FR2433": 417.45149999999995,
+   "MSPM0L1306": 405.56669999999997
+  },
+  "trace2_die_only_nJ": 587.935,
+  "trace2_system_floor_nJ": 1791.3032799999999,
+  "ratio_trace2_system_floor_over_msp430_nominal": 4.291045259149866,
+  "mcu_standby_energy_at_1_per_s_uJ": 2.94
+ }
+}

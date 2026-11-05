@@ -1,0 +1,74 @@
+{
+ "converged": true,
+ "runs": [
+  {
+   "run": 1,
+   "tag": "c01_s81",
+   "prior": "/home/user/TRACE-2/results/fitc10_campaign/raw/v3/warmstart/fitc10_warm",
+   "reset_level": {
+    "1": 0.89815,
+    "2": 0.89889,
+    "3": 0.89899,
+    "4": 0.89895,
+    "5": 0.89909
+   },
+   "ref_reset": 1.37619,
+   "max_delta_mV": null,
+   "latched": [
+    5
+   ],
+   "latched_at_cls": [
+    5
+   ],
+   "trip_us": {
+    "5": 1276.03
+   }
+  },
+  {
+   "run": 2,
+   "tag": "c02_s81",
+   "prior": "/home/user/TRACE-2/results/energy_host/raw/b1_opt_O1_chain/c01_s81_end",
+   "reset_level": {
+    "1": 0.87819,
+    "2": 0.88094,
+    "3": 0.88143,
+    "4": 0.88125,
+    "5": 0.88196
+   },
+   "ref_reset": 1.37613,
+   "max_delta_mV": 19.95999999999998,
+   "latched": [
+    5
+   ],
+   "latched_at_cls": [
+    5
+   ],
+   "trip_us": {
+    "5": 1303.029
+   }
+  },
+  {
+   "run": 3,
+   "tag": "c03_s81",
+   "prior": "/home/user/TRACE-2/results/energy_host/raw/b1_opt_O1_chain/c02_s81_end",
+   "reset_level": {
+    "1": 0.8781,
+    "2": 0.88094,
+    "3": 0.8814,
+    "4": 0.88122,
+    "5": 0.88196
+   },
+   "ref_reset": 1.37613,
+   "max_delta_mV": 0.0900000000000345,
+   "latched": [
+    5
+   ],
+   "latched_at_cls": [
+    5
+   ],
+   "trip_us": {
+    "5": 1303.028
+   }
+  }
+ ]
+}

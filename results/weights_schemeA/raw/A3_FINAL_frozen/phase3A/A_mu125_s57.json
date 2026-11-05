@@ -1,0 +1,153 @@
+{
+ "tag": "A_mu125_s57",
+ "split": "test",
+ "idx": 57,
+ "label": 1,
+ "F": [
+  [
+   5,
+   0,
+   21,
+   26,
+   5
+  ],
+  [
+   0,
+   20,
+   2,
+   11,
+   0
+  ],
+  [
+   11,
+   12,
+   0,
+   10,
+   30
+  ],
+  [
+   0,
+   11,
+   14,
+   0,
+   17
+  ],
+  [
+   6,
+   0,
+   8,
+   13,
+   7
+  ],
+  [
+   36,
+   17,
+   15,
+   0,
+   0
+  ]
+ ],
+ "weights": "FINAL_frozen",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_a/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": [
+  "fitc10_sweep.lib",
+  "fc10_mu125"
+ ],
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 178.3,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 134,
+ "x": [
+  0.425494,
+  0.325409,
+  0.449735,
+  0.364431,
+  0.007145,
+  0.5463
+ ],
+ "trip_us": {
+  "1": 1335.499,
+  "2": 1339.851
+ },
+ "first": 1,
+ "latched": [
+  1,
+  2
+ ],
+ "winner": null,
+ "valid": false,
+ "failure": "multi_latched",
+ "lock_us": 1352.467,
+ "lock_latency_us": 16.968,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 18.36,
+ "reset_level": {
+  "1": 0.86476,
+  "2": 0.86876,
+  "3": 0.86844,
+  "4": 0.86889,
+  "5": 0.86914
+ },
+ "ref_reset": 1.3811,
+ "ref_308": 1.2367,
+ "ref_309": 1.31285,
+ "ref_settle_mV_308_309": 76.147,
+ "rail_at_C2": {
+  "1": 1.5781,
+  "2": 1.55461,
+  "3": 1.50765,
+  "4": 1.43168,
+  "5": 1.48365
+ },
+ "runner_up": 2,
+ "gap": {
+  "dV_mV": 2.226,
+  "gap_reach_us": 2.841,
+  "gap_slope_us": 2.846
+ },
+ "gaps": {
+  "2": {
+   "dV_mV": 2.226,
+   "gap_reach_us": 2.841,
+   "gap_slope_us": 2.846
+  },
+  "3": {
+   "dV_mV": 48.655,
+   "gap_reach_us": 59.277,
+   "gap_slope_us": 62.098
+  },
+  "4": {
+   "dV_mV": 124.372,
+   "gap_reach_us": 155.928,
+   "gap_slope_us": 157.903
+  },
+  "5": {
+   "dV_mV": 83.123,
+   "gap_reach_us": 105.085,
+   "gap_slope_us": 107.47
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.75413,
+  "2": 0.77961,
+  "3": 0.78417,
+  "4": 0.78735,
+  "5": 0.77339
+ }
+}

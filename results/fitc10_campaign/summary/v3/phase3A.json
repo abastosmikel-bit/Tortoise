@@ -1,0 +1,268 @@
+{
+ "vth065_mu100 (nominal, = Phase 1 runs)": {
+  "n": 20,
+  "correct": 15,
+  "accuracy": 0.75,
+  "accuracy_wilson95": [
+   0.5313,
+   0.8881
+  ],
+  "valid": 20,
+  "validity": 1.0,
+  "validity_wilson95": [
+   0.8389,
+   1.0
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {
+   "p0": 493.02,
+   "p50": 878.851,
+   "p100": 1148.108
+  },
+  "lock_latency_us": {
+   "p0": 19.085,
+   "p50": 19.297,
+   "p100": 19.972
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 20
+ },
+ "vth045": {
+  "n": 20,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "valid": 0,
+  "validity": 0.0,
+  "validity_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "failures": {
+   "stuck_latched": 20
+  },
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "vth055": {
+  "n": 20,
+  "correct": 14,
+  "accuracy": 0.7,
+  "accuracy_wilson95": [
+   0.481,
+   0.8545
+  ],
+  "valid": 19,
+  "validity": 0.95,
+  "validity_wilson95": [
+   0.7639,
+   0.9911
+  ],
+  "failures": {
+   "multi_latched": 1
+  },
+  "race_time_from_C2_us": {
+   "p0": 166.412,
+   "p50": 424.452,
+   "p100": 603.877
+  },
+  "lock_latency_us": {
+   "p0": 21.834,
+   "p50": 21.88,
+   "p100": 22.116
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 19
+ },
+ "vth075": {
+  "n": 20,
+  "correct": 13,
+  "accuracy": 0.65,
+  "accuracy_wilson95": [
+   0.4329,
+   0.8188
+  ],
+  "valid": 18,
+  "validity": 0.9,
+  "validity_wilson95": [
+   0.699,
+   0.9721
+  ],
+  "failures": {
+   "timeout": 2
+  },
+  "race_time_from_C2_us": {
+   "p0": 1383.479,
+   "p50": 1983.571,
+   "p100": 2442.846
+  },
+  "lock_latency_us": {
+   "p0": 28.622,
+   "p50": 29.383,
+   "p100": 31.408
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 18
+ },
+ "vth085": {
+  "n": 20,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "valid": 0,
+  "validity": 0.0,
+  "validity_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "failures": {
+   "timeout": 20
+  },
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "vth095": {
+  "n": 20,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "valid": 0,
+  "validity": 0.0,
+  "validity_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "failures": {
+   "timeout": 20
+  },
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "vth105": {
+  "n": 20,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "valid": 0,
+  "validity": 0.0,
+  "validity_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "failures": {
+   "timeout": 20
+  },
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "mu050": {
+  "n": 20,
+  "correct": 8,
+  "accuracy": 0.4,
+  "accuracy_wilson95": [
+   0.2188,
+   0.6134
+  ],
+  "valid": 10,
+  "validity": 0.5,
+  "validity_wilson95": [
+   0.2993,
+   0.7007
+  ],
+  "failures": {
+   "none_latched": 2,
+   "timeout": 6,
+   "multi_latched": 2
+  },
+  "race_time_from_C2_us": {
+   "p0": 1997.918,
+   "p50": 2300.827,
+   "p100": 2477.121
+  },
+  "lock_latency_us": {
+   "p0": 35.166,
+   "p50": 35.633,
+   "p100": 37.269
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 10
+ },
+ "mu075": {
+  "n": 20,
+  "correct": 14,
+  "accuracy": 0.7,
+  "accuracy_wilson95": [
+   0.481,
+   0.8545
+  ],
+  "valid": 19,
+  "validity": 0.95,
+  "validity_wilson95": [
+   0.7639,
+   0.9911
+  ],
+  "failures": {
+   "multi_latched": 1
+  },
+  "race_time_from_C2_us": {
+   "p0": 1031.463,
+   "p50": 1426.705,
+   "p100": 1704.175
+  },
+  "lock_latency_us": {
+   "p0": 24.366,
+   "p50": 24.691,
+   "p100": 25.71
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 19
+ },
+ "mu125": {
+  "n": 20,
+  "correct": 15,
+  "accuracy": 0.75,
+  "accuracy_wilson95": [
+   0.5313,
+   0.8881
+  ],
+  "valid": 20,
+  "validity": 1.0,
+  "validity_wilson95": [
+   0.8389,
+   1.0
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {
+   "p0": 156.739,
+   "p50": 534.341,
+   "p100": 797.029
+  },
+  "lock_latency_us": {
+   "p0": 15.962,
+   "p50": 16.097,
+   "p100": 16.574
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 20
+ }
+}

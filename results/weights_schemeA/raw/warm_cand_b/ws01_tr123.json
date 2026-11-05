@@ -1,0 +1,148 @@
+{
+ "tag": "ws01_tr123",
+ "split": "train",
+ "idx": 123,
+ "label": 5,
+ "F": [
+  [
+   0,
+   0,
+   27,
+   3,
+   4
+  ],
+  [
+   0,
+   25,
+   0,
+   26,
+   0
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   26
+  ],
+  [
+   0,
+   15,
+   6,
+   0,
+   22
+  ],
+  [
+   0,
+   0,
+   6,
+   25,
+   3
+  ],
+  [
+   51,
+   18,
+   20,
+   6,
+   0
+  ]
+ ],
+ "weights": "cand_b",
+ "prior": "/home/claude/w/sim/circuits/t6L_x2_v085",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 207.3,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 130,
+ "x": [
+  0.644129,
+  0.417852,
+  0.938666,
+  0.803294,
+  0.108757,
+  0.150625
+ ],
+ "trip_us": {
+  "5": 1233.222
+ },
+ "first": 5,
+ "latched": [
+  5
+ ],
+ "winner": 5,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1253.1,
+ "lock_latency_us": 19.879,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 21.5,
+ "reset_level": {
+  "1": 0.8973,
+  "2": 0.90084,
+  "3": 0.90153,
+  "4": 0.90224,
+  "5": 0.8997
+ },
+ "ref_reset": 1.39162,
+ "ref_308": 1.25302,
+ "ref_309": 1.32622,
+ "ref_settle_mV_308_309": 73.193,
+ "rail_at_C2": {
+  "1": 1.16909,
+  "2": 1.46786,
+  "3": 1.48213,
+  "4": 1.32424,
+  "5": 1.79576
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 283.679,
+  "gap_reach_us": 451.31,
+  "gap_slope_us": 453.828
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 649.256,
+   "gap_reach_us": 1175.84,
+   "gap_slope_us": 1177.189
+  },
+  "2": {
+   "dV_mV": 305.42,
+   "gap_reach_us": 494.492,
+   "gap_slope_us": 496.966
+  },
+  "3": {
+   "dV_mV": 283.679,
+   "gap_reach_us": 451.31,
+   "gap_slope_us": 453.828
+  },
+  "4": {
+   "dV_mV": 434.186,
+   "gap_reach_us": 680.899,
+   "gap_slope_us": 682.924
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.55149,
+  "2": 0.61453,
+  "3": 0.62505,
+  "4": 0.63574,
+  "5": 0.57714
+ }
+}

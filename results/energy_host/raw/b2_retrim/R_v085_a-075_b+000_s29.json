@@ -1,0 +1,123 @@
+{
+ "tag": "R_v085_a-075_b+000_s29",
+ "idx": 29,
+ "label": 5,
+ "job": {
+  "tag": "R_v085_a-075_b+000_s29",
+  "idx": 29,
+  "wdir": "b2",
+  "vth": 0.85,
+  "V1": 1.5450000000000002,
+  "V2": 2.2,
+  "inst": false,
+  "vth_metric": 0.85,
+  "offsets_mV": [
+   -75,
+   0
+  ]
+ },
+ "run": {
+  "wall_s": 109.5,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.545,
+  "V2": 2.2,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v08500_m10000.lib",
+   "eh_v08500_m10000"
+  ],
+  "vth": 0.85,
+  "muf": 1.0
+ },
+ "trip_us": {
+  "4": 503.08,
+  "5": 490.961
+ },
+ "first": 5,
+ "latched": [
+  5
+ ],
+ "winner": 5,
+ "valid": true,
+ "failure": null,
+ "lock_us": 500.488,
+ "lock_latency_us": 9.527,
+ "trip_in_C1": true,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 11.883,
+ "reset_level": {
+  "1": 1.10187,
+  "2": 1.10271,
+  "3": 1.10282,
+  "4": 1.10278,
+  "5": 1.10293
+ },
+ "ref_reset": 1.50473,
+ "ref_308": 1.37951,
+ "ref_309": 1.44728,
+ "ref_settle_mV_308_309": 67.772,
+ "rail_at_C2": {
+  "1": 1.67385,
+  "2": 1.95967,
+  "3": 1.97112,
+  "4": 2.16062,
+  "5": 2.27988
+ },
+ "runner_up": 4,
+ "gap": {
+  "dV_mV": 116.602,
+  "gap_reach_us": 208.951,
+  "gap_slope_us": 2832.54
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 603.497,
+   "gap_reach_us": 978.075,
+   "gap_slope_us": 1384.699
+  },
+  "2": {
+   "dV_mV": 318.427,
+   "gap_reach_us": 527.356,
+   "gap_slope_us": 225.894
+  },
+  "3": {
+   "dV_mV": 306.442,
+   "gap_reach_us": 509.439,
+   "gap_slope_us": 666.243
+  },
+  "4": {
+   "dV_mV": 116.602,
+   "gap_reach_us": 208.951,
+   "gap_slope_us": 2832.54
+  }
+ },
+ "race_us": -16.539,
+ "energy": null
+}

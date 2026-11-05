@@ -1,0 +1,123 @@
+{
+ "tag": "R_v085_a-025_b+000_s17",
+ "idx": 17,
+ "label": 4,
+ "job": {
+  "tag": "R_v085_a-025_b+000_s17",
+  "idx": 17,
+  "wdir": "b2",
+  "vth": 0.85,
+  "V1": 1.5950000000000002,
+  "V2": 2.2,
+  "inst": false,
+  "vth_metric": 0.85,
+  "offsets_mV": [
+   -25,
+   0
+  ]
+ },
+ "run": {
+  "wall_s": 156.4,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.595,
+  "V2": 2.2,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v08500_m10000.lib",
+   "eh_v08500_m10000"
+  ],
+  "vth": 0.85,
+  "muf": 1.0
+ },
+ "trip_us": {
+  "4": 588.429,
+  "5": 603.518
+ },
+ "first": 4,
+ "latched": [
+  4
+ ],
+ "winner": 4,
+ "valid": true,
+ "failure": null,
+ "lock_us": 608.749,
+ "lock_latency_us": 20.32,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 22.689,
+ "reset_level": {
+  "1": 1.09694,
+  "2": 1.09777,
+  "3": 1.09789,
+  "4": 1.09784,
+  "5": 1.098
+ },
+ "ref_reset": 1.50095,
+ "ref_308": 1.37569,
+ "ref_309": 1.44351,
+ "ref_settle_mV_308_309": 67.821,
+ "rail_at_C2": {
+  "1": 1.72397,
+  "2": 1.90495,
+  "3": 1.95133,
+  "4": 2.1058,
+  "5": 2.09809
+ },
+ "runner_up": 5,
+ "gap": {
+  "dV_mV": 7.795,
+  "gap_reach_us": 12.249,
+  "gap_slope_us": 12.274
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 382.099,
+   "gap_reach_us": 599.04,
+   "gap_slope_us": 600.185
+  },
+  "2": {
+   "dV_mV": 200.997,
+   "gap_reach_us": 313.816,
+   "gap_slope_us": 315.867
+  },
+  "3": {
+   "dV_mV": 154.437,
+   "gap_reach_us": 240.448,
+   "gap_slope_us": 242.854
+  },
+  "5": {
+   "dV_mV": 7.795,
+   "gap_reach_us": 12.249,
+   "gap_slope_us": 12.274
+  }
+ },
+ "race_us": 80.929,
+ "energy": null
+}

@@ -1,0 +1,151 @@
+{
+ "tag": "A_mu125_s18",
+ "split": "test",
+ "idx": 18,
+ "label": 3,
+ "F": [
+  [
+   5,
+   0,
+   21,
+   26,
+   5
+  ],
+  [
+   0,
+   20,
+   2,
+   11,
+   0
+  ],
+  [
+   11,
+   12,
+   0,
+   10,
+   30
+  ],
+  [
+   0,
+   11,
+   14,
+   0,
+   17
+  ],
+  [
+   6,
+   0,
+   8,
+   13,
+   7
+  ],
+  [
+   36,
+   17,
+   15,
+   0,
+   0
+  ]
+ ],
+ "weights": "FINAL_frozen",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_a/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": [
+  "fitc10_sweep.lib",
+  "fc10_mu125"
+ ],
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 162.9,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 134,
+ "x": [
+  0.788659,
+  0.453242,
+  0.421592,
+  0.50043,
+  0.01244,
+  0.497355
+ ],
+ "trip_us": {
+  "3": 1157.466
+ },
+ "first": 3,
+ "latched": [
+  3
+ ],
+ "winner": 3,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1173.624,
+ "lock_latency_us": 16.158,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 17.55,
+ "reset_level": {
+  "1": 0.86476,
+  "2": 0.86876,
+  "3": 0.86844,
+  "4": 0.86889,
+  "5": 0.86914
+ },
+ "ref_reset": 1.3811,
+ "ref_308": 1.2367,
+ "ref_309": 1.31285,
+ "ref_settle_mV_308_309": 76.147,
+ "rail_at_C2": {
+  "1": 1.57346,
+  "2": 1.61403,
+  "3": 1.69504,
+  "4": 1.65082,
+  "5": 1.55207
+ },
+ "runner_up": 4,
+ "gap": {
+  "dV_mV": 43.717,
+  "gap_reach_us": 52.864,
+  "gap_slope_us": 55.95
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 137.498,
+   "gap_reach_us": 178.508,
+   "gap_slope_us": 180.764
+  },
+  "2": {
+   "dV_mV": 80.446,
+   "gap_reach_us": 99.849,
+   "gap_slope_us": 102.463
+  },
+  "4": {
+   "dV_mV": 43.717,
+   "gap_reach_us": 52.864,
+   "gap_slope_us": 55.95
+  },
+  "5": {
+   "dV_mV": 150.576,
+   "gap_reach_us": 192.432,
+   "gap_slope_us": 194.588
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.76043,
+  "2": 0.78526,
+  "3": 0.77901,
+  "4": 0.78243,
+  "5": 0.77357
+ }
+}

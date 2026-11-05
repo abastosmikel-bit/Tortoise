@@ -1,0 +1,46 @@
+{
+ "rstb50": {
+  "0.50": {
+   "n": 20,
+   "correct": 13,
+   "accuracy": 0.65,
+   "wilson95": [
+    0.4329,
+    0.8188
+   ],
+   "valid": 17,
+   "failures": {
+    "none_latched": 3
+   },
+   "race_median_us": 372.3665
+  },
+  "0.65": {
+   "n": 20,
+   "correct": 15,
+   "accuracy": 0.75,
+   "wilson95": [
+    0.5313,
+    0.8881
+   ],
+   "valid": 20,
+   "failures": {},
+   "race_median_us": 983.1879999999999
+  }
+ },
+ "fixed": {
+  "0.55": {
+   "n": 20,
+   "correct": 14,
+   "accuracy": 0.7,
+   "wilson95": [
+    0.481,
+    0.8545
+   ],
+   "valid": 19,
+   "failures": {
+    "multi_latched": 1
+   },
+   "race_median_us": 424.4515
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "tag": "tr138",
+ "split": "train",
+ "idx": 138,
+ "label": 2,
+ "F": [
+  [
+   9,
+   0,
+   26,
+   29,
+   5
+  ],
+  [
+   0,
+   21,
+   3,
+   12,
+   0
+  ],
+  [
+   4,
+   5,
+   0,
+   0,
+   28
+  ],
+  [
+   0,
+   17,
+   8,
+   0,
+   19
+  ],
+  [
+   9,
+   0,
+   6,
+   19,
+   6
+  ],
+  [
+   38,
+   17,
+   17,
+   0,
+   2
+  ]
+ ],
+ "weights": "old",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_old/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 135.8,
+  "returncode": 0,
+  "warnings": []
+ },
+ "n_tft": 134,
+ "x": [
+  0.64189,
+  0.4028,
+  0.441496,
+  0.66415,
+  0.01779,
+  0.481822
+ ],
+ "trip_us": {
+  "3": 1521.401
+ },
+ "first": 3,
+ "latched": [
+  3
+ ],
+ "winner": 3,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1541.095,
+ "lock_latency_us": 19.694,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 21.311,
+ "reset_level": {
+  "1": 0.89461,
+  "2": 0.89768,
+  "3": 0.8973,
+  "4": 0.89691,
+  "5": 0.89942
+ },
+ "ref_reset": 1.37606,
+ "ref_308": 1.23674,
+ "ref_309": 1.31048,
+ "ref_settle_mV_308_309": 73.737,
+ "rail_at_C2": {
+  "1": 1.4797,
+  "2": 1.55312,
+  "3": 1.57584,
+  "4": 1.44411,
+  "5": 1.53974
+ },
+ "runner_up": 2,
+ "gap": {
+  "dV_mV": 22.519,
+  "gap_reach_us": 32.376,
+  "gap_slope_us": 35.803
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 95.401,
+   "gap_reach_us": 147.044,
+   "gap_slope_us": 150.083
+  },
+  "2": {
+   "dV_mV": 22.519,
+   "gap_reach_us": 32.376,
+   "gap_slope_us": 35.803
+  },
+  "4": {
+   "dV_mV": 130.887,
+   "gap_reach_us": 203.025,
+   "gap_slope_us": 205.668
+  },
+  "5": {
+   "dV_mV": 35.703,
+   "gap_reach_us": 52.524,
+   "gap_slope_us": 56.628
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.63554,
+  "2": 0.62948,
+  "3": 0.63069,
+  "4": 0.63615,
+  "5": 0.63132
+ }
+}

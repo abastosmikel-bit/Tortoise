@@ -1,0 +1,31 @@
+samples [9, 11, 29, 51, 113, 137, 145, 168, 191, 205]
+[1/30    168s] mm_an35_d1_tr029 label 3 latched [2, 3] valid False multi_latched gap 0.0 wall 166.7
+[2/30    169s] mm_an35_d1_tr051 label 4 latched [4] valid True None gap 41.345 wall 168.2
+[3/30    169s] mm_an35_d1_tr009 label 2 latched [2] valid True None gap 108.963 wall 168.4
+[4/30    170s] mm_an35_d1_tr011 label 1 latched [3] valid True None gap 58.795 wall 169.5
+[5/30    372s] mm_an35_d1_tr113 label 1 latched [1] valid True None gap 71.076 wall 203.8
+[6/30    374s] mm_an35_d1_tr168 label 5 latched [2] valid True None gap 94.645 wall 202.3
+[7/30    375s] mm_an35_d1_tr145 label 5 latched [5] valid True None gap 105.827 wall 204.9
+[8/30    375s] mm_an35_d1_tr137 label 2 latched [2] valid True None gap 36.82 wall 205.9
+[9/30    581s] mm_an35_d1_tr191 label 3 latched [4] valid True None gap 21.161 wall 208.0
+[10/30    582s] mm_an35_d1_tr205 label 4 latched [4] valid True None gap 43.796 wall 207.7
+[11/30    584s] mm_an35_d2_tr011 label 1 latched [3] valid True None gap 28.093 wall 208.0
+[12/30    584s] mm_an35_d2_tr009 label 2 latched [2] valid True None gap 139.162 wall 208.7
+[13/30    786s] mm_an35_d2_tr029 label 3 latched [2] valid True None gap 71.099 wall 204.6
+[14/30    790s] mm_an35_d2_tr137 label 2 latched [2] valid True None gap 161.095 wall 204.8
+[15/30    791s] mm_an35_d2_tr051 label 4 latched [2] valid True None gap 10.849 wall 207.6
+[16/30    791s] mm_an35_d2_tr113 label 1 latched [2] valid True None gap 56.734 wall 206.6
+[17/30    989s] mm_an35_d2_tr145 label 5 latched [5] valid True None gap 131.312 wall 202.0
+[18/30    995s] mm_an35_d2_tr191 label 3 latched [4] valid True None gap 35.316 wall 204.3
+[19/30    996s] mm_an35_d2_tr205 label 4 latched [4] valid True None gap 0.0 wall 203.7
+[20/30    996s] mm_an35_d2_tr168 label 5 latched [2] valid True None gap 123.248 wall 205.4
+[21/30   1195s] mm_an35_d3_tr009 label 2 latched [2] valid True None gap 39.075 wall 204.9
+[22/30   1200s] mm_an35_d3_tr029 label 3 latched [5] valid True None gap 5.318 wall 203.6
+[23/30   1201s] mm_an35_d3_tr011 label 1 latched [1] valid True None gap 52.4 wall 205.0
+[24/30   1202s] mm_an35_d3_tr051 label 4 latched [5] valid True None gap 23.685 wall 204.8
+[25/30   1404s] mm_an35_d3_tr113 label 1 latched [1] valid True None gap 211.598 wall 208.4
+[26/30   1405s] mm_an35_d3_tr168 label 5 latched [2] valid True None gap 19.35 wall 203.0
+[27/30   1407s] mm_an35_d3_tr145 label 5 latched [5] valid True None gap 163.241 wall 205.4
+[28/30   1408s] mm_an35_d3_tr137 label 2 latched [1] valid True None gap 88.571 wall 206.8
+[29/30   1507s] mm_an35_d3_tr191 label 3 latched [1] valid True None gap 33.381 wall 102.8
+[30/30   1508s] mm_an35_d3_tr205 label 4 latched [5] valid True None gap 17.607 wall 102.4

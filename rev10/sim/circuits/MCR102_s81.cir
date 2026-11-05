@@ -1,0 +1,315 @@
+* ==================================================================
+* TRACE-2 FINAL (frozen)  Rev-4 Autonomous  (Time-Race Accumulating Charge-trap Element)
+* 6-input x 5-class autonomous unipolar p-OTFT neuromorphic processor
+* Monolithic 145-TFT budget (M1 to M145). Single DC supply VDD = 3.30 V, VSS = 0.00 V.
+* Zero external negative supply rails. Zero hidden subcircuits.
+* Production sign-off netlist for flexible substrate pre-tapeout.
+* ==================================================================
+
+.options TEMP=27 GMIN=1e-14 ABSTOL=1e-15 VNTOL=1e-7 RELTOL=1e-4
++ CHGTOL=1e-16 ITL1=500 ITL2=200 ITL4=500 METHOD=GEAR MAXORD=2
+
+* ---- p-type organic TFT (DNTT / SAM gate dielectric), aged corner ----
+* KP = mu*Cox = 1.0e-7 A/V^2  (mu ~ 3 cm2/Vs, Cox ~ 33 nF/cm2)
+* VTO = -1.20 V  = fully-walked-out |Vth| (nominal 0.85 V + 350 mV)
+* .model PORG PMOS (LEVEL=1 VTO=-1.20 KP=1.0e-7 GAMMA=0 PHI=0.60   (replaced by potft)
+.include ../models/trace2_otft_v2.sub
+.include ../models/trace2_otft_seg.sub
+.lib ../models/vth_sweep.lib lab_vth085
+* + LAMBDA=0.010 CGSO=2.0e-10 CGDO=2.0e-10 CGBO=1.0e-10
+* + CBD=0 CBS=0 CJ=0 CJSW=0 IS=1.0e-16 RD=0 RS=0)
+
+* ------------------------- single DC supply -------------------------
+VDD    vdd  0  DC 3.30
+
+* --------------------- row (input) drivers ------------------------
+* Phase B (1.0 us to 11.0 us): all 6 rows active-low (1.62 V) for calibration
+* Phase C (11.0 us to 65.0 us): test vector x = [1, 1, 1, 0, 0, 0]
+* Standby (65.0 us to 100.0 us): rows return to 3.30 V (quiescent standby)
+VR1  row1 0  PWL(0 3.3 301.0u 3.3 302.0u 1.62 310.0u 1.62 311.0u 3.3 312.50u 3.3 312.70u 1.62 461.64u 1.62 461.84u 3.3 507.50u 3.3 507.70u 2.2)
+VR2  row2 0  PWL(0 3.3 301.0u 3.3 302.0u 1.62 310.0u 1.62 311.0u 3.3 312.50u 3.3 312.70u 1.62 439.15u 1.62 439.35u 3.3 507.50u 3.3 507.70u 2.2)
+VR3  row3 0  PWL(0 3.3 301.0u 3.3 302.0u 1.62 310.0u 1.62 311.0u 3.3 312.50u 3.3 312.70u 1.62 439.30u 1.62 439.50u 3.3 507.50u 3.3 507.70u 2.2)
+VR4  row4 0  PWL(0 3.3 301.0u 3.3 302.0u 1.62 310.0u 1.62 311.0u 3.3 312.50u 3.3 312.70u 1.62 469.04u 1.62 469.24u 3.3 507.50u 3.3 507.70u 2.2)
+VR5  row5 0  PWL(0 3.3 301.0u 3.3 302.0u 1.62 310.0u 1.62 311.0u 3.3 312.50u 3.3 312.70u 1.62 416.65u 1.62 416.85u 3.3 507.50u 3.3 507.70u 2.2)
+VR6  row6 0  PWL(0 3.3 301.0u 3.3 302.0u 1.62 310.0u 1.62 311.0u 3.3 312.50u 3.3 312.70u 1.62 415.99u 1.62 416.19u 3.3 507.50u 3.3 507.70u 2.2)
+
+* ------------------- integration capacitance ----------------------
+CVBOOTDUMMY vboot 0 1p
+CRAIL1  ap1 0 375.0p
+CRAIL2  ap2 0 375.0p
+CRAIL3  ap3 0 375.0p
+CRAIL4  ap4 0 375.0p
+CRAIL5  ap5 0 375.0p
+CREF    ref 0 24.0p
+.ic v(ap1)=3.420 v(ap2)=3.391 v(ap3)=3.368 v(ap4)=3.280 v(ap5)=2.932 v(na1)=3.185 v(na2)=0.247 v(na3)=0.247 v(na4)=0.247 v(na5)=0.247 v(nb1)=0.757 v(nb2)=3.033 v(nb3)=3.033 v(nb4)=3.033 v(nb5)=3.033 v(d1)=2.824 v(d2)=2.824 v(d3)=2.824 v(d4)=2.824 v(d5)=2.824 v(ref)=1.574 v(win)=3.212 v(lockb)=0.726 v(vls)=3.196 v(vboot)=0
+CD1     d1  0 0.20p
+CNA1    na1 0 0.20p
+CNB1    nb1 0 0.20p
+CACOL1  acol1 0 0.20p
+RACOL1  acol1 vdd 1T
+CD2     d2  0 0.20p
+CNA2    na2 0 0.20p
+CNB2    nb2 0 0.20p
+CACOL2  acol2 0 0.20p
+RACOL2  acol2 vdd 1T
+CD3     d3  0 0.20p
+CNA3    na3 0 0.20p
+CNB3    nb3 0 0.20p
+CACOL3  acol3 0 0.20p
+RACOL3  acol3 vdd 1T
+CD4     d4  0 0.20p
+CNA4    na4 0 0.20p
+CNB4    nb4 0 0.20p
+CACOL4  acol4 0 0.20p
+RACOL4  acol4 vdd 1T
+CD5     d5  0 0.20p
+CNA5    na5 0 0.20p
+CNB5    nb5 0 0.20p
+CACOL5  acol5 0 0.20p
+RACOL5  acol5 vdd 1T
+CACOM   acom 0 0.20p
+RACOM   acom 0 1T
+CWIN win 0 0.3p
+XNP1 na1 rstb vdd potft W=20 L=5   $ na precharge (history equaliser)
+XNP2 na2 rstb vdd potft W=20 L=5   $ na precharge (history equaliser)
+XNP3 na3 rstb vdd potft W=20 L=5   $ na precharge (history equaliser)
+XNP4 na4 rstb vdd potft W=20 L=5   $ na precharge (history equaliser)
+XNP5 na5 rstb vdd potft W=20 L=5   $ na precharge (history equaliser)
+XWR win rstr vdd potft W=10 L=5 DVTH=0.12357   $ precharge win high during reset (keeps win >= 0)
+CLOCKB lockb 0 0.20p
+
+* ============ M1-M30 : EXCITATORY 2T-CELL HALF (A+) ===============
+X1 ap1 row1 vdd potftseg W=90 L=54 DVTH=0.04335
+* X2 removed: 0 fingers
+X3 ap1 row3 vdd potftseg W=40 L=54 DVTH=0.02871
+* X4 removed: 0 fingers
+X5 ap1 row5 vdd potftseg W=90 L=54 DVTH=-0.02164
+X6 ap1 row6 vdd potftseg W=380 L=54 DVTH=-0.00579
+* X7 removed: 0 fingers
+X8 ap2 row2 vdd potftseg W=210 L=54 DVTH=0.01129
+X9 ap2 row3 vdd potftseg W=50 L=54 DVTH=-0.00118
+X10 ap2 row4 vdd potftseg W=170 L=54 DVTH=0.01738
+* X11 removed: 0 fingers
+X12 ap2 row6 vdd potftseg W=170 L=54 DVTH=-0.02831
+X13 ap3 row1 vdd potftseg W=260 L=54 DVTH=0.02490
+X14 ap3 row2 vdd potftseg W=30 L=54 DVTH=0.06540
+* X15 removed: 0 fingers
+X16 ap3 row4 vdd potftseg W=80 L=54 DVTH=-0.03077
+X17 ap3 row5 vdd potftseg W=60 L=54 DVTH=-0.00726
+X18 ap3 row6 vdd potftseg W=170 L=54 DVTH=-0.00880
+X19 ap4 row1 vdd potftseg W=290 L=54 DVTH=-0.00412
+X20 ap4 row2 vdd potftseg W=120 L=54 DVTH=0.01728
+* X21 removed: 0 fingers
+* X22 removed: 0 fingers
+X23 ap4 row5 vdd potftseg W=190 L=54 DVTH=-0.00670
+* X24 removed: 0 fingers
+X25 ap5 row1 vdd potftseg W=50 L=54 DVTH=-0.02389
+* X26 removed: 0 fingers
+X27 ap5 row3 vdd potftseg W=280 L=54 DVTH=0.00860
+X28 ap5 row4 vdd potftseg W=190 L=54 DVTH=0.01939
+X29 ap5 row5 vdd potftseg W=60 L=54 DVTH=-0.00952
+X30 ap5 row6 vdd potftseg W=20 L=54 DVTH=0.01531
+
+* ============ M31-M60 : INHIBITORY 2T-CELL HALF (A-) ==============
+X31 acol1 row1 vdd potft W=38 L=10 DVTH=-0.09953
+X32 acol1 row2 vdd potft W=38 L=10 DVTH=0.07732
+X33 acol1 row3 vdd potft W=38 L=10 DVTH=0.17126
+X34 acol1 row4 vdd potft W=38 L=10 DVTH=0.04917
+X35 acol1 row5 vdd potft W=38 L=10 DVTH=0.00124
+X36 acol1 row6 vdd potft W=38 L=10 DVTH=-0.14334
+X37 acol2 row1 vdd potft W=38 L=10 DVTH=-0.01737
+X38 acol2 row2 vdd potft W=38 L=10 DVTH=-0.14486
+X39 acol2 row3 vdd potft W=38 L=10 DVTH=0.06279
+X40 acol2 row4 vdd potft W=38 L=10 DVTH=0.13678
+X41 acol2 row5 vdd potft W=38 L=10 DVTH=0.10824
+X42 acol2 row6 vdd potft W=38 L=10 DVTH=0.01799
+X43 acol3 row1 vdd potft W=38 L=10 DVTH=0.04197
+X44 acol3 row2 vdd potft W=38 L=10 DVTH=-0.04414
+X45 acol3 row3 vdd potft W=38 L=10 DVTH=0.02245
+X46 acol3 row4 vdd potft W=38 L=10 DVTH=0.02239
+X47 acol3 row5 vdd potft W=38 L=10 DVTH=0.00433
+X48 acol3 row6 vdd potft W=38 L=10 DVTH=-0.19201
+X49 acol4 row1 vdd potft W=38 L=10 DVTH=0.02384
+X50 acol4 row2 vdd potft W=38 L=10 DVTH=0.03736
+X51 acol4 row3 vdd potft W=38 L=10 DVTH=-0.05222
+X52 acol4 row4 vdd potft W=38 L=10 DVTH=0.03474
+X53 acol4 row5 vdd potft W=38 L=10 DVTH=0.06245
+X54 acol4 row6 vdd potft W=38 L=10 DVTH=-0.15688
+X55 acol5 row1 vdd potft W=38 L=10 DVTH=0.06842
+X56 acol5 row2 vdd potft W=38 L=10 DVTH=-0.03718
+X57 acol5 row3 vdd potft W=38 L=10 DVTH=-0.08617
+X58 acol5 row4 vdd potft W=38 L=10 DVTH=0.00942
+X59 acol5 row5 vdd potft W=38 L=10 DVTH=-0.06130
+X60 acol5 row6 vdd potft W=38 L=10 DVTH=-0.03868
+
+* ============ M61-M64 : 4T SPLIT-BRANCH DRIFT SERVO ================
+X61 n1 n1 vdd potft W=20 L=10 DVTH=-0.10898   $ M_S1 diode master
+X62 0 0 n1 potft W=20 L=10 DVTH=-0.07512   $ M_S2 self-biased pull-down
+X63 comp n1 vdd potft W=20 L=10 DVTH=-0.13029   $ M_S3 mirror slave
+X64 0 0 comp potft W=33 L=10 DVTH=-0.05199   $ M_S4 tracking load
+
+* ============ M65-M66 : SHARED LEVEL-SHIFT REFERENCE ===============
+X65 vls n1 vdd potft W=790 L=5 DVTH=-0.02649   $ M_LSB bias current source
+X66 0 ref vls potft W=320 L=10 DVTH=-0.03600  $ M_LS  reference follower
+
+* ============ M67-M69 : SAMPLER + DUMMY + C_ref RESET ==============
+X67 ref phib acom potft W=40 L=5 DVTH=0.10338    $ M_smp sampling switch
+X68 ref phi ref potft W=20 L=5 DVTH=-0.00300    $ M_dum feedthrough dummy
+X69 0 rstb ref potft W=20 L=5 DVTH=0.05495    $ C_ref reset switch
+
+* ============ M70-M74 : A- COLUMN STEERING (Phase B only) =========
+X70 acom phib acol1 potft W=40 L=5 DVTH=0.17241
+X71 acom phib acol2 potft W=40 L=5 DVTH=0.06465
+X72 acom phib acol3 potft W=40 L=5 DVTH=-0.00174
+X73 acom phib acol4 potft W=40 L=5 DVTH=-0.11505
+X74 acom phib acol5 potft W=40 L=5 DVTH=0.07828
+
+* ============ M75-M79 : A+ RAIL RESET SWITCHES ====================
+X75 0 rstr ap1 potft W=400 L=20 DVTH=0.00726
+X76 0 rstr ap2 potft W=400 L=20 DVTH=0.01631
+X77 0 rstr ap3 potft W=400 L=20 DVTH=-0.00246
+X78 0 rstr ap4 potft W=400 L=20 DVTH=-0.00635
+X79 0 rstr ap5 potft W=400 L=20 DVTH=-0.03418
+
+* ============ M80 : GLOBAL WIN-BAR PULL-UP ========================
+X80 0 0 win potft W=5 L=20 DVTH=0.07612   $ idle pull-down of win
+XI1 lockb win vdd potft W=40 L=5 DVTH=-0.16081   $ inverter pull-up
+XI2 0 0 lockb potft W=10 L=5 DVTH=-0.10899   $ inverter load
+
+* ====== M81-M130 : PER-CLASS COMPARATOR + LATCH + LOCKOUT =========
+* ---- class 1 (M81-M90) ----
+X81 d1 ap1 vls potft W=468 L=15 DVTH=0.00772    $ M_sense gate-isolated
+X82 0 0 d1 potft W=20 L=20 DVTH=0.00141   $ M_dl detect load (bootstrapped gate)
+X83 na1 d1 vdd potft W=200 L=10 DVTH=-0.00475    $ M_T trip driver
+X84 0 0 na1 potft W=10 L=20 DVTH=0.04013   $ M_A_L latch load A
+X85 na1 nb1 vdd potft W=60 L=5 DVTH=-0.15266    $ M_X cross-coupled
+X86 nb1 na1 vdd potft W=60 L=5 DVTH=-0.00066    $ M_Y cross-coupled
+X87 0 0 nb1 potft W=20 L=5 DVTH=0.17372    $ M_B_L latch load B
+X88 nb1 rstr vdd potft W=40 L=5 DVTH=0.11244    $ M_rst latch reset
+X89 d1 lockb vdd potft W=20 L=5 DVTH=-0.22501   $ lock: pulls d1 high when lockb low
+X90 win nb1 vdd potft W=80 L=5 DVTH=0.06407   $ P_k: wired-OR pull-up of win
+
+* ---- class 2 (M91-M100) ----
+X91 d2 ap2 vls potft W=468 L=15 DVTH=0.00650
+X92 0 0 d2 potft W=20 L=20 DVTH=-0.07557
+X93 na2 d2 vdd potft W=200 L=10 DVTH=-0.04594
+X94 0 0 na2 potft W=10 L=20 DVTH=-0.02142
+X95 na2 nb2 vdd potft W=60 L=5 DVTH=0.11061
+X96 nb2 na2 vdd potft W=60 L=5 DVTH=0.03498
+X97 0 0 nb2 potft W=20 L=5 DVTH=-0.14585
+X98 nb2 rstr vdd potft W=40 L=5 DVTH=0.00435
+X99 d2 lockb vdd potft W=20 L=5 DVTH=0.14272   $ lock: pulls d2 high when lockb low
+X100 win nb2 vdd potft W=80 L=5 DVTH=-0.01095   $ P_k: wired-OR pull-up of win
+
+* ---- class 3 (M101-M110) ----
+X101 d3 ap3 vls potft W=468 L=15 DVTH=-0.00906
+X102 0 0 d3 potft W=20 L=20 DVTH=0.02894
+X103 na3 d3 vdd potft W=200 L=10 DVTH=-0.06948
+X104 0 0 na3 potft W=10 L=20 DVTH=0.03836
+X105 na3 nb3 vdd potft W=60 L=5 DVTH=-0.11932
+X106 nb3 na3 vdd potft W=60 L=5 DVTH=-0.01257
+X107 0 0 nb3 potft W=20 L=5 DVTH=0.04267
+X108 nb3 rstr vdd potft W=40 L=5 DVTH=-0.02118
+X109 d3 lockb vdd potft W=20 L=5 DVTH=-0.11777   $ lock: pulls d3 high when lockb low
+X110 win nb3 vdd potft W=80 L=5 DVTH=-0.03249   $ P_k: wired-OR pull-up of win
+
+* ---- class 4 (M111-M120) ----
+X111 d4 ap4 vls potft W=468 L=15 DVTH=0.01295
+X112 0 0 d4 potft W=20 L=20 DVTH=-0.10248
+X113 na4 d4 vdd potft W=200 L=10 DVTH=-0.03103
+X114 0 0 na4 potft W=10 L=20 DVTH=0.02598
+X115 na4 nb4 vdd potft W=60 L=5 DVTH=0.06128
+X116 nb4 na4 vdd potft W=60 L=5 DVTH=-0.00657
+X117 0 0 nb4 potft W=20 L=5 DVTH=-0.08575
+X118 nb4 rstr vdd potft W=40 L=5 DVTH=0.06547
+X119 d4 lockb vdd potft W=20 L=5 DVTH=-0.06529   $ lock: pulls d4 high when lockb low
+X120 win nb4 vdd potft W=80 L=5 DVTH=0.14387   $ P_k: wired-OR pull-up of win
+
+* ---- class 5 (M121-M130) ----
+X121 d5 ap5 vls potft W=468 L=15 DVTH=0.02195
+X122 0 0 d5 potft W=20 L=20 DVTH=0.13221
+X123 na5 d5 vdd potft W=200 L=10 DVTH=-0.03272
+X124 0 0 na5 potft W=10 L=20 DVTH=-0.05467
+X125 na5 nb5 vdd potft W=60 L=5 DVTH=-0.02734
+X126 nb5 na5 vdd potft W=60 L=5 DVTH=-0.10847
+X127 0 0 nb5 potft W=20 L=5 DVTH=-0.08387
+X128 nb5 rstr vdd potft W=40 L=5 DVTH=0.09190
+X129 d5 lockb vdd potft W=20 L=5 DVTH=-0.15372   $ lock: pulls d5 high when lockb low
+X130 win nb5 vdd potft W=80 L=5 DVTH=-0.02484   $ P_k: wired-OR pull-up of win
+
+* ====================================================================
+* M131-M132 : SHARED GLOBAL BOOTSTRAP DRIVER (ON-CHIP BIAS GENERATOR)
+* ====================================================================
+* Single on-chip bootstrap driver generates negative bias node (vboot = -1.25 V)
+* from sequencer falling edge. Replaces 24 redundant distributed bootstrap TFTs.
+* C_BOOT_VB removed (ideal vboot)
+* X131 vboot vboot 0 potft W=10 L=5   $ M_cl : Negative diode clamp to -|Vth| (removed)
+* X132 vboot vdd vdd potft W=5 L=50 $ M_iso: Leakage isolation / pull-up (removed)
+
+* ====================================================================
+* M133-M140 : AUTONOMOUS 8-TFT MONOSTABLE CLOCK SEQUENCER (SEQ8)
+* ====================================================================
+* Stage 1: Phase A Monostable Timer (CA = 1.8 pF, TA = 1.0 us)
+* removed (SEQ8 replaced by host timing): X133 0 rst_coarse na potft W=40 L=5
+* removed (SEQ8 replaced by host timing): X134 na 0 vdd potft W=90 L=5
+* removed (SEQ8 replaced by host timing): CA    na  0          1.8p
+* removed (SEQ8 replaced by host timing): X135 rst_fine na vdd potft W=100 L=5
+* removed (SEQ8 replaced by host timing): X136 0 0 rst_fine potft W=10 L=20
+
+* Stage 2: Phase B Monostable Timer (CB = 18.0 pF, TB = 10.0 us)
+* removed (SEQ8 replaced by host timing): X137 0 rst_fine nb potft W=40 L=5
+* removed (SEQ8 replaced by host timing): X138 nb 0 vdd potft W=90 L=5
+* removed (SEQ8 replaced by host timing): CB    nb  0          18.0p
+* removed (SEQ8 replaced by host timing): X139 phib_seq nb vdd potft W=100 L=5
+* removed (SEQ8 replaced by host timing): X140 0 win phib_seq potft W=10 L=20
+
+* Monolithic internal timing waveforms derived from sequencer
+* removed (SEQ8 replaced by host timing): V_RST_COARSE rst_coarse 0 PWL(0 0.00 600n 0.00 605n 3.30)
+* removed (SEQ8 replaced by host timing): V_RST_FINE   rst_fine   0 PWL(0 3.30 600n 3.30 605n 0.00)
+V_RSTB rstb 0 PWL(0 0 150u 0 151u 3.3)
+V_RSTR rstr 0 PWL(0 3.3 20.0u 0.00 311.5u 0.00 312.5u 3.3)
+V_PHIB phib 0 PWL(0 0 309.0u 0 310.0u 3.3)
+V_PHI phi 0 PWL(0 3.3 309.0u 3.3 310.0u 0)
+
+* ====================================================================
+* M141-M145 : MONOLITHIC PARALLEL REPAIR SPARES (GATE=VDD, HARD-OFF)
+* ====================================================================
+* External 6.00 V programming probe protection is located OFF-CHIP on the probe fixture.
+* These 5 reserve TFTs are dedicated 100% to laser-linkable parallel redundancy across
+* the 5 most critical single-point failure sites (M61, M62, M65, M66, M80),
+* achieving P_die_red = 6.526% (boosting yield by +1.18% over raw 5.343%).
+X141 0 vdd vdd potft W=20 L=10 DVTH=0.14823
+X142 0 vdd vdd potft W=20 L=10 DVTH=0.02664
+X143 0 vdd vdd potft W=20 L=10 DVTH=0.04677
+X144 0 vdd vdd potft W=20 L=10 DVTH=-0.00308
+X145 0 vdd vdd potft W=20 L=10 DVTH=-0.06916
+
+* ------------------------- analysis --------------------------------
+.tran 100n 1408u 0 100n
+
+.measure tran v_ref_hold   FIND v(ref)   AT=10.9u
+.measure tran v_vls_hold   FIND v(vls)   AT=10.9u
+.measure tran v_n1_bias    FIND v(n1)    AT=10.9u
+.measure tran v_comp_bias  FIND v(comp)  AT=10.9u
+.measure tran t_trip1      WHEN v(na1)=1.65 RISE=1
+.measure tran v_ap1_trip   FIND v(ap1)   WHEN v(na1)=1.65 RISE=1
+.measure tran vout1_final  FIND v(na1)   AT=699u
+.measure tran vrail1_final FIND v(ap1)   AT=699u
+.measure tran vout2_final  FIND v(na2)   AT=699u
+.measure tran vrail2_final FIND v(ap2)   AT=699u
+.measure tran vout3_final  FIND v(na3)   AT=699u
+.measure tran vrail3_final FIND v(ap3)   AT=699u
+.measure tran vout4_final  FIND v(na4)   AT=699u
+.measure tran vrail4_final FIND v(ap4)   AT=699u
+.measure tran vout5_final  FIND v(na5)   AT=699u
+.measure tran vrail5_final FIND v(ap5)   AT=699u
+.measure tran v_winb_final FIND v(win)  AT=699u
+.measure tran vboot_hold   FIND v(vboot) AT=50u
+.measure tran i_vdd_standby FIND i(vdd)  AT=699u
+
+.control
+run
+print v(ref) v(vls) v(n1) v(comp)
+.endc
+* VVBOOT removed: no negative bias in T4
+.end

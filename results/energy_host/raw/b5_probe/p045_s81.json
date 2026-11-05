@@ -1,0 +1,81 @@
+{
+ "tag": "p045_s81",
+ "idx": 81,
+ "vth": 0.45,
+ "build": {
+  "tC2": 507.5,
+  "t_end": 800.0,
+  "V1": 1.82,
+  "V2": 2.4,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v04500_m10000.lib",
+   "eh_v04500_m10000"
+  ],
+  "vth": 0.45,
+  "muf": 1.0
+ },
+ "run": {
+  "wall_s": 105.7,
+  "returncode": 0,
+  "warnings": []
+ },
+ "trip_us": {},
+ "first": null,
+ "latched": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "winner": null,
+ "valid": false,
+ "failure": "timeout",
+ "lock_us": null,
+ "lock_latency_us": null,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 800.0,
+ "lockb_chain_us": null,
+ "reset_level": {
+  "1": 0.7223,
+  "2": 0.72297,
+  "3": 0.72306,
+  "4": 0.72303,
+  "5": 0.72315
+ },
+ "ref_reset": 1.26581,
+ "ref_308": 1.11207,
+ "ref_309": 1.19152,
+ "ref_settle_mV_308_309": 79.448,
+ "rail_at_C2": {
+  "1": 1.75355,
+  "2": 1.90294,
+  "3": 1.92993,
+  "4": 1.91939,
+  "5": 1.96114
+ },
+ "runner_up": null,
+ "gap": null,
+ "gaps": null
+}

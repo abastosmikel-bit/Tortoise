@@ -1,0 +1,22 @@
+{
+ "1_identical_to_common_build": true,
+ "2_identical_to_stored_campaign_netlist": true,
+ "3_paired_draws": {
+  "n_old": 134,
+  "n_new": 134,
+  "same_names": true,
+  "max_abs_diff_V": 1.3877787807814457e-17,
+  "all_paired": true
+ },
+ "4_other_pattern": {
+  "n_tft": 128,
+  "expected": 128,
+  "bank_widths_match": true,
+  "n_unpaired_banks": 4,
+  "expected_unpaired": 4
+ },
+ "5_timing_T1_220": {
+  "tC2": 557.5,
+  "expected": 557.5
+ }
+}

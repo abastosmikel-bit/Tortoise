@@ -1,0 +1,91 @@
+{
+ "tag": "G_v085_m050_L1820_2400_s72",
+ "idx": 72,
+ "label": 3,
+ "job": {
+  "tag": "G_v085_m050_L1820_2400_s72",
+  "idx": 72,
+  "wdir": "b4",
+  "vth": 0.85,
+  "muf": 0.5,
+  "V1": 1.82,
+  "V2": 2.4,
+  "inst": false,
+  "vth_metric": 0.85,
+  "policy": "none"
+ },
+ "run": {
+  "wall_s": 111.2,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.82,
+  "V2": 2.4,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v08500_m05000.lib",
+   "eh_v08500_m05000"
+  ],
+  "vth": 0.85,
+  "muf": 0.5
+ },
+ "trip_us": {},
+ "first": null,
+ "latched": [],
+ "winner": null,
+ "valid": false,
+ "failure": "timeout",
+ "lock_us": null,
+ "lock_latency_us": null,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": null,
+ "reset_level": {
+  "1": 1.22894,
+  "2": 1.23092,
+  "3": 1.23118,
+  "4": 1.23108,
+  "5": 1.23144
+ },
+ "ref_reset": 1.42565,
+ "ref_308": 1.31879,
+ "ref_309": 1.37734,
+ "ref_settle_mV_308_309": 58.553,
+ "rail_at_C2": {
+  "1": 1.46177,
+  "2": 1.46717,
+  "3": 1.47448,
+  "4": 1.44963,
+  "5": 1.44671
+ },
+ "runner_up": null,
+ "gap": null,
+ "gaps": null,
+ "race_us": null,
+ "energy": null
+}

@@ -1,0 +1,126 @@
+{
+ "tag": "a2_an35_d09_st2_V2_2047",
+ "idx": 0,
+ "label": 4,
+ "job": {
+  "tag": "a2_an35_d09_st2_V2_2047",
+  "idx": 0,
+  "wdir": "race",
+  "vth": 0.9145,
+  "muf": 1.0,
+  "mc": {
+   "seed": 35009,
+   "s_vth": 0.035,
+   "s_mu": 0.1,
+   "s_rc": 0.2,
+   "scale": "pelgrom_vth"
+  },
+  "V2": 2.047,
+  "inst": false,
+  "save_wave": false,
+  "vth_metric": 0.9145
+ },
+ "run": {
+  "wall_s": 220.6,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.82,
+  "V2": 2.047,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v09145_m10000.lib",
+   "eh_v09145_m10000"
+  ],
+  "vth": 0.9145,
+  "muf": 1.0
+ },
+ "trip_us": {
+  "2": 1305.472
+ },
+ "first": 2,
+ "latched": [
+  2
+ ],
+ "winner": 2,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1322.36,
+ "lock_latency_us": 16.887,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 19.413,
+ "reset_level": {
+  "1": 1.16182,
+  "2": 1.13847,
+  "3": 1.13154,
+  "4": 1.15328,
+  "5": 1.1273
+ },
+ "ref_reset": 1.51975,
+ "ref_308": 1.40726,
+ "ref_309": 1.4718,
+ "ref_settle_mV_308_309": 64.535,
+ "rail_at_C2": {
+  "1": 1.23925,
+  "2": 1.21762,
+  "3": 1.20981,
+  "4": 1.23058,
+  "5": 1.20745
+ },
+ "runner_up": 5,
+ "gap": {
+  "dV_mV": -13.547,
+  "gap_reach_us": 0.0,
+  "gap_slope_us": -11.571
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 17.698,
+   "gap_reach_us": 16.221,
+   "gap_slope_us": 16.27
+  },
+  "3": {
+   "dV_mV": 27.771,
+   "gap_reach_us": 24.549,
+   "gap_slope_us": 25.078
+  },
+  "4": {
+   "dV_mV": 28.988,
+   "gap_reach_us": 26.163,
+   "gap_slope_us": 26.817
+  },
+  "5": {
+   "dV_mV": -13.547,
+   "gap_reach_us": 0.0,
+   "gap_slope_us": -11.571
+  }
+ },
+ "race_us": 797.972,
+ "energy": null
+}

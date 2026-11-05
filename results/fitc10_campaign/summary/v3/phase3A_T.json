@@ -1,0 +1,189 @@
+{
+ "vth075": {
+  "n": 20,
+  "correct": 15,
+  "accuracy": 0.75,
+  "accuracy_wilson95": [
+   0.5313,
+   0.8881
+  ],
+  "valid": 20,
+  "validity": 1.0,
+  "validity_wilson95": [
+   0.8389,
+   1.0
+  ],
+  "failures": {},
+  "levels": {
+   "V1": 1.72,
+   "V2": 2.3
+  },
+  "race_time_from_C2_us": {
+   "p0": 293.628,
+   "p50": 680.942,
+   "p100": 951.8
+  },
+  "lock_latency_us": {
+   "p0": 18.175,
+   "p50": 18.53,
+   "p100": 19.487
+  },
+  "n_trip_in_C1": 0,
+  "strict_correct_C2_resolved": 15,
+  "strict_accuracy": 0.75,
+  "strict_accuracy_wilson95": [
+   0.5313,
+   0.8881
+  ],
+  "ref_minus_reset_V": 0.441,
+  "fixed_levels": {
+   "accuracy": 0.65,
+   "validity": 0.9,
+   "failures": {
+    "timeout": 2
+   }
+  }
+ },
+ "vth085": {
+  "n": 20,
+  "correct": 14,
+  "accuracy": 0.7,
+  "accuracy_wilson95": [
+   0.481,
+   0.8545
+  ],
+  "valid": 19,
+  "validity": 0.95,
+  "validity_wilson95": [
+   0.7639,
+   0.9911
+  ],
+  "failures": {
+   "multi_latched": 1
+  },
+  "levels": {
+   "V1": 1.62,
+   "V2": 2.2
+  },
+  "race_time_from_C2_us": {
+   "p0": 86.755,
+   "p50": 477.073,
+   "p100": 750.237
+  },
+  "lock_latency_us": {
+   "p0": 19.005,
+   "p50": 19.545,
+   "p100": 20.672
+  },
+  "n_trip_in_C1": 0,
+  "strict_correct_C2_resolved": 14,
+  "strict_accuracy": 0.7,
+  "strict_accuracy_wilson95": [
+   0.481,
+   0.8545
+  ],
+  "ref_minus_reset_V": 0.4035,
+  "fixed_levels": {
+   "accuracy": 0.0,
+   "validity": 0.0,
+   "failures": {
+    "timeout": 20
+   }
+  }
+ },
+ "vth095": {
+  "n": 20,
+  "correct": 13,
+  "accuracy": 0.65,
+  "accuracy_wilson95": [
+   0.4329,
+   0.8188
+  ],
+  "valid": 18,
+  "validity": 0.9,
+  "validity_wilson95": [
+   0.699,
+   0.9721
+  ],
+  "failures": {
+   "multi_latched": 2
+  },
+  "levels": {
+   "V1": 1.52,
+   "V2": 2.1
+  },
+  "race_time_from_C2_us": {
+   "p0": -6.463,
+   "p50": 271.241,
+   "p100": 548.304
+  },
+  "lock_latency_us": {
+   "p0": 11.379,
+   "p50": 21.191,
+   "p100": 23.672
+  },
+  "n_trip_in_C1": 2,
+  "strict_correct_C2_resolved": 12,
+  "strict_accuracy": 0.6,
+  "strict_accuracy_wilson95": [
+   0.3866,
+   0.7812
+  ],
+  "ref_minus_reset_V": 0.3645,
+  "fixed_levels": {
+   "accuracy": 0.0,
+   "validity": 0.0,
+   "failures": {
+    "timeout": 20
+   }
+  }
+ },
+ "vth105": {
+  "n": 20,
+  "correct": 11,
+  "accuracy": 0.55,
+  "accuracy_wilson95": [
+   0.3421,
+   0.7418
+  ],
+  "valid": 15,
+  "validity": 0.75,
+  "validity_wilson95": [
+   0.5313,
+   0.8881
+  ],
+  "failures": {
+   "multi_latched": 5
+  },
+  "levels": {
+   "V1": 1.42,
+   "V2": 2.0
+  },
+  "race_time_from_C2_us": {
+   "p0": -26.993,
+   "p50": 59.459,
+   "p100": 345.762
+  },
+  "lock_latency_us": {
+   "p0": 12.54,
+   "p50": 23.096,
+   "p100": 24.533
+  },
+  "n_trip_in_C1": 9,
+  "strict_correct_C2_resolved": 7,
+  "strict_accuracy": 0.35,
+  "strict_accuracy_wilson95": [
+   0.1812,
+   0.5671
+  ],
+  "ref_minus_reset_V": 0.3229,
+  "fixed_levels": {
+   "accuracy": 0.0,
+   "validity": 0.0,
+   "failures": {
+    "timeout": 20
+   }
+  }
+ },
+ "nominal_vth065_ref_minus_reset_V": 0.4774
+}

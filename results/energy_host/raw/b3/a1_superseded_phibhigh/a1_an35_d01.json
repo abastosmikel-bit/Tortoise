@@ -1,0 +1,21 @@
+{
+ "tag": "a1_an35_d01",
+ "vth": 0.57,
+ "muf": 1.0,
+ "mc": {
+  "seed": 35001,
+  "s_vth": 0.035,
+  "s_mu": 0.1,
+  "s_rc": 0.2,
+  "scale": "pelgrom_vth"
+ },
+ "run": {
+  "error": "timeout (7200 s), first attempt 2026-10-26 17:19-19:19 UTC"
+ },
+ "vth_raw": null,
+ "vsg_at_I": null,
+ "na_max_during_ramp": {
+  "0": null
+ },
+ "failed": true
+}

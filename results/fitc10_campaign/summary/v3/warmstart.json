@@ -1,0 +1,53 @@
+{
+ "converged": true,
+ "n_runs": 2,
+ "warm_start": "/home/user/TRACE-2/results/fitc10_campaign/raw/v3/warmstart/fitc10_warm",
+ "runs": [
+  {
+   "run": 1,
+   "tag": "ws01_s81",
+   "prior": "/home/claude/w/sim/circuits/t6L_x2_v085",
+   "reset_level": {
+    "1": 0.90163,
+    "2": 0.90193,
+    "3": 0.90208,
+    "4": 0.90226,
+    "5": 0.90241
+   },
+   "ref_reset": 1.39166,
+   "max_delta_mV": null,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1280.094
+   },
+   "lock_latency_us": 19.806,
+   "wall_s": 100.4
+  },
+  {
+   "run": 2,
+   "tag": "ws02_s81",
+   "prior": "/home/user/TRACE-2/results/fitc10_campaign/raw/v3/warmstart/ws01_s81_end",
+   "reset_level": {
+    "1": 0.89817,
+    "2": 0.8989,
+    "3": 0.899,
+    "4": 0.89896,
+    "5": 0.89911
+   },
+   "ref_reset": 1.37749,
+   "max_delta_mV": 3.4600000000000186,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1276.789
+   },
+   "lock_latency_us": 19.957,
+   "wall_s": 106.4
+  }
+ ]
+}

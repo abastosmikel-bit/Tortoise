@@ -1,0 +1,43 @@
+* ==================================================================
+* trace2_otft_v2.sub - p-type organic TFT compact model for Tortoise, v2
+* ==================================================================
+* DC: identical to v1 (trace2_otft.sub / verification/otft_model.py):
+*   sp(x)   = S * ln(1 + exp(x/S)),   S = 2 * SS / ln(10)
+*   I(s->d) = (beta/2) * [ sp(V_si - V_g - Vth)^2 - sp(V_di - V_g - Vth)^2 ]
+*             + W * JOFF * tanh(V_si,di / 0.1 V)
+* Capacitance (CHANGED from v1, which used a fixed Ci*W*(L/2+LOV) per side):
+*   overlap   : Ci*W*LOV per side, linear (bias independent)
+*   channel   : gate charge Q = -Ci*W*(L/2)*[ sp(V_si-V_g-Vth) + sp(V_di-V_g-Vth) ]
+*               split as one term per channel end, implemented via a 1 pF auxiliary capacitor (see below).
+*   => off: channel C -> 0; linear: Ci*W*L split 50/50; saturation: drain-side
+*      channel C -> 0, source side Ci*W*L/2.
+* Known simplification: in saturation the source side should carry ~2/3 Ci*W*L
+* (Meyer); this model gives 1/2. Charge-conserving (charges are node functions).
+* Units: MU cm^2/Vs, CI F/cm^2, SS V/dec, RCW ohm*cm, JOFF A/um, VTH0 V, LOV um
+* ==================================================================
+.subckt potft d g s W=10 L=5 DVTH=0
+.param vth   = {VTH0 + DVTH}
+.param sw    = {2*SS/ln(10)}
+.param beta  = {MU*CI*W/L}
+.param rc2   = {max(RCW/(W*1e-4)/2, 1e-3)}
+.param cov   = {CI*1e-8*W*LOV}
+.param qch   = {CI*1e-8*W*L/2}
+Rcs s si {rc2}
+Rcd d di {rc2}
+B1 si di I = {beta/2} * ( ({sw}*ln(1+exp((v(si,g)-{vth})/{sw})))^2
++                       - ({sw}*ln(1+exp((v(di,g)-{vth})/{sw})))^2 )
++            + {W*JOFF}*tanh(v(si,di)/0.1)
+Cgso g si {cov}
+Cgdo g di {cov}
+* channel charge, implemented without ddt(): V(xq) = Q [pC] drives a 1 pF cap,
+* the sensed current dQ/dt is injected gate->channel-end by a CCCS.
+Bqs xqs 0 V = -{qch*1e12} * {sw}*ln(1+exp((v(si,g)-{vth})/{sw}))
+Vqs xqs xqsc 0
+Cqs xqsc 0 1e-12
+Fqs g si Vqs 1
+Bqd xqd 0 V = -{qch*1e12} * {sw}*ln(1+exp((v(di,g)-{vth})/{sw}))
+Vqd xqd xqdc 0
+Cqd xqdc 0 1e-12
+Fqd g di Vqd 1
+Rleak si di 1e14
+.ends potft

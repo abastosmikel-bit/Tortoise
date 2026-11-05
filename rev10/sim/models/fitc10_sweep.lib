@@ -1,0 +1,36 @@
+* fitc10 sweep corners for the Phase 3A robustness map (fitc10 campaign, 2026-10-22). New file; fitc10.lib unchanged.
+* One-dimensional sweeps around fitc10 (MU 5.87, VTH0 0.65, SS 0.112, RCW 490, CI 0.70e-6, JOFF 1e-14, LOV 2).
+* fc10_vthXXX: |V_th| = X.XX V at nominal mobility.  fc10_muXXX: mobility x0.XX at nominal V_th.
+.lib fc10_vth045
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.45 LOV=2
+.endl fc10_vth045
+.lib fc10_vth055
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.55 LOV=2
+.endl fc10_vth055
+.lib fc10_vth065
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.65 LOV=2
+.endl fc10_vth065
+.lib fc10_vth075
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.75 LOV=2
+.endl fc10_vth075
+.lib fc10_vth085
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.85 LOV=2
+.endl fc10_vth085
+.lib fc10_vth095
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.95 LOV=2
+.endl fc10_vth095
+.lib fc10_vth105
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=1.05 LOV=2
+.endl fc10_vth105
+.lib fc10_mu050
+.param MU=2.9350 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.65 LOV=2
+.endl fc10_mu050
+.lib fc10_mu075
+.param MU=4.4025 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.65 LOV=2
+.endl fc10_mu075
+.lib fc10_mu100
+.param MU=5.8700 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.65 LOV=2
+.endl fc10_mu100
+.lib fc10_mu125
+.param MU=7.3375 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.65 LOV=2
+.endl fc10_mu125

@@ -1,0 +1,153 @@
+{
+ "tag": "AT_vth095_s57",
+ "split": "test",
+ "idx": 57,
+ "label": 1,
+ "F": [
+  [
+   5,
+   0,
+   21,
+   26,
+   5
+  ],
+  [
+   0,
+   20,
+   2,
+   11,
+   0
+  ],
+  [
+   11,
+   12,
+   0,
+   10,
+   30
+  ],
+  [
+   0,
+   11,
+   14,
+   0,
+   17
+  ],
+  [
+   6,
+   0,
+   8,
+   13,
+   7
+  ],
+  [
+   36,
+   17,
+   15,
+   0,
+   0
+  ]
+ ],
+ "weights": "FINAL_frozen",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_a/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": [
+  "fitc10_sweep.lib",
+  "fc10_vth095"
+ ],
+ "mc": null,
+ "levels_vth": 0.95,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 300.3,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 134,
+ "x": [
+  0.425494,
+  0.325409,
+  0.449735,
+  0.364431,
+  0.007145,
+  0.5463
+ ],
+ "trip_us": {
+  "1": 1080.836,
+  "2": 1093.961
+ },
+ "first": 1,
+ "latched": [
+  1,
+  2
+ ],
+ "winner": null,
+ "valid": false,
+ "failure": "multi_latched",
+ "lock_us": 1102.944,
+ "lock_latency_us": 22.108,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 24.978,
+ "reset_level": {
+  "1": 1.18719,
+  "2": 1.19232,
+  "3": 1.19183,
+  "4": 1.19254,
+  "5": 1.19349
+ },
+ "ref_reset": 1.55774,
+ "ref_308": 1.43921,
+ "ref_309": 1.50418,
+ "ref_settle_mV_308_309": 64.97,
+ "rail_at_C2": {
+  "1": 1.78088,
+  "2": 1.76347,
+  "3": 1.7245,
+  "4": 1.66219,
+  "5": 1.70576
+ },
+ "runner_up": 2,
+ "gap": {
+  "dV_mV": 5.739,
+  "gap_reach_us": 8.981,
+  "gap_slope_us": 8.993
+ },
+ "gaps": {
+  "2": {
+   "dV_mV": 5.739,
+   "gap_reach_us": 8.981,
+   "gap_slope_us": 8.993
+  },
+  "3": {
+   "dV_mV": 44.468,
+   "gap_reach_us": 66.041,
+   "gap_slope_us": 70.471
+  },
+  "4": {
+   "dV_mV": 105.979,
+   "gap_reach_us": 164.033,
+   "gap_slope_us": 166.911
+  },
+  "5": {
+   "dV_mV": 68.711,
+   "gap_reach_us": 106.467,
+   "gap_slope_us": 111.001
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.61661,
+  "2": 0.63635,
+  "3": 0.63002,
+  "4": 0.6355,
+  "5": 0.61998
+ }
+}

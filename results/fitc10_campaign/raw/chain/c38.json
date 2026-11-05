@@ -1,0 +1,215 @@
+{
+ "tag": "c38",
+ "idx": 38,
+ "label": 4,
+ "prior": "/home/user/TRACE-2/results/fitc10_campaign/raw/chain/c37_end",
+ "variant": 1,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "run": {
+  "wall_s": 100.7,
+  "returncode": 0,
+  "warnings": [
+   "Error: measure  t_trip1  when(WHEN) : out of interval",
+   ".measure tran t_trip1 when v(na1)=1.65 rise=1 failed!",
+   "Error: measure  v_ap1_trip  find(AT) : out of interval",
+   ".measure tran v_ap1_trip find v(ap1) when v(na1)=1.65 rise=1 failed!"
+  ]
+ },
+ "n_tft": 134,
+ "resized": [
+  [
+   "X62",
+   "n1",
+   20.0,
+   10.0,
+   60.0
+  ],
+  [
+   "X64",
+   "comp",
+   33.0,
+   10.0,
+   60.0
+  ],
+  [
+   "X80",
+   "win",
+   5.0,
+   20.0,
+   120.0
+  ],
+  [
+   "XI2",
+   "lockb",
+   10.0,
+   5.0,
+   30.0
+  ],
+  [
+   "X82",
+   "d1",
+   20.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X84",
+   "na1",
+   10.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X87",
+   "nb1",
+   20.0,
+   5.0,
+   30.0
+  ],
+  [
+   "X92",
+   "d2",
+   20.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X94",
+   "na2",
+   10.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X97",
+   "nb2",
+   20.0,
+   5.0,
+   30.0
+  ],
+  [
+   "X102",
+   "d3",
+   20.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X104",
+   "na3",
+   10.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X107",
+   "nb3",
+   20.0,
+   5.0,
+   30.0
+  ],
+  [
+   "X112",
+   "d4",
+   20.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X114",
+   "na4",
+   10.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X117",
+   "nb4",
+   20.0,
+   5.0,
+   30.0
+  ],
+  [
+   "X122",
+   "d5",
+   20.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X124",
+   "na5",
+   10.0,
+   20.0,
+   120.0
+  ],
+  [
+   "X127",
+   "nb5",
+   20.0,
+   5.0,
+   30.0
+  ]
+ ],
+ "trip_us": {
+  "4": 1935.031
+ },
+ "first": 4,
+ "latched": [
+  4
+ ],
+ "winner": 4,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1952.411,
+ "lock_latency_us": 17.38,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 18.999,
+ "reset_level": {
+  "1": 0.90477,
+  "2": 0.90391,
+  "3": 0.90469,
+  "4": 0.9027,
+  "5": 0.90388
+ },
+ "ref_reset": 2.41879,
+ "rail_at_C2": {
+  "1": 1.49925,
+  "2": 1.48976,
+  "3": 1.54802,
+  "4": 1.59486,
+  "5": 1.50116
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 46.293,
+  "gap_reach_us": 70.302,
+  "gap_slope_us": 73.957
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 94.408,
+   "gap_reach_us": 146.852,
+   "gap_slope_us": 148.893
+  },
+  "2": {
+   "dV_mV": 103.853,
+   "gap_reach_us": 161.759,
+   "gap_slope_us": 163.613
+  },
+  "3": {
+   "dV_mV": 46.293,
+   "gap_reach_us": 70.302,
+   "gap_slope_us": 73.957
+  },
+  "5": {
+   "dV_mV": 92.503,
+   "gap_reach_us": 143.841,
+   "gap_slope_us": 145.925
+  }
+ }
+}

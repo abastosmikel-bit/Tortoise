@@ -1,0 +1,124 @@
+{
+ "tag": "R_v085_a-150_b+000_s13",
+ "idx": 13,
+ "label": 5,
+ "job": {
+  "tag": "R_v085_a-150_b+000_s13",
+  "idx": 13,
+  "wdir": "b2",
+  "vth": 0.85,
+  "V1": 1.4700000000000002,
+  "V2": 2.2,
+  "inst": false,
+  "vth_metric": 0.85,
+  "offsets_mV": [
+   -150,
+   0
+  ]
+ },
+ "run": {
+  "wall_s": 109.2,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.47,
+  "V2": 2.2,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v08500_m10000.lib",
+   "eh_v08500_m10000"
+  ],
+  "vth": 0.85,
+  "muf": 1.0
+ },
+ "trip_us": {
+  "2": 485.182,
+  "5": 479.543
+ },
+ "first": 5,
+ "latched": [
+  2,
+  5
+ ],
+ "winner": null,
+ "valid": false,
+ "failure": "multi_latched",
+ "lock_us": 489.231,
+ "lock_latency_us": 9.688,
+ "trip_in_C1": true,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 12.042,
+ "reset_level": {
+  "1": 1.1098,
+  "2": 1.11064,
+  "3": 1.11075,
+  "4": 1.1107,
+  "5": 1.11086
+ },
+ "ref_reset": 1.50943,
+ "ref_308": 1.38426,
+ "ref_309": 1.45198,
+ "ref_settle_mV_308_309": 67.718,
+ "rail_at_C2": {
+  "1": 1.82623,
+  "2": 2.23346,
+  "3": 2.02078,
+  "4": 1.91715,
+  "5": 2.28735
+ },
+ "runner_up": 2,
+ "gap": {
+  "dV_mV": 51.495,
+  "gap_reach_us": 91.281,
+  "gap_slope_us": 21.687
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 439.535,
+   "gap_reach_us": 732.185,
+   "gap_slope_us": 12623.127
+  },
+  "2": {
+   "dV_mV": 51.495,
+   "gap_reach_us": 91.281,
+   "gap_slope_us": 21.687
+  },
+  "3": {
+   "dV_mV": 253.489,
+   "gap_reach_us": 425.699,
+   "gap_slope_us": 228.574
+  },
+  "4": {
+   "dV_mV": 348.788,
+   "gap_reach_us": 588.929,
+   "gap_slope_us": 10579.36
+  }
+ },
+ "race_us": -27.957,
+ "energy": null
+}

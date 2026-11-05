@@ -1,0 +1,307 @@
+{
+ "phase": "phase3B_P",
+ "n_dies": 15,
+ "n_failing_dies": 12,
+ "dies": {
+  "an20_d1": {
+   "fail_frac": 0.0,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  },
+  "an20_d2": {
+   "fail_frac": 0.95,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 19,
+    "5": 0
+   }
+  },
+  "an20_d3": {
+   "fail_frac": 0.9,
+   "culprit_runs_per_class": {
+    "1": 12,
+    "2": 14,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  },
+  "an20_d4": {
+   "fail_frac": 1.0,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 20
+   }
+  },
+  "an20_d5": {
+   "fail_frac": 0.7,
+   "culprit_runs_per_class": {
+    "1": 14,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  },
+  "an35_d1": {
+   "fail_frac": 1.0,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 20
+   }
+  },
+  "an35_d2": {
+   "fail_frac": 0.7,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 14
+   }
+  },
+  "an35_d3": {
+   "fail_frac": 0.0,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  },
+  "an35_d4": {
+   "fail_frac": 1.0,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 20
+   }
+  },
+  "an35_d5": {
+   "fail_frac": 0.95,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 19,
+    "5": 0
+   }
+  },
+  "an50_d1": {
+   "fail_frac": 0.55,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 11,
+    "4": 0,
+    "5": 0
+   }
+  },
+  "an50_d2": {
+   "fail_frac": 1.0,
+   "culprit_runs_per_class": {
+    "1": 19,
+    "2": 14,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  },
+  "an50_d3": {
+   "fail_frac": 0.9,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 18
+   }
+  },
+  "an50_d4": {
+   "fail_frac": 0.5,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 10
+   }
+  },
+  "an50_d5": {
+   "fail_frac": 0.0,
+   "culprit_runs_per_class": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  }
+ },
+ "die_level_top15": [
+  {
+   "device": "X87",
+   "r": 0.693
+  },
+  {
+   "device": "X144",
+   "r": -0.657
+  },
+  {
+   "device": "X93",
+   "r": 0.589
+  },
+  {
+   "device": "X14",
+   "r": -0.579
+  },
+  {
+   "device": "X47",
+   "r": 0.568
+  },
+  {
+   "device": "XNP3",
+   "r": 0.556
+  },
+  {
+   "device": "X77",
+   "r": 0.49
+  },
+  {
+   "device": "X112",
+   "r": 0.479
+  },
+  {
+   "device": "X141",
+   "r": 0.469
+  },
+  {
+   "device": "X32",
+   "r": -0.462
+  },
+  {
+   "device": "X110",
+   "r": -0.458
+  },
+  {
+   "device": "X33",
+   "r": -0.456
+  },
+  {
+   "device": "X56",
+   "r": 0.445
+  },
+  {
+   "device": "X57",
+   "r": -0.444
+  },
+  {
+   "device": "X52",
+   "r": -0.424
+  }
+ ],
+ "die_level_note": "n = 15 dies, 134 devices: |r| of ~0.6-0.7 arises by chance for the top few devices",
+ "class_level": {
+  "M89 lock pull-up": {
+   "r": 0.3293870992495645,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": 0.649,
+   "mean_z_other": -0.239
+  },
+  "M90 P_k win pull-up": {
+   "r": 0.21511099933504627,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": 0.605,
+   "mean_z_other": 0.064
+  },
+  "M82 detect load": {
+   "r": 0.1422216045695794,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": 0.441,
+   "mean_z_other": 0.007
+  },
+  "M84 latch load A": {
+   "r": 0.1335243289667038,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": 0.361,
+   "mean_z_other": 0.022
+  },
+  "M81 sense (ap->d)": {
+   "r": -0.1266914323610492,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": -0.223,
+   "mean_z_other": 0.066
+  },
+  "M83 trip driver": {
+   "r": -0.12347697961631791,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": -0.261,
+   "mean_z_other": 0.081
+  },
+  "M87 latch load B": {
+   "r": 0.12203822468413708,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": 0.188,
+   "mean_z_other": -0.143
+  },
+  "XNP na precharge": {
+   "r": -0.10521571869454523,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": -0.311,
+   "mean_z_other": -0.035
+  },
+  "M86 cross-coupled Y": {
+   "r": -0.0508021933981673,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": -0.094,
+   "mean_z_other": 0.033
+  },
+  "M75-79 rail reset": {
+   "r": -0.031723083938006304,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": 0.096,
+   "mean_z_other": 0.161
+  },
+  "M85 cross-coupled X": {
+   "r": 0.029990852426753086,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": -0.133,
+   "mean_z_other": -0.212
+  },
+  "M88 latch reset": {
+   "r": 0.00195856346463963,
+   "n": 75,
+   "n_culprit": 14,
+   "mean_z_culprit": -0.126,
+   "mean_z_other": -0.13
+  }
+ },
+ "z_definition": "DVTH / (anchor * sqrt(780/WL)); positive = higher |V_th| = weaker p-device"
+}

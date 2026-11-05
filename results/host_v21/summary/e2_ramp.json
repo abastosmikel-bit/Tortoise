@@ -1,0 +1,616 @@
+{
+ "limit_V": 3.5,
+ "ramp0_us": 10.0,
+ "rates": {
+  "0.1": {
+   "ramp_us": 100.0,
+   "slope_V_per_us": 0.033,
+   "n_runs": 5,
+   "outcomes": {
+    "E2_r0p1_chain_s31": {
+     "read": [
+      2
+     ],
+     "failure": null,
+     "race_us": 1583.605
+    },
+    "E2_r0p1_maxcol_s29": {
+     "read": [
+      5
+     ],
+     "failure": null,
+     "race_us": 1251.612
+    },
+    "E2_r0p1_maxsum_s17": {
+     "read": [
+      4
+     ],
+     "failure": null,
+     "race_us": 1330.271
+    },
+    "E2_r0p1_mincol_s01": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1698.139
+    },
+    "E2_r0p1_minsum_s61": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1832.873
+    }
+   },
+   "up": {
+    "worst": {
+     "run": "E2_r0p1_chain_s31",
+     "device": "XWR",
+     "crossbar": false,
+     "d": "win",
+     "g": "rstr",
+     "s": "vdd",
+     "W": 10.0,
+     "L": 5.0,
+     "max_vgs": 3.3,
+     "max_vgd": 3.1182,
+     "max_stress": 3.3,
+     "t_max_us": 100.0,
+     "margin_V": 0.2
+    },
+    "crossbar": {
+     "run": "E2_r0p1_chain_s31",
+     "device": "X1",
+     "crossbar": true,
+     "d": "ap1",
+     "g": "row1",
+     "s": "vdd",
+     "W": 90.0,
+     "L": 54.0,
+     "max_vgs": 1.48,
+     "max_vgd": 3.0094,
+     "max_stress": 3.0094,
+     "t_max_us": 100.0,
+     "margin_V": 0.4906
+    },
+    "lowest": {
+     "run": "E2_r0p1_maxcol_s29",
+     "node": "nb1",
+     "V": -2.061983,
+     "t_us": 0.0
+    },
+    "n_above": 0,
+    "devices_above": []
+   },
+   "down": {
+    "worst": {
+     "run": "E2_r0p1_chain_s31",
+     "device": "X69",
+     "crossbar": false,
+     "d": "0",
+     "g": "rstb",
+     "s": "ref",
+     "W": 20.0,
+     "L": 5.0,
+     "max_vgs": 2.1189,
+     "max_vgd": 3.3,
+     "max_stress": 3.3,
+     "t_max_us": 0.0,
+     "margin_V": 0.2
+    },
+    "crossbar": {
+     "run": "E2_r0p1_maxcol_s29",
+     "device": "X1",
+     "crossbar": true,
+     "d": "ap1",
+     "g": "row1",
+     "s": "vdd",
+     "W": 90.0,
+     "L": 54.0,
+     "max_vgs": 0.0,
+     "max_vgd": 1.6532,
+     "max_stress": 1.6532,
+     "t_max_us": 0.512,
+     "margin_V": 1.8468
+    },
+    "lowest": {
+     "run": "E2_r0p1_mincol_s01",
+     "node": "nb1",
+     "V": -2.214386423038061,
+     "t_us": 102.1944313740695
+    },
+    "n_above": 0,
+    "devices_above": []
+   }
+  },
+  "0.3": {
+   "ramp_us": 33.333333333333336,
+   "slope_V_per_us": 0.09899999999999999,
+   "n_runs": 5,
+   "outcomes": {
+    "E2_r0p3_chain_s31": {
+     "read": [
+      2
+     ],
+     "failure": null,
+     "race_us": 1583.602
+    },
+    "E2_r0p3_maxcol_s29": {
+     "read": [
+      5
+     ],
+     "failure": null,
+     "race_us": 1251.605
+    },
+    "E2_r0p3_maxsum_s17": {
+     "read": [
+      4
+     ],
+     "failure": null,
+     "race_us": 1330.268
+    },
+    "E2_r0p3_mincol_s01": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1698.131
+    },
+    "E2_r0p3_minsum_s61": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1832.865
+    }
+   },
+   "up": {
+    "worst": {
+     "run": "E2_r0p3_maxcol_s29",
+     "device": "X84",
+     "crossbar": false,
+     "d": "0",
+     "g": "0",
+     "s": "na1",
+     "W": 10.0,
+     "L": 120.0,
+     "max_vgs": 3.3304,
+     "max_vgd": 0.0,
+     "max_stress": 3.3304,
+     "t_max_us": 50.897,
+     "margin_V": 0.1696
+    },
+    "crossbar": {
+     "run": "E2_r0p3_maxcol_s29",
+     "device": "X1",
+     "crossbar": true,
+     "d": "ap1",
+     "g": "row1",
+     "s": "vdd",
+     "W": 90.0,
+     "L": 54.0,
+     "max_vgs": 1.48,
+     "max_vgd": 3.021,
+     "max_stress": 3.021,
+     "t_max_us": 33.33,
+     "margin_V": 0.479
+    },
+    "lowest": {
+     "run": "E2_r0p3_maxcol_s29",
+     "node": "nb1",
+     "V": -2.0476229999999997,
+     "t_us": 0.0
+    },
+    "n_above": 0,
+    "devices_above": []
+   },
+   "down": {
+    "worst": {
+     "run": "E2_r0p3_chain_s31",
+     "device": "X69",
+     "crossbar": false,
+     "d": "0",
+     "g": "rstb",
+     "s": "ref",
+     "W": 20.0,
+     "L": 5.0,
+     "max_vgs": 2.1189,
+     "max_vgd": 3.3,
+     "max_stress": 3.3,
+     "t_max_us": 0.0,
+     "margin_V": 0.2
+    },
+    "crossbar": {
+     "run": "E2_r0p3_chain_s31",
+     "device": "X8",
+     "crossbar": true,
+     "d": "ap2",
+     "g": "row2",
+     "s": "vdd",
+     "W": 210.0,
+     "L": 54.0,
+     "max_vgs": 0.0,
+     "max_vgd": 1.8909,
+     "max_stress": 1.8909,
+     "t_max_us": 34.33,
+     "margin_V": 1.6091
+    },
+    "lowest": {
+     "run": "E2_r0p3_mincol_s01",
+     "node": "nb1",
+     "V": -2.2012112731860096,
+     "t_us": 35.06147740799184
+    },
+    "n_above": 0,
+    "devices_above": []
+   }
+  },
+  "1": {
+   "ramp_us": 10.0,
+   "slope_V_per_us": 0.32999999999999996,
+   "n_runs": 5,
+   "outcomes": {
+    "E2_r1_chain_s31": {
+     "read": [
+      2
+     ],
+     "failure": null,
+     "race_us": 1583.21
+    },
+    "E2_r1_maxcol_s29": {
+     "read": [
+      5
+     ],
+     "failure": null,
+     "race_us": 1251.212
+    },
+    "E2_r1_maxsum_s17": {
+     "read": [
+      4
+     ],
+     "failure": null,
+     "race_us": 1329.88
+    },
+    "E2_r1_mincol_s01": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1697.747
+    },
+    "E2_r1_minsum_s61": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1832.48
+    }
+   },
+   "up": {
+    "worst": {
+     "run": "E2_r1_chain_s31",
+     "device": "XNP1",
+     "crossbar": false,
+     "d": "na1",
+     "g": "rstb",
+     "s": "vdd",
+     "W": 20.0,
+     "L": 5.0,
+     "max_vgs": 3.3,
+     "max_vgd": 3.2861,
+     "max_stress": 3.3,
+     "t_max_us": 10.0,
+     "margin_V": 0.2
+    },
+    "crossbar": {
+     "run": "E2_r1_maxcol_s29",
+     "device": "X1",
+     "crossbar": true,
+     "d": "ap1",
+     "g": "row1",
+     "s": "vdd",
+     "W": 90.0,
+     "L": 54.0,
+     "max_vgs": 1.48,
+     "max_vgd": 3.033,
+     "max_stress": 3.033,
+     "t_max_us": 10.0,
+     "margin_V": 0.467
+    },
+    "lowest": {
+     "run": "E2_r1_maxcol_s29",
+     "node": "nb1",
+     "V": -2.0419430000000003,
+     "t_us": 0.0
+    },
+    "n_above": 0,
+    "devices_above": []
+   },
+   "down": {
+    "worst": {
+     "run": "E2_r1_chain_s31",
+     "device": "X69",
+     "crossbar": false,
+     "d": "0",
+     "g": "rstb",
+     "s": "ref",
+     "W": 20.0,
+     "L": 5.0,
+     "max_vgs": 2.1195,
+     "max_vgd": 3.3,
+     "max_stress": 3.3,
+     "t_max_us": 0.0,
+     "margin_V": 0.2
+    },
+    "crossbar": {
+     "run": "E2_r1_chain_s31",
+     "device": "X8",
+     "crossbar": true,
+     "d": "ap2",
+     "g": "row2",
+     "s": "vdd",
+     "W": 210.0,
+     "L": 54.0,
+     "max_vgs": 0.0,
+     "max_vgd": 2.0209,
+     "max_stress": 2.0209,
+     "t_max_us": 11.0,
+     "margin_V": 1.4791
+    },
+    "lowest": {
+     "run": "E2_r1_mincol_s01",
+     "node": "nb1",
+     "V": -2.197192109133641,
+     "t_us": 14.965172411866575
+    },
+    "n_above": 0,
+    "devices_above": []
+   }
+  },
+  "3": {
+   "ramp_us": 3.3333333333333335,
+   "slope_V_per_us": 0.9899999999999999,
+   "n_runs": 5,
+   "outcomes": {
+    "E2_r3_chain_s31": {
+     "read": [
+      2
+     ],
+     "failure": null,
+     "race_us": 1583.074
+    },
+    "E2_r3_maxcol_s29": {
+     "read": [
+      5
+     ],
+     "failure": null,
+     "race_us": 1251.086
+    },
+    "E2_r3_maxsum_s17": {
+     "read": [
+      4
+     ],
+     "failure": null,
+     "race_us": 1329.748
+    },
+    "E2_r3_mincol_s01": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1697.616
+    },
+    "E2_r3_minsum_s61": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1832.348
+    }
+   },
+   "up": {
+    "worst": {
+     "run": "E2_r3_maxcol_s29",
+     "device": "XWR",
+     "crossbar": false,
+     "d": "win",
+     "g": "rstr",
+     "s": "vdd",
+     "W": 10.0,
+     "L": 5.0,
+     "max_vgs": 3.3,
+     "max_vgd": 3.3737,
+     "max_stress": 3.3737,
+     "t_max_us": 3.68,
+     "margin_V": 0.1263
+    },
+    "crossbar": {
+     "run": "E2_r3_chain_s31",
+     "device": "X13",
+     "crossbar": true,
+     "d": "ap3",
+     "g": "row1",
+     "s": "vdd",
+     "W": 260.0,
+     "L": 54.0,
+     "max_vgs": 1.48,
+     "max_vgd": 3.041,
+     "max_stress": 3.041,
+     "t_max_us": 3.333,
+     "margin_V": 0.459
+    },
+    "lowest": {
+     "run": "E2_r3_maxcol_s29",
+     "node": "nb1",
+     "V": -2.040007,
+     "t_us": 0.0
+    },
+    "n_above": 0,
+    "devices_above": []
+   },
+   "down": {
+    "worst": {
+     "run": "E2_r3_chain_s31",
+     "device": "X69",
+     "crossbar": false,
+     "d": "0",
+     "g": "rstb",
+     "s": "ref",
+     "W": 20.0,
+     "L": 5.0,
+     "max_vgs": 2.1196,
+     "max_vgd": 3.3,
+     "max_stress": 3.3,
+     "t_max_us": 0.0,
+     "margin_V": 0.2
+    },
+    "crossbar": {
+     "run": "E2_r3_chain_s31",
+     "device": "X8",
+     "crossbar": true,
+     "d": "ap2",
+     "g": "row2",
+     "s": "vdd",
+     "W": 210.0,
+     "L": 54.0,
+     "max_vgs": 0.0,
+     "max_vgd": 2.0778,
+     "max_stress": 2.0778,
+     "t_max_us": 4.333,
+     "margin_V": 1.4222
+    },
+    "lowest": {
+     "run": "E2_r3_mincol_s01",
+     "node": "nb1",
+     "V": -2.196149493567726,
+     "t_us": 7.276484892289052
+    },
+    "n_above": 0,
+    "devices_above": []
+   }
+  },
+  "10": {
+   "ramp_us": 1.0,
+   "slope_V_per_us": 3.3,
+   "n_runs": 5,
+   "outcomes": {
+    "E2_r10_chain_s31": {
+     "read": [
+      2
+     ],
+     "failure": null,
+     "race_us": 1583.035
+    },
+    "E2_r10_maxcol_s29": {
+     "read": [
+      5
+     ],
+     "failure": null,
+     "race_us": 1251.05
+    },
+    "E2_r10_maxsum_s17": {
+     "read": [
+      4
+     ],
+     "failure": null,
+     "race_us": 1329.712
+    },
+    "E2_r10_mincol_s01": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1697.581
+    },
+    "E2_r10_minsum_s61": {
+     "read": [
+      1
+     ],
+     "failure": null,
+     "race_us": 1832.311
+    }
+   },
+   "up": {
+    "worst": {
+     "run": "E2_r10_maxcol_s29",
+     "device": "XWR",
+     "crossbar": false,
+     "d": "win",
+     "g": "rstr",
+     "s": "vdd",
+     "W": 10.0,
+     "L": 5.0,
+     "max_vgs": 3.3,
+     "max_vgd": 3.4363,
+     "max_stress": 3.4363,
+     "t_max_us": 1.286,
+     "margin_V": 0.0637
+    },
+    "crossbar": {
+     "run": "E2_r10_chain_s31",
+     "device": "X8",
+     "crossbar": true,
+     "d": "ap2",
+     "g": "row2",
+     "s": "vdd",
+     "W": 210.0,
+     "L": 54.0,
+     "max_vgs": 1.48,
+     "max_vgd": 3.0477,
+     "max_stress": 3.0477,
+     "t_max_us": 1.0,
+     "margin_V": 0.4523
+    },
+    "lowest": {
+     "run": "E2_r10_maxcol_s29",
+     "node": "nb1",
+     "V": -2.0391,
+     "t_us": 0.0
+    },
+    "n_above": 0,
+    "devices_above": []
+   },
+   "down": {
+    "worst": {
+     "run": "E2_r10_chain_s31",
+     "device": "X69",
+     "crossbar": false,
+     "d": "0",
+     "g": "rstb",
+     "s": "ref",
+     "W": 20.0,
+     "L": 5.0,
+     "max_vgs": 2.1197,
+     "max_vgd": 3.3,
+     "max_stress": 3.3,
+     "t_max_us": 0.0,
+     "margin_V": 0.2
+    },
+    "crossbar": {
+     "run": "E2_r10_chain_s31",
+     "device": "X8",
+     "crossbar": true,
+     "d": "ap2",
+     "g": "row2",
+     "s": "vdd",
+     "W": 210.0,
+     "L": 54.0,
+     "max_vgs": 0.0,
+     "max_vgd": 2.1111,
+     "max_stress": 2.1111,
+     "t_max_us": 2.0,
+     "margin_V": 1.3889
+    },
+    "lowest": {
+     "run": "E2_r10_mincol_s01",
+     "node": "nb1",
+     "V": -2.195422285411284,
+     "t_us": 5.93156905288386
+    },
+    "n_above": 0,
+    "devices_above": []
+   }
+  }
+ }
+}

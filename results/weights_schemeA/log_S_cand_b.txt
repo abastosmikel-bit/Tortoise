@@ -1,0 +1,43 @@
+{"run": 1, "tag": "ws01_tr123", "prior": "/home/claude/w/sim/circuits/t6L_x2_v085", "reset_level": {"1": 0.8973, "2": 0.90084, "3": 0.90153, "4": 0.90224, "5": 0.8997}, "ref_reset": 1.39162, "max_delta_mV": null, "latched": [5], "valid": true, "trip_us": {"5": 1233.222}, "lock_latency_us": 19.879, "wall_s": 207.3}
+{"run": 2, "tag": "ws02_tr123", "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_b/ws01_tr123_end", "reset_level": {"1": 0.8841, "2": 0.89499, "3": 0.89606, "4": 0.89474, "5": 0.896}, "ref_reset": 1.37742, "max_delta_mV": 13.199999999999989, "latched": [5], "valid": true, "trip_us": {"5": 1230.334}, "lock_latency_us": 20.053, "wall_s": 219.5}
+{"run": 3, "tag": "ws03_tr123", "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_b/ws02_tr123_end", "reset_level": {"1": 0.88385, "2": 0.89492, "3": 0.896, "4": 0.89464, "5": 0.89598}, "ref_reset": 1.37612, "max_delta_mV": 0.24999999999997247, "latched": [5], "valid": true, "trip_us": {"5": 1229.514}, "lock_latency_us": 20.07, "wall_s": 188.4}
+[1/40    748s] tr016 label 3 latched [2] valid True None gap 37.528 wall 746.7
+[2/40    769s] tr000 label 3 latched [2] valid True None gap 22.714 wall 767.4
+[3/40    783s] tr007 label 4 latched [4] valid True None gap 32.541 wall 780.8
+[4/40    810s] tr024 label 4 latched [3, 4] valid False multi_latched gap 7.004 wall 808.6
+[5/40   1524s] tr030 label 2 latched [2] valid True None gap 27.181 wall 773.9
+[6/40   1539s] tr050 label 2 latched [1] valid True None gap 50.265 wall 754.9
+[7/40   1546s] tr033 label 2 latched [2] valid True None gap 132.502 wall 775.2
+[8/40   1600s] tr057 label 3 latched [2] valid True None gap 33.715 wall 788.1
+[9/40   2262s] tr086 label 5 latched [5] valid True None gap 9.087 wall 714.5
+[10/40   2270s] tr059 label 4 latched [4] valid True None gap 260.691 wall 744.9
+[11/40   2308s] tr063 label 4 latched [4] valid True None gap 112.763 wall 767.4
+[12/40   2386s] tr088 label 4 latched [3] valid True None gap 16.148 wall 784.6
+[13/40   3008s] tr091 label 5 latched [5] valid True None gap 114.612 wall 744.8
+[14/40   3029s] tr093 label 1 latched [1] valid True None gap 493.849 wall 757.1
+[15/40   3067s] tr094 label 5 latched [3] valid True None gap 44.614 wall 757.8
+[16/40   3174s] tr100 label 2 latched [2] valid True None gap 176.489 wall 786.0
+[17/40   3777s] tr107 label 1 latched [1] valid True None gap 277.765 wall 767.3
+[18/40   3791s] tr109 label 5 latched [5] valid True None gap 131.806 wall 760.7
+[19/40   3821s] tr119 label 3 latched [2] valid True None gap 49.93 wall 752.0
+[20/40   3916s] tr129 label 1 latched [1] valid True None gap 362.732 wall 740.5
+[21/40   4498s] tr134 label 1 latched [1] valid True None gap 115.034 wall 719.1
+[22/40   4540s] tr135 label 3 latched [4] valid True None gap 77.753 wall 747.1
+[23/40   4612s] tr139 label 1 latched [1] valid True None gap 124.435 wall 790.4
+[24/40   4705s] tr143 label 2 latched [2] valid True None gap 48.168 wall 787.1
+[25/40   5249s] tr144 label 5 latched [5] valid True None gap 167.617 wall 749.6
+[26/40   5312s] tr149 label 4 latched [2] valid True None gap 79.001 wall 771.0
+[27/40   5394s] tr157 label 2 latched [2] valid True None gap 37.422 wall 781.1
+[28/40   5453s] tr159 label 5 latched [5] valid True None gap 347.757 wall 746.2
+[29/40   6018s] tr163 label 2 latched [2] valid True None gap 50.495 wall 767.9
+[30/40   6071s] tr166 label 5 latched [5] valid True None gap 95.765 wall 757.5
+[31/40   6161s] tr178 label 3 latched [5] valid True None gap 21.281 wall 764.6
+[32/40   6225s] tr181 label 4 latched [5] valid True None gap 43.901 wall 770.7
+[33/40   6743s] tr182 label 3 latched [1] valid True None gap 133.975 wall 723.1
+[34/40   6802s] tr184 label 1 latched [1] valid True None gap 303.621 wall 728.5
+[35/40   6897s] tr196 label 3 latched [1] valid True None gap 103.162 wall 735.0
+[36/40   6928s] tr200 label 4 latched [3] valid True None gap 180.569 wall 701.5
+[37/40   7510s] tr201 label 2 latched [2] valid True None gap 75.725 wall 765.5
+[38/40   7546s] tr204 label 5 latched [5] valid True None gap 200.924 wall 742.7
+[39/40   7582s] tr206 label 1 latched [1] valid True None gap 262.887 wall 684.2
+[40/40   7588s] tr208 label 1 latched [1] valid True None gap 205.515 wall 660.0

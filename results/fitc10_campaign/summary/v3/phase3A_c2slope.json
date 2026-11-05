@@ -1,0 +1,82 @@
+{
+ "vth065_mu100": {
+  "vth": 0.65,
+  "c2_overdrive_V": 0.25,
+  "c2_slope_mV_per_us_median": 0.6346,
+  "min": 0.631,
+  "max": 0.6348,
+  "n": 20
+ },
+ "vth045": {
+  "vth": 0.45,
+  "c2_overdrive_V": 0.45,
+  "c2_slope_mV_per_us_median": 1.8954,
+  "min": 1.6427,
+  "max": 1.91,
+  "n": 20
+ },
+ "vth055": {
+  "vth": 0.55,
+  "c2_overdrive_V": 0.35,
+  "c2_slope_mV_per_us_median": 1.1849,
+  "min": 1.1698,
+  "max": 1.198,
+  "n": 20
+ },
+ "vth075": {
+  "vth": 0.75,
+  "c2_overdrive_V": 0.15,
+  "c2_slope_mV_per_us_median": 0.2785,
+  "min": 0.2785,
+  "max": 0.2787,
+  "n": 20
+ },
+ "vth085": {
+  "vth": 0.85,
+  "c2_overdrive_V": 0.05,
+  "c2_slope_mV_per_us_median": 0.0905,
+  "min": 0.0905,
+  "max": 0.091,
+  "n": 20
+ },
+ "vth095": {
+  "vth": 0.95,
+  "c2_overdrive_V": -0.05,
+  "c2_slope_mV_per_us_median": 0.0208,
+  "min": 0.0205,
+  "max": 0.021,
+  "n": 20
+ },
+ "vth105": {
+  "vth": 1.05,
+  "c2_overdrive_V": -0.15,
+  "c2_slope_mV_per_us_median": 0.0035,
+  "min": 0.0035,
+  "max": 0.004,
+  "n": 20
+ },
+ "mu050": {
+  "vth": 0.65,
+  "c2_overdrive_V": 0.25,
+  "c2_slope_mV_per_us_median": 0.3242,
+  "min": 0.324,
+  "max": 0.3245,
+  "n": 20
+ },
+ "mu075": {
+  "vth": 0.65,
+  "c2_overdrive_V": 0.25,
+  "c2_slope_mV_per_us_median": 0.481,
+  "min": 0.481,
+  "max": 0.4813,
+  "n": 20
+ },
+ "mu125": {
+  "vth": 0.65,
+  "c2_overdrive_V": 0.25,
+  "c2_slope_mV_per_us_median": 0.785,
+  "min": 0.7825,
+  "max": 0.804,
+  "n": 20
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "S1_v0550_m100": {
+  "reference_calibration": "results/host_v21/raw/cal/v0550_m100/calibration.json",
+  "reference_runs": "results/host_v21/raw/E1",
+  "netlists_identical": 20,
+  "n": 20,
+  "differing": [],
+  "mode": "W"
+ },
+ "S1_v0650_m100": {
+  "reference_calibration": "results/host_v2/raw/cal/v0650_m100/calibration.json",
+  "reference_runs": "results/host_v2/raw/C3",
+  "netlists_identical": 20,
+  "n": 20,
+  "differing": [],
+  "mode": "G"
+ },
+ "S1_v0650_m070": {
+  "reference_calibration": "results/host_v2/raw/cal/v0650_m070/calibration.json",
+  "reference_runs": "results/host_v2/raw/C3",
+  "netlists_identical": 20,
+  "n": 20,
+  "differing": [],
+  "mode": "G"
+ },
+ "S1_v0650_m050": {
+  "reference_calibration": "results/host_v2/raw/cal/v0650_m050/calibration.json",
+  "reference_runs": "results/host_v2/raw/C3",
+  "netlists_identical": 20,
+  "n": 20,
+  "differing": [],
+  "mode": "G"
+ },
+ "S1_v0750_m100": {
+  "reference_calibration": "results/host_v2/raw/cal/v0750_m100/calibration.json",
+  "reference_runs": "results/host_v2/raw/C3",
+  "netlists_identical": 20,
+  "n": 20,
+  "differing": [],
+  "mode": "G"
+ },
+ "S1_v0750_m070": {
+  "reference_calibration": "results/host_v2/raw/cal/v0750_m070/calibration.json",
+  "reference_runs": "results/host_v2/raw/C3",
+  "netlists_identical": 20,
+  "n": 20,
+  "differing": [],
+  "mode": "G"
+ },
+ "S1_v0750_m050": {
+  "reference_calibration": "results/host_v2/raw/cal/v0750_m050/calibration.json",
+  "reference_runs": "results/host_v2/raw/C3",
+  "netlists_identical": 20,
+  "n": 20,
+  "differing": [],
+  "mode": "G"
+ }
+}

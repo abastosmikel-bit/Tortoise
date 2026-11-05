@@ -1,0 +1,248 @@
+{
+ "offsets": {
+  "rep": -0.0005584275912111636,
+  "a1": -0.03232549779623828,
+  "a2": [
+   -0.11747872318069252,
+   -0.039221265563448626
+  ],
+  "raw": {
+   "rep": {
+    "I_uA": {
+     "1.4": 5.655091,
+     "1.7": 10.595360000000001,
+     "2.0": 16.79064
+    },
+    "vth_raw": 0.6494415724087889,
+    "max_VGS_V": 2.0,
+    "max_VGD_V": 1.9
+   },
+   "a1": {
+    "vth_raw": 0.6176745022037617,
+    "vsg_at_I": [
+     0.8519147330439143,
+     1.084343652436626,
+     1.3149612603818963
+    ],
+    "I_base_uA": 85.0967700048991
+   },
+   "a2": {
+    "step1": {
+     "t_us": [
+      213.006,
+      338.487
+     ],
+     "vth_raw": 0.5325212768193075
+    },
+    "est1": 0.5325212768193075,
+    "step2": {
+     "t_us": [
+      654.525,
+      1361.353
+     ],
+     "vth_raw": 0.6107787344365514,
+     "V2s": [
+      2.2,
+      2.35
+     ]
+    },
+    "vth_est": 0.6107787344365514
+   }
+  },
+  "a1_superseded_phibhigh": -0.03407750677100707
+ },
+ "by_anchor_method": {
+  "20_a1": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 26,
+   "accuracy": 0.65,
+   "wilson95": [
+    0.4951,
+    0.7787
+   ],
+   "valid": 37,
+   "die_acc_median": 0.65,
+   "die_acc_min": 0.65,
+   "err_global_mV": {
+    "mean": -0.97,
+    "rms": 3.11,
+    "max_abs": 5.61
+   },
+   "err_xbar_mV": {
+    "mean": -1.58,
+    "rms": 2.11,
+    "max_abs": 2.98
+   },
+   "missing_estimates": 0
+  },
+  "20_a2": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 26,
+   "accuracy": 0.65,
+   "wilson95": [
+    0.4951,
+    0.7787
+   ],
+   "valid": 36,
+   "die_acc_median": 0.65,
+   "die_acc_min": 0.65,
+   "err_global_mV": {
+    "mean": -9.47,
+    "rms": 11.09,
+    "max_abs": 17.46
+   },
+   "err_xbar_mV": {
+    "mean": -17.95,
+    "rms": 18.0,
+    "max_abs": 19.16
+   },
+   "missing_estimates": 0
+  },
+  "20_ideal": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 26,
+   "accuracy": 0.65,
+   "wilson95": [
+    0.4951,
+    0.7787
+   ],
+   "valid": 37,
+   "die_acc_median": 0.65,
+   "die_acc_min": 0.65,
+   "err_global_mV": {
+    "mean": 0.0,
+    "rms": 0.0,
+    "max_abs": 0.0
+   },
+   "err_xbar_mV": {
+    "mean": -0.86,
+    "rms": 1.2,
+    "max_abs": 1.7
+   },
+   "missing_estimates": 0
+  },
+  "20_rep": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 26,
+   "accuracy": 0.65,
+   "wilson95": [
+    0.4951,
+    0.7787
+   ],
+   "valid": 36,
+   "die_acc_median": 0.65,
+   "die_acc_min": 0.65,
+   "err_global_mV": {
+    "mean": -1.7,
+    "rms": 4.21,
+    "max_abs": 8.06
+   },
+   "err_xbar_mV": {
+    "mean": -5.61,
+    "rms": 5.72,
+    "max_abs": 6.74
+   },
+   "missing_estimates": 0
+  },
+  "35_a1": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 22,
+   "accuracy": 0.55,
+   "wilson95": [
+    0.3983,
+    0.6929
+   ],
+   "valid": 34,
+   "die_acc_median": 0.55,
+   "die_acc_min": 0.55,
+   "err_global_mV": {
+    "mean": -3.1,
+    "rms": 5.42,
+    "max_abs": 9.37
+   },
+   "err_xbar_mV": {
+    "mean": -7.65,
+    "rms": 7.83,
+    "max_abs": 9.31
+   },
+   "missing_estimates": 0
+  },
+  "35_a2": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 22,
+   "accuracy": 0.55,
+   "wilson95": [
+    0.3983,
+    0.6929
+   ],
+   "valid": 34,
+   "die_acc_median": 0.55,
+   "die_acc_min": 0.55,
+   "err_global_mV": {
+    "mean": -11.81,
+    "rms": 14.36,
+    "max_abs": 25.97
+   },
+   "err_xbar_mV": {
+    "mean": -23.35,
+    "rms": 23.49,
+    "max_abs": 25.9
+   },
+   "missing_estimates": 0
+  },
+  "35_ideal": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 23,
+   "accuracy": 0.575,
+   "wilson95": [
+    0.4219,
+    0.7149
+   ],
+   "valid": 35,
+   "die_acc_median": 0.575,
+   "die_acc_min": 0.55,
+   "err_global_mV": {
+    "mean": 0.0,
+    "rms": 0.0,
+    "max_abs": 0.0
+   },
+   "err_xbar_mV": {
+    "mean": 1.43,
+    "rms": 1.97,
+    "max_abs": 2.79
+   },
+   "missing_estimates": 0
+  },
+  "35_rep": {
+   "dies": 10,
+   "n_runs": 40,
+   "correct": 23,
+   "accuracy": 0.575,
+   "wilson95": [
+    0.4219,
+    0.7149
+   ],
+   "valid": 35,
+   "die_acc_median": 0.575,
+   "die_acc_min": 0.55,
+   "err_global_mV": {
+    "mean": -1.49,
+    "rms": 6.26,
+    "max_abs": 12.64
+   },
+   "err_xbar_mV": {
+    "mean": -1.13,
+    "rms": 4.29,
+    "max_abs": 5.27
+   },
+   "missing_estimates": 0
+  }
+ }
+}

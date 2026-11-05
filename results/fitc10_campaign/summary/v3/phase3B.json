@@ -1,0 +1,376 @@
+{
+ "sigma_vth_20mV": {
+  "assumption": "sigma_Vth per device (geometry-independent), sigma_mu/mu 10 %, R_C lognormal 20 %",
+  "n_dies_complete": 5,
+  "accuracy_median": 0.4,
+  "accuracy_worst_die": 0.25,
+  "accuracy_best_die": 0.5,
+  "validity_median": 0.95,
+  "validity_worst_die": 0.9,
+  "dominant_class_share_median": 0.6111,
+  "pooled": {
+   "n": 100,
+   "correct": 39,
+   "accuracy": 0.39,
+   "accuracy_wilson95": [
+    0.3002,
+    0.488
+   ],
+   "valid": 95,
+   "validity": 0.95,
+   "validity_wilson95": [
+    0.8882,
+    0.9785
+   ],
+   "failures": {
+    "multi_latched": 5
+   }
+  },
+  "dies": {
+   "1": {
+    "n": 20,
+    "correct": 7,
+    "accuracy": 0.35,
+    "accuracy_wilson95": [
+     0.1812,
+     0.5671
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 5,
+    "dominant_class_share": 0.7
+   },
+   "2": {
+    "n": 20,
+    "correct": 9,
+    "accuracy": 0.45,
+    "accuracy_wilson95": [
+     0.2582,
+     0.6579
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 2,
+    "dominant_class_share": 0.4737
+   },
+   "3": {
+    "n": 20,
+    "correct": 10,
+    "accuracy": 0.5,
+    "accuracy_wilson95": [
+     0.2993,
+     0.7007
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 1,
+    "dominant_class_share": 0.4211
+   },
+   "4": {
+    "n": 20,
+    "correct": 5,
+    "accuracy": 0.25,
+    "accuracy_wilson95": [
+     0.1119,
+     0.4687
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 4,
+    "dominant_class_share": 0.6316
+   },
+   "5": {
+    "n": 20,
+    "correct": 8,
+    "accuracy": 0.4,
+    "accuracy_wilson95": [
+     0.2188,
+     0.6134
+    ],
+    "valid": 18,
+    "validity": 0.9,
+    "validity_wilson95": [
+     0.699,
+     0.9721
+    ],
+    "failures": {
+     "multi_latched": 2
+    },
+    "dominant_class": 1,
+    "dominant_class_share": 0.6111
+   }
+  }
+ },
+ "sigma_vth_40mV": {
+  "assumption": "sigma_Vth per device (geometry-independent), sigma_mu/mu 10 %, R_C lognormal 20 %",
+  "n_dies_complete": 5,
+  "accuracy_median": 0.4,
+  "accuracy_worst_die": 0.3,
+  "accuracy_best_die": 0.5,
+  "validity_median": 1.0,
+  "validity_worst_die": 0.95,
+  "dominant_class_share_median": 0.6,
+  "pooled": {
+   "n": 100,
+   "correct": 41,
+   "accuracy": 0.41,
+   "accuracy_wilson95": [
+    0.3187,
+    0.508
+   ],
+   "valid": 99,
+   "validity": 0.99,
+   "validity_wilson95": [
+    0.9455,
+    0.9982
+   ],
+   "failures": {
+    "multi_latched": 1
+   }
+  },
+  "dies": {
+   "1": {
+    "n": 20,
+    "correct": 8,
+    "accuracy": 0.4,
+    "accuracy_wilson95": [
+     0.2188,
+     0.6134
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 1,
+    "dominant_class_share": 0.6
+   },
+   "2": {
+    "n": 20,
+    "correct": 10,
+    "accuracy": 0.5,
+    "accuracy_wilson95": [
+     0.2993,
+     0.7007
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 3,
+    "dominant_class_share": 0.45
+   },
+   "3": {
+    "n": 20,
+    "correct": 7,
+    "accuracy": 0.35,
+    "accuracy_wilson95": [
+     0.1812,
+     0.5671
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 1,
+    "dominant_class_share": 0.7
+   },
+   "4": {
+    "n": 20,
+    "correct": 10,
+    "accuracy": 0.5,
+    "accuracy_wilson95": [
+     0.2993,
+     0.7007
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 1,
+    "dominant_class_share": 0.5
+   },
+   "5": {
+    "n": 20,
+    "correct": 6,
+    "accuracy": 0.3,
+    "accuracy_wilson95": [
+     0.1455,
+     0.519
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 5,
+    "dominant_class_share": 0.8947
+   }
+  }
+ },
+ "sigma_vth_80mV": {
+  "assumption": "sigma_Vth per device (geometry-independent), sigma_mu/mu 10 %, R_C lognormal 20 %",
+  "n_dies_complete": 5,
+  "accuracy_median": 0.3,
+  "accuracy_worst_die": 0.2,
+  "accuracy_best_die": 0.45,
+  "validity_median": 1.0,
+  "validity_worst_die": 0.95,
+  "dominant_class_share_median": 0.9,
+  "pooled": {
+   "n": 100,
+   "correct": 31,
+   "accuracy": 0.31,
+   "accuracy_wilson95": [
+    0.2278,
+    0.4063
+   ],
+   "valid": 98,
+   "validity": 0.98,
+   "validity_wilson95": [
+    0.93,
+    0.9945
+   ],
+   "failures": {
+    "multi_latched": 2
+   }
+  },
+  "dies": {
+   "1": {
+    "n": 20,
+    "correct": 4,
+    "accuracy": 0.2,
+    "accuracy_wilson95": [
+     0.0807,
+     0.416
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 5,
+    "dominant_class_share": 1.0
+   },
+   "2": {
+    "n": 20,
+    "correct": 6,
+    "accuracy": 0.3,
+    "accuracy_wilson95": [
+     0.1455,
+     0.519
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 2,
+    "dominant_class_share": 0.9
+   },
+   "3": {
+    "n": 20,
+    "correct": 5,
+    "accuracy": 0.25,
+    "accuracy_wilson95": [
+     0.1119,
+     0.4687
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 2,
+    "dominant_class_share": 0.9474
+   },
+   "4": {
+    "n": 20,
+    "correct": 9,
+    "accuracy": 0.45,
+    "accuracy_wilson95": [
+     0.2582,
+     0.6579
+    ],
+    "valid": 19,
+    "validity": 0.95,
+    "validity_wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "failures": {
+     "multi_latched": 1
+    },
+    "dominant_class": 2,
+    "dominant_class_share": 0.4737
+   },
+   "5": {
+    "n": 20,
+    "correct": 7,
+    "accuracy": 0.35,
+    "accuracy_wilson95": [
+     0.1812,
+     0.5671
+    ],
+    "valid": 20,
+    "validity": 1.0,
+    "validity_wilson95": [
+     0.8389,
+     1.0
+    ],
+    "failures": {},
+    "dominant_class": 2,
+    "dominant_class_share": 0.6
+   }
+  }
+ }
+}

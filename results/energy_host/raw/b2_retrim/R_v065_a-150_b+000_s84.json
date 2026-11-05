@@ -1,0 +1,119 @@
+{
+ "tag": "R_v065_a-150_b+000_s84",
+ "idx": 84,
+ "label": 4,
+ "job": {
+  "tag": "R_v065_a-150_b+000_s84",
+  "idx": 84,
+  "wdir": "b2",
+  "vth": 0.65,
+  "V1": 1.6700000000000002,
+  "V2": 2.4,
+  "inst": false,
+  "vth_metric": 0.65,
+  "offsets_mV": [
+   -150,
+   0
+  ]
+ },
+ "run": {
+  "wall_s": 105.3,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.67,
+  "V2": 2.4,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": null,
+  "vth": 0.65,
+  "muf": 1.0
+ },
+ "trip_us": {
+  "3": 1217.788
+ },
+ "first": 3,
+ "latched": [
+  3
+ ],
+ "winner": 3,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1237.24,
+ "lock_latency_us": 19.451,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 21.069,
+ "reset_level": {
+  "1": 0.91343,
+  "2": 0.91418,
+  "3": 0.91427,
+  "4": 0.91424,
+  "5": 0.91437
+ },
+ "ref_reset": 1.38762,
+ "ref_308": 1.24844,
+ "ref_309": 1.32202,
+ "ref_settle_mV_308_309": 73.582,
+ "rail_at_C2": {
+  "1": 1.59349,
+  "2": 1.69635,
+  "3": 1.7726,
+  "4": 1.73046,
+  "5": 1.7389
+ },
+ "runner_up": 5,
+ "gap": {
+  "dV_mV": 33.386,
+  "gap_reach_us": 48.842,
+  "gap_slope_us": 53.021
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 178.283,
+   "gap_reach_us": 277.718,
+   "gap_slope_us": 280.092
+  },
+  "2": {
+   "dV_mV": 75.624,
+   "gap_reach_us": 115.797,
+   "gap_slope_us": 119.191
+  },
+  "4": {
+   "dV_mV": 41.646,
+   "gap_reach_us": 61.947,
+   "gap_slope_us": 66.003
+  },
+  "5": {
+   "dV_mV": 33.386,
+   "gap_reach_us": 48.842,
+   "gap_slope_us": 53.021
+  }
+ },
+ "race_us": 710.288,
+ "energy": null
+}

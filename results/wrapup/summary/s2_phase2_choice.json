@@ -1,0 +1,8 @@
+{
+ "scores_049_051": {
+  "R10.2-edgeA": 30,
+  "R10.2-edgeB": 30
+ },
+ "better": "R10.2-edgeA",
+ "rule": "S2-D2"
+}

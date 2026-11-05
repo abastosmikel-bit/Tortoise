@@ -1,0 +1,4 @@
+* energy_host corner: |V_th| 0.7500 V, mobility x1.0000 (fitc10 otherwise). Aging/drift PROXY.
+.lib eh_v07500_m10000
+.param MU=5.870000 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.7500 LOV=2
+.endl eh_v07500_m10000

@@ -1,0 +1,3 @@
+a_le60_30 S reported 0.6913 -> without old start 0.6936 | splits changed 3
+b_le60_20 S reported 0.6744 -> without old start 0.6812 | splits changed 3
+c_le60_10 S reported 0.6726 -> without old start 0.6679 | splits changed 7

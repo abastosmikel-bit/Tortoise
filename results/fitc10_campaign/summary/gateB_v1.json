@@ -1,0 +1,87 @@
+{
+ "v1_s81": {
+  "criteria": {
+   "valid": false,
+   "latched_5": false,
+   "no_C1_trip": true,
+   "lock_15_25us": false
+  },
+  "passed": false,
+  "label": 5,
+  "trip_us": {
+   "5": 1706.833
+  },
+  "first": 5,
+  "latched": [],
+  "valid": false,
+  "failure": "none_latched",
+  "lock_latency_us": null,
+  "lockb_chain_us": null,
+  "trip_in_C1": false,
+  "runner_up": 3,
+  "gap": {
+   "dV_mV": 21.01,
+   "gap_reach_us": null,
+   "gap_slope_us": 33.227
+  },
+  "reset_level": {
+   "1": 0.90816,
+   "2": 0.90845,
+   "3": 0.90861,
+   "4": 0.90878,
+   "5": 0.90893
+  },
+  "ref_reset": 2.41288,
+  "rail_at_C2": {
+   "1": 1.60514,
+   "2": 1.70485,
+   "3": 1.72298,
+   "4": 1.71613,
+   "5": 1.74411
+  },
+  "run": {
+   "wall_s": 65.4,
+   "returncode": 0,
+   "warnings": []
+  }
+ },
+ "v1_s31": {
+  "criteria": {
+   "valid": false,
+   "latched_2": false
+  },
+  "passed": false,
+  "label": 2,
+  "trip_us": {},
+  "first": null,
+  "latched": [],
+  "valid": false,
+  "failure": "timeout",
+  "lock_latency_us": null,
+  "lockb_chain_us": null,
+  "trip_in_C1": false,
+  "runner_up": null,
+  "gap": null,
+  "reset_level": {
+   "1": 0.90816,
+   "2": 0.90845,
+   "3": 0.90861,
+   "4": 0.90878,
+   "5": 0.90893
+  },
+  "ref_reset": 2.41288,
+  "rail_at_C2": {
+   "1": 1.41297,
+   "2": 1.70561,
+   "3": 1.547,
+   "4": 1.48392,
+   "5": 1.69905
+  },
+  "run": {
+   "wall_s": 62.9,
+   "returncode": 0,
+   "warnings": []
+  }
+ },
+ "gate_passed": false
+}

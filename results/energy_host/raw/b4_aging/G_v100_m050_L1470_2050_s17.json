@@ -1,0 +1,122 @@
+{
+ "tag": "G_v100_m050_L1470_2050_s17",
+ "idx": 17,
+ "label": 4,
+ "job": {
+  "tag": "G_v100_m050_L1470_2050_s17",
+  "idx": 17,
+  "wdir": "b4",
+  "vth": 1.0,
+  "muf": 0.5,
+  "V1": 1.47,
+  "V2": 2.05,
+  "inst": false,
+  "vth_metric": 1.0,
+  "policy": "ideal"
+ },
+ "run": {
+  "wall_s": 140.7,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.47,
+  "V2": 2.05,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v10000_m05000.lib",
+   "eh_v10000_m05000"
+  ],
+  "vth": 1.0,
+  "muf": 0.5
+ },
+ "trip_us": {
+  "4": 1161.508,
+  "5": 1174.485
+ },
+ "first": 4,
+ "latched": [
+  4,
+  5
+ ],
+ "winner": null,
+ "valid": false,
+ "failure": "multi_latched",
+ "lock_us": 1204.312,
+ "lock_latency_us": 42.804,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 48.47,
+ "reset_level": {
+  "1": 1.37865,
+  "2": 1.38081,
+  "3": 1.3811,
+  "4": 1.38099,
+  "5": 1.38139
+ },
+ "ref_reset": 1.5445,
+ "ref_308": 1.44611,
+ "ref_309": 1.5007,
+ "ref_settle_mV_308_309": 54.59,
+ "rail_at_C2": {
+  "1": 1.71016,
+  "2": 1.80318,
+  "3": 1.82662,
+  "4": 1.90483,
+  "5": 1.90124
+ },
+ "runner_up": 5,
+ "gap": {
+  "dV_mV": 3.634,
+  "gap_reach_us": 11.138,
+  "gap_slope_us": 11.146
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 194.264,
+   "gap_reach_us": 593.01,
+   "gap_slope_us": 597.59
+  },
+  "2": {
+   "dV_mV": 101.356,
+   "gap_reach_us": 305.385,
+   "gap_slope_us": 314.49
+  },
+  "3": {
+   "dV_mV": 77.92,
+   "gap_reach_us": 232.091,
+   "gap_slope_us": 243.043
+  },
+  "5": {
+   "dV_mV": 3.634,
+   "gap_reach_us": 11.138,
+   "gap_slope_us": 11.146
+  }
+ },
+ "race_us": 654.008,
+ "energy": null
+}

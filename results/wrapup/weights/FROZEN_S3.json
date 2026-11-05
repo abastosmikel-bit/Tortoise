@@ -1,0 +1,21 @@
+{
+ "weights": "S3_le60_m30_b138",
+ "sha256": "a3f229834fd31190b19cfab880a9b0cb787113baf8c637957dc4f8d43f63afb1",
+ "frozen_utc": "2026-10-30T22:22:33Z",
+ "rule": "S3.3 with S3-D1: higher SPICE correct on the 20 held-out S samples (groups 3, 4); tie -> higher CV S3",
+ "S_results": {
+  "S3_le60_m30_b134": {
+   "correct": 12,
+   "n": 20,
+   "valid": 19,
+   "cv_S3": 0.6523437499999999
+  },
+  "S3_le60_m30_b138": {
+   "correct": 14,
+   "n": 20,
+   "valid": 20,
+   "cv_S3": 0.6641699999999999
+  }
+ },
+ "note": "frozen before any test-set run of Study 3"
+}

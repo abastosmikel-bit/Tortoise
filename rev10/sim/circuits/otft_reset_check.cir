@@ -1,0 +1,17 @@
+* otft_reset_check.cir - two-step reset of a 12 pF rail through an 80/5 um p-OTFT
+* Mirrors verification/otft_reset_study.py.  Run:  ngspice -b otft_reset_check.cir
+* Expected v_end (lab corner), set via .param DV below:
+*   DV=0     (|Vth|=1.25 V): ~0 mV   (reaches 50 mV ~12 us into the fine phase)
+*   DV=0.30  (|Vth|=1.55 V): ~8 mV
+*   DV=0.35  (|Vth|=1.60 V): ~37 mV
+*   DV=0.40  (|Vth|=1.65 V): ~81 mV  (misses the 50 mV target)
+.include ../models/trace2_otft.sub
+.lib ../models/trace2_otft.lib lab
+.param DV=0
+VRG rg 0 PWL(0 0 300u 0 300.001u -1.45 1m -1.45)
+C1 rail 0 12p IC=3.30
+X1 0 rg rail potft W=80 L=5 DVTH={DV}
+.tran 1u 1m UIC
+.measure tran v_coarse FIND v(rail) AT=299.9u
+.measure tran v_end    FIND v(rail) AT=999.9u
+.end

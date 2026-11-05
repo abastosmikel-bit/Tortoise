@@ -1,0 +1,69 @@
+* potftseg: potft (v2 equations) with the channel split into N series segments (distributed charging).
+* Contacts and overlaps only at the two ends; each segment has its own channel charge (L/N).
+.subckt potftseg d g s W=10 L=5 DVTH=0
+.param vth = {VTH0 + DVTH}
+.param sw = {2*SS/ln(10)}
+.param betas = {MU*CI*W/(L/5)}
+.param rc2 = {max(RCW/(W*1e-4)/2, 1e-3)}
+.param cov = {CI*1e-8*W*LOV}
+.param qseg = {CI*1e-8*W*(L/5)/2}
+Rcs s n0 {rc2}
+Rcd d n5 {rc2}
+Cgso g n0 {cov}
+Cgdo g n5 {cov}
+Rleak n0 n5 1e14
+B0 n0 n1 I = {betas/2} * ( ({sw}*ln(1+exp((v(n0,g)-{vth})/{sw})))^2 - ({sw}*ln(1+exp((v(n1,g)-{vth})/{sw})))^2 )
+Bq0a xq0a 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n0,g)-{vth})/{sw}))
+Vq0a xq0a xq0ac 0
+Cq0a xq0ac 0 1e-12
+Fq0a g n0 Vq0a 1
+Bq0b xq0b 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n1,g)-{vth})/{sw}))
+Vq0b xq0b xq0bc 0
+Cq0b xq0bc 0 1e-12
+Fq0b g n1 Vq0b 1
+B1 n1 n2 I = {betas/2} * ( ({sw}*ln(1+exp((v(n1,g)-{vth})/{sw})))^2 - ({sw}*ln(1+exp((v(n2,g)-{vth})/{sw})))^2 )
+Bq1a xq1a 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n1,g)-{vth})/{sw}))
+Vq1a xq1a xq1ac 0
+Cq1a xq1ac 0 1e-12
+Fq1a g n1 Vq1a 1
+Bq1b xq1b 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n2,g)-{vth})/{sw}))
+Vq1b xq1b xq1bc 0
+Cq1b xq1bc 0 1e-12
+Fq1b g n2 Vq1b 1
+B2 n2 n3 I = {betas/2} * ( ({sw}*ln(1+exp((v(n2,g)-{vth})/{sw})))^2 - ({sw}*ln(1+exp((v(n3,g)-{vth})/{sw})))^2 )
+Bq2a xq2a 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n2,g)-{vth})/{sw}))
+Vq2a xq2a xq2ac 0
+Cq2a xq2ac 0 1e-12
+Fq2a g n2 Vq2a 1
+Bq2b xq2b 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n3,g)-{vth})/{sw}))
+Vq2b xq2b xq2bc 0
+Cq2b xq2bc 0 1e-12
+Fq2b g n3 Vq2b 1
+B3 n3 n4 I = {betas/2} * ( ({sw}*ln(1+exp((v(n3,g)-{vth})/{sw})))^2 - ({sw}*ln(1+exp((v(n4,g)-{vth})/{sw})))^2 )
+Bq3a xq3a 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n3,g)-{vth})/{sw}))
+Vq3a xq3a xq3ac 0
+Cq3a xq3ac 0 1e-12
+Fq3a g n3 Vq3a 1
+Bq3b xq3b 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n4,g)-{vth})/{sw}))
+Vq3b xq3b xq3bc 0
+Cq3b xq3bc 0 1e-12
+Fq3b g n4 Vq3b 1
+B4 n4 n5 I = {betas/2} * ( ({sw}*ln(1+exp((v(n4,g)-{vth})/{sw})))^2 - ({sw}*ln(1+exp((v(n5,g)-{vth})/{sw})))^2 )
+Bq4a xq4a 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n4,g)-{vth})/{sw}))
+Vq4a xq4a xq4ac 0
+Cq4a xq4ac 0 1e-12
+Fq4a g n4 Vq4a 1
+Bq4b xq4b 0 V = -{qseg*1e12} * {sw}*ln(1+exp((v(n5,g)-{vth})/{sw}))
+Vq4b xq4b xq4bc 0
+Cq4b xq4bc 0 1e-12
+Fq4b g n5 Vq4b 1
+Cpar1 g n1 {qseg*0.01}
+Rlk1 n0 n1 1e14
+Cpar2 g n2 {qseg*0.01}
+Rlk2 n1 n2 1e14
+Cpar3 g n3 {qseg*0.01}
+Rlk3 n2 n3 1e14
+Cpar4 g n4 {qseg*0.01}
+Rlk4 n3 n4 1e14
+Rlk5 n4 n5 1e14
+.ends potftseg

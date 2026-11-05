@@ -1,0 +1,39 @@
+* ==================================================================
+* trace2_otft.sub  -  p-type organic TFT compact model for Tortoise
+* ==================================================================
+* Smooth, symmetric model from subthreshold to saturation:
+*
+*   sp(x)   = S * ln(1 + exp(x/S)),   S = 2 * SS / ln(10)
+*   I(s->d) = (beta/2) * [ sp(V_si - V_g - Vth)^2 - sp(V_di - V_g - Vth)^2 ]
+*             + W * JOFF * tanh(V_si,di / 0.1 V)
+*   beta    = MU * CI * W / L
+*
+* Contact resistance RCW/W is split equally between source and drain.
+* Reference implementation: verification/otft_model.py (identical equations; not included in this release).
+*
+* Usage (corner parameters come from trace2_otft.lib):
+*   .include ../models/trace2_otft.sub
+*   .lib ../models/trace2_otft.lib lab            (or: printed)
+*   X1 drain gate source potft W=80 L=5            (W, L in micrometres)
+*   X2 drain gate source potft W=80 L=5 DVTH=0.05  (per-device |Vth| offset, V)
+*
+* Units: MU cm^2/Vs, CI F/cm^2, SS V/dec, RCW ohm*cm, JOFF A/um, VTH0 V (|Vth|), LOV um
+* NOT modelled: Vg-dependent mobility and contact resistance, channel-length
+* modulation, traps/hysteresis, bias-stress drift, noise, temperature.
+* Capacitances are linear (Ci*W*(L/2 + LOV) per side).
+* ==================================================================
+.subckt potft d g s W=10 L=5 DVTH=0
+.param vth   = {VTH0 + DVTH}
+.param sw    = {2*SS/ln(10)}
+.param beta  = {MU*CI*W/L}
+.param rc2   = {max(RCW/(W*1e-4)/2, 1e-3)}
+.param cside = {CI*1e-8*W*(L/2 + LOV)}
+Rcs s si {rc2}
+Rcd d di {rc2}
+B1 si di I = {beta/2} * ( ({sw}*ln(1+exp((v(si,g)-{vth})/{sw})))^2
++                       - ({sw}*ln(1+exp((v(di,g)-{vth})/{sw})))^2 )
++            + {W*JOFF}*tanh(v(si,di)/0.1)
+Cgs g si {cside}
+Cgd g di {cside}
+Rleak si di 1e14
+.ends potft

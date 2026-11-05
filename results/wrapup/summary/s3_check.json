@@ -1,0 +1,10 @@
+{
+ "old": {
+  "max_abs_diff_nominal_us": 3.410605131648481e-13,
+  "max_abs_diff_dies_us": 4.547473508864641e-13
+ },
+ "cand_a": {
+  "max_abs_diff_nominal_us": 4.547473508864641e-13,
+  "max_abs_diff_dies_us": 4.547473508864641e-13
+ }
+}

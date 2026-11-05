@@ -1,0 +1,147 @@
+{
+ "tag": "tr039",
+ "split": "train",
+ "idx": 39,
+ "label": 5,
+ "F": [
+  [
+   9,
+   0,
+   26,
+   29,
+   5
+  ],
+  [
+   0,
+   21,
+   3,
+   12,
+   0
+  ],
+  [
+   4,
+   5,
+   0,
+   0,
+   28
+  ],
+  [
+   0,
+   17,
+   8,
+   0,
+   19
+  ],
+  [
+   9,
+   0,
+   6,
+   19,
+   6
+  ],
+  [
+   38,
+   17,
+   17,
+   0,
+   2
+  ]
+ ],
+ "weights": "old",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_old/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 167.1,
+  "returncode": 0,
+  "warnings": []
+ },
+ "n_tft": 134,
+ "x": [
+  0.65439,
+  0.338881,
+  0.64557,
+  0.789301,
+  0.319054,
+  0.502044
+ ],
+ "trip_us": {
+  "5": 1306.895
+ },
+ "first": 5,
+ "latched": [
+  5
+ ],
+ "winner": 5,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1326.074,
+ "lock_latency_us": 19.179,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 20.798,
+ "reset_level": {
+  "1": 0.89461,
+  "2": 0.89768,
+  "3": 0.8973,
+  "4": 0.89691,
+  "5": 0.89942
+ },
+ "ref_reset": 1.37606,
+ "ref_308": 1.23674,
+ "ref_309": 1.31048,
+ "ref_settle_mV_308_309": 73.737,
+ "rail_at_C2": {
+  "1": 1.55469,
+  "2": 1.58959,
+  "3": 1.63169,
+  "4": 1.53461,
+  "5": 1.70973
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 77.418,
+  "gap_reach_us": 118.549,
+  "gap_slope_us": 122.162
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 154.355,
+   "gap_reach_us": 239.954,
+   "gap_slope_us": 242.872
+  },
+  "2": {
+   "dV_mV": 119.407,
+   "gap_reach_us": 184.851,
+   "gap_slope_us": 188.008
+  },
+  "3": {
+   "dV_mV": 77.418,
+   "gap_reach_us": 118.549,
+   "gap_slope_us": 122.162
+  },
+  "4": {
+   "dV_mV": 174.406,
+   "gap_reach_us": 271.552,
+   "gap_slope_us": 274.364
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.63551,
+  "2": 0.63516,
+  "3": 0.63404,
+  "4": 0.63562,
+  "5": 0.62983
+ }
+}

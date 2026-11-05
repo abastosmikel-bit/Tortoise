@@ -1,0 +1,36 @@
+version = 1
+SPDX-PackageName = "Tortoise"
+SPDX-PackageSupplier = "Mikel Lopez"
+SPDX-PackageDownloadLocation = "<repository-url>"
+
+# Licence mapping (plain-language summary in LICENSES.md). When several annotations match a file, the LAST one wins.
+
+# 1. Default: documentation, reports, decisions, the concept document, results (summaries, per-run data, logs),
+#    weights, the dataset and metadata files.
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mikel Lopez"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# 2. Code and scripts.
+[[annotations]]
+path = ["**/*.py", "**/*.sh"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mikel Lopez"
+SPDX-License-Identifier = "Apache-2.0"
+
+# 3. Hardware design: netlists, compact-model and corner cards, Monte Carlo die files of the design netlists,
+#    the specification and the design/tooling description.
+[[annotations]]
+path = [
+  "**/*.cir",
+  "**/*.sub",
+  "**/*.lib",
+  "rev10/sim/circuits/*_dvth.json",
+  "docs/SPEC.md",
+  "docs/TOOLING.md",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mikel Lopez"
+SPDX-License-Identifier = "CERN-OHL-S-2.0"

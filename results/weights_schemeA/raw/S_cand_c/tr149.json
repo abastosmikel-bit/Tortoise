@@ -1,0 +1,148 @@
+{
+ "tag": "tr149",
+ "split": "train",
+ "idx": 149,
+ "label": 4,
+ "F": [
+  [
+   6,
+   0,
+   21,
+   1,
+   3
+  ],
+  [
+   0,
+   21,
+   0,
+   23,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   22
+  ],
+  [
+   0,
+   16,
+   9,
+   0,
+   22
+  ],
+  [
+   0,
+   0,
+   9,
+   27,
+   5
+  ],
+  [
+   44,
+   17,
+   17,
+   6,
+   0
+  ]
+ ],
+ "weights": "cand_c",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_c/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 420.3,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 130,
+ "x": [
+  0.516565,
+  0.491395,
+  0.424969,
+  0.71319,
+  0.002832,
+  0.408115
+ ],
+ "trip_us": {
+  "2": 1744.265
+ },
+ "first": 2,
+ "latched": [
+  2
+ ],
+ "winner": 2,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1764.809,
+ "lock_latency_us": 20.544,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 22.164,
+ "reset_level": {
+  "1": 0.88223,
+  "2": 0.89075,
+  "3": 0.89276,
+  "4": 0.89096,
+  "5": 0.89287
+ },
+ "ref_reset": 1.37599,
+ "ref_308": 1.23668,
+ "ref_309": 1.31041,
+ "ref_settle_mV_308_309": 73.729,
+ "rail_at_C2": {
+  "1": 1.36124,
+  "2": 1.50797,
+  "3": 1.43884,
+  "4": 1.27104,
+  "5": 1.47058
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 42.885,
+  "gap_reach_us": 68.427,
+  "gap_slope_us": 72.821
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 197.412,
+   "gap_reach_us": 369.137,
+   "gap_slope_us": 372.094
+  },
+  "3": {
+   "dV_mV": 42.885,
+   "gap_reach_us": 68.427,
+   "gap_slope_us": 72.821
+  },
+  "4": {
+   "dV_mV": 197.44,
+   "gap_reach_us": 324.021,
+   "gap_slope_us": 326.704
+  },
+  "5": {
+   "dV_mV": 62.464,
+   "gap_reach_us": 109.468,
+   "gap_slope_us": 113.774
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.53041,
+  "2": 0.56704,
+  "3": 0.5897,
+  "4": 0.60422,
+  "5": 0.54933
+ }
+}

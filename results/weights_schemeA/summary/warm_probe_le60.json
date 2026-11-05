@@ -1,0 +1,81 @@
+{
+ "weights": "probe_le60",
+ "timing": null,
+ "sample_train_idx": 123,
+ "sample_label": 5,
+ "sample_sw_margin": 15.273,
+ "converged": true,
+ "n_runs": 3,
+ "warm_start": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_probe_le60/warm",
+ "runs": [
+  {
+   "run": 1,
+   "tag": "ws01_tr123",
+   "prior": "/home/claude/w/sim/circuits/t6L_x2_v085",
+   "reset_level": {
+    "1": 0.90055,
+    "2": 0.90193,
+    "3": 0.90208,
+    "4": 0.90225,
+    "5": 0.90133
+   },
+   "ref_reset": 1.39165,
+   "max_delta_mV": null,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1123.637
+   },
+   "lock_latency_us": 19.298,
+   "wall_s": 105.4
+  },
+  {
+   "run": 2,
+   "tag": "ws02_tr123",
+   "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_probe_le60/ws01_tr123_end",
+   "reset_level": {
+    "1": 0.89409,
+    "2": 0.89794,
+    "3": 0.89757,
+    "4": 0.8981,
+    "5": 0.89825
+   },
+   "ref_reset": 1.37748,
+   "max_delta_mV": 6.45999999999991,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1119.904
+   },
+   "lock_latency_us": 19.46,
+   "wall_s": 102.5
+  },
+  {
+   "run": 3,
+   "tag": "ws03_tr123",
+   "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_probe_le60/ws02_tr123_end",
+   "reset_level": {
+    "1": 0.89401,
+    "2": 0.89791,
+    "3": 0.89753,
+    "4": 0.89807,
+    "5": 0.89824
+   },
+   "ref_reset": 1.37618,
+   "max_delta_mV": 0.08000000000008001,
+   "latched": [
+    5
+   ],
+   "valid": true,
+   "trip_us": {
+    "5": 1119.101
+   },
+   "lock_latency_us": 19.476,
+   "wall_s": 101.6
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "tag": "V_an20_d3_s33",
+ "split": "test",
+ "idx": 33,
+ "label": 2,
+ "F": [
+  [
+   5,
+   0,
+   21,
+   26,
+   5
+  ],
+  [
+   0,
+   20,
+   2,
+   11,
+   0
+  ],
+  [
+   11,
+   12,
+   0,
+   10,
+   30
+  ],
+  [
+   0,
+   11,
+   14,
+   0,
+   17
+  ],
+  [
+   6,
+   0,
+   8,
+   13,
+   7
+  ],
+  [
+   36,
+   17,
+   15,
+   0,
+   0
+  ]
+ ],
+ "weights": "FINAL_frozen",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_a/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": {
+  "seed": 20003,
+  "s_vth": 0.02,
+  "paired": true
+ },
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 162.6,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 134,
+ "x": [
+  0.533244,
+  0.559489,
+  0.393058,
+  0.764796,
+  0.075488,
+  0.680308
+ ],
+ "trip_us": {
+  "2": 1389.463
+ },
+ "first": 2,
+ "latched": [
+  2
+ ],
+ "winner": 2,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1409.838,
+ "lock_latency_us": 20.375,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 21.985,
+ "reset_level": {
+  "1": 0.89423,
+  "2": 0.90096,
+  "3": 0.90024,
+  "4": 0.89578,
+  "5": 0.90758
+ },
+ "ref_reset": 1.34391,
+ "ref_308": 1.20142,
+ "ref_309": 1.27643,
+ "ref_settle_mV_308_309": 75.011,
+ "rail_at_C2": {
+  "1": 1.57787,
+  "2": 1.64986,
+  "3": 1.60614,
+  "4": 1.4659,
+  "5": 1.5216
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 63.111,
+  "gap_reach_us": 101.164,
+  "gap_slope_us": 105.048
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 73.385,
+   "gap_reach_us": 114.542,
+   "gap_slope_us": 117.986
+  },
+  "3": {
+   "dV_mV": 63.111,
+   "gap_reach_us": 101.164,
+   "gap_slope_us": 105.048
+  },
+  "4": {
+   "dV_mV": 164.132,
+   "gap_reach_us": 250.669,
+   "gap_slope_us": 253.338
+  },
+  "5": {
+   "dV_mV": 138.216,
+   "gap_reach_us": 222.288,
+   "gap_slope_us": 225.279
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.62215,
+  "2": 0.62011,
+  "3": 0.60113,
+  "4": 0.64779,
+  "5": 0.61347
+ }
+}

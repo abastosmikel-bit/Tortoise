@@ -1,0 +1,125 @@
+{
+ "limit_V": 3.5,
+ "weights": "FINAL_frozen",
+ "selection": {
+  "maxsum": 17,
+  "minsum": 61,
+  "maxcol": 29,
+  "mincol": 20
+ },
+ "chain_run": "#31 from this weight set's chain #30 end state",
+ "runs": [
+  {
+   "tag": "aud_maxsum_s17",
+   "idx": 17,
+   "n_devices": 134,
+   "n_crossbar": 21,
+   "max_stress": 3.3395,
+   "n_over": 0,
+   "n_points": 30404,
+   "valid": true,
+   "latched": [
+    4
+   ],
+   "audit_py": [
+    "134 devices audited, 0 exceed 3.5 V at some time. Sim length 3008 us.",
+    "  X80    max 3.34 V at   10.63 us, above limit     0.0 us   (g=0 d=0 s=win)",
+    "  XNP5   max 3.31 V at   10.73 us, above limit     0.0 us   (g=rstb d=na5 s=vdd)"
+   ]
+  },
+  {
+   "tag": "aud_minsum_s61",
+   "idx": 61,
+   "n_devices": 134,
+   "n_crossbar": 21,
+   "max_stress": 3.3395,
+   "n_over": 0,
+   "n_points": 30391,
+   "valid": true,
+   "latched": [
+    1
+   ],
+   "audit_py": [
+    "134 devices audited, 0 exceed 3.5 V at some time. Sim length 3008 us.",
+    "  X80    max 3.34 V at   10.63 us, above limit     0.0 us   (g=0 d=0 s=win)",
+    "  XNP5   max 3.31 V at   10.73 us, above limit     0.0 us   (g=rstb d=na5 s=vdd)"
+   ]
+  },
+  {
+   "tag": "aud_maxcol_s29",
+   "idx": 29,
+   "n_devices": 134,
+   "n_crossbar": 21,
+   "max_stress": 3.3395,
+   "n_over": 0,
+   "n_points": 30402,
+   "valid": true,
+   "latched": [
+    5
+   ],
+   "audit_py": [
+    "134 devices audited, 0 exceed 3.5 V at some time. Sim length 3008 us.",
+    "  X80    max 3.34 V at   10.63 us, above limit     0.0 us   (g=0 d=0 s=win)",
+    "  XNP5   max 3.31 V at   10.73 us, above limit     0.0 us   (g=rstb d=na5 s=vdd)"
+   ]
+  },
+  {
+   "tag": "aud_mincol_s20",
+   "idx": 20,
+   "n_devices": 134,
+   "n_crossbar": 21,
+   "max_stress": 3.3395,
+   "n_over": 0,
+   "n_points": 30394,
+   "valid": true,
+   "latched": [
+    1
+   ],
+   "audit_py": [
+    "134 devices audited, 0 exceed 3.5 V at some time. Sim length 3008 us.",
+    "  X80    max 3.34 V at   10.63 us, above limit     0.0 us   (g=0 d=0 s=win)",
+    "  XNP5   max 3.31 V at   10.73 us, above limit     0.0 us   (g=rstb d=na5 s=vdd)"
+   ]
+  },
+  {
+   "tag": "aud_chain_s31",
+   "idx": 31,
+   "n_devices": 134,
+   "n_crossbar": 21,
+   "max_stress": 3.3394,
+   "n_over": 0,
+   "n_points": 30392,
+   "valid": true,
+   "latched": [
+    2
+   ],
+   "audit_py": [
+    "134 devices audited, 0 exceed 3.5 V at some time. Sim length 3008 us.",
+    "  X80    max 3.34 V at   10.59 us, above limit     0.0 us   (g=0 d=0 s=win)",
+    "  XNP3   max 3.31 V at   10.69 us, above limit     0.0 us   (g=rstb d=na3 s=vdd)"
+   ]
+  }
+ ],
+ "n_devices": 134,
+ "n_over_limit": 0,
+ "crossbar": {
+  "n": 21,
+  "max_stress": 2.4329,
+  "worst": [
+   {
+    "run": "aud_maxsum_s17",
+    "device": "X1",
+    "model": "potftseg",
+    "crossbar": true,
+    "d": "ap1",
+    "g": "row1",
+    "s": "vdd",
+    "W": 50.0,
+    "L": 54.0,
+    "max_vgs": 1.48,
+    "max_vgd": 2.4329,
+    "max_stress": 2.4329,
+    "t_max_us": 301.0,
+    "in_reset_phase": true,
+    "margin_V": 1.0671,
+    "us_abo

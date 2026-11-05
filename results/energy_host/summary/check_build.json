@@ -1,0 +1,44 @@
+[
+ {
+  "case": "nominal",
+  "idx": 81,
+  "identical": true,
+  "identical_except_lib_line": true,
+  "eh_row_pwl_matches": true
+ },
+ {
+  "case": "nominal",
+  "idx": 31,
+  "identical": true,
+  "identical_except_lib_line": true,
+  "eh_row_pwl_matches": true
+ },
+ {
+  "case": "retrim085",
+  "idx": 81,
+  "identical": false,
+  "identical_except_lib_line": true,
+  "eh_row_pwl_matches": true
+ },
+ {
+  "case": "retrim085",
+  "idx": 31,
+  "identical": false,
+  "identical_except_lib_line": true,
+  "eh_row_pwl_matches": true
+ },
+ {
+  "case": "mc_pv35_d3",
+  "idx": 81,
+  "identical": true,
+  "identical_except_lib_line": true,
+  "eh_row_pwl_matches": true
+ },
+ {
+  "case": "mc_pv35_d3",
+  "idx": 31,
+  "identical": true,
+  "identical_except_lib_line": true,
+  "eh_row_pwl_matches": true
+ }
+]

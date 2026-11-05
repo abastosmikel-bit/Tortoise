@@ -1,0 +1,4 @@
+scratch/
+logs/
+*.log
+__pycache__/

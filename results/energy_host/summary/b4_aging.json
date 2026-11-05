@@ -1,0 +1,367 @@
+{
+ "none": {
+  "0.65_1.00": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 15,
+   "accuracy": 0.75,
+   "valid": 20,
+   "failures": {},
+   "trips_in_C1": 0,
+   "race_median_us": 878.8515,
+   "race_max_us": 1148.108
+  },
+  "0.65_0.70": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 13,
+   "accuracy": 0.65,
+   "valid": 18,
+   "failures": {
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 1576.246,
+   "race_max_us": 1855.702
+  },
+  "0.65_0.50": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 8,
+   "accuracy": 0.4,
+   "valid": 10,
+   "failures": {
+    "none_latched": 2,
+    "timeout": 6,
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 2300.8265,
+   "race_max_us": 2477.121
+  },
+  "0.85_1.00": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 0,
+   "accuracy": 0.0,
+   "valid": 0,
+   "failures": {
+    "timeout": 20
+   },
+   "trips_in_C1": 0,
+   "race_median_us": null,
+   "race_max_us": null
+  },
+  "0.85_0.70": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 0,
+   "accuracy": 0.0,
+   "valid": 0,
+   "failures": {
+    "timeout": 20
+   },
+   "trips_in_C1": 0,
+   "race_median_us": null,
+   "race_max_us": null
+  },
+  "0.85_0.50": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 0,
+   "accuracy": 0.0,
+   "valid": 0,
+   "failures": {
+    "timeout": 20
+   },
+   "trips_in_C1": 0,
+   "race_median_us": null,
+   "race_max_us": null
+  },
+  "1.00_1.00": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 0,
+   "accuracy": 0.0,
+   "valid": 0,
+   "failures": {
+    "timeout": 20
+   },
+   "trips_in_C1": 0,
+   "race_median_us": null,
+   "race_max_us": null
+  },
+  "1.00_0.70": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 0,
+   "accuracy": 0.0,
+   "valid": 0,
+   "failures": {
+    "timeout": 20
+   },
+   "trips_in_C1": 0,
+   "race_median_us": null,
+   "race_max_us": null
+  },
+  "1.00_0.50": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 0,
+   "accuracy": 0.0,
+   "valid": 0,
+   "failures": {
+    "timeout": 20
+   },
+   "trips_in_C1": 0,
+   "race_median_us": null,
+   "race_max_us": null
+  }
+ },
+ "ideal": {
+  "0.65_1.00": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 15,
+   "accuracy": 0.75,
+   "valid": 20,
+   "failures": {},
+   "trips_in_C1": 0,
+   "race_median_us": 878.8515,
+   "race_max_us": 1148.108
+  },
+  "0.65_0.70": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 13,
+   "accuracy": 0.65,
+   "valid": 18,
+   "failures": {
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 1576.246,
+   "race_max_us": 1855.702
+  },
+  "0.65_0.50": {
+   "V1": 1.82,
+   "V2": 2.4,
+   "correct": 8,
+   "accuracy": 0.4,
+   "valid": 10,
+   "failures": {
+    "none_latched": 2,
+    "timeout": 6,
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 2300.8265,
+   "race_max_us": 2477.121
+  },
+  "0.85_1.00": {
+   "V1": 1.62,
+   "V2": 2.2,
+   "correct": 14,
+   "accuracy": 0.7,
+   "valid": 19,
+   "failures": {
+    "multi_latched": 1
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 477.073,
+   "race_max_us": 750.237
+  },
+  "0.85_0.70": {
+   "V1": 1.62,
+   "V2": 2.2,
+   "correct": 13,
+   "accuracy": 0.65,
+   "valid": 18,
+   "failures": {
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 998.9485,
+   "race_max_us": 1284.801
+  },
+  "0.85_0.50": {
+   "V1": 1.62,
+   "V2": 2.2,
+   "correct": 13,
+   "accuracy": 0.65,
+   "valid": 18,
+   "failures": {
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 1594.3815,
+   "race_max_us": 1893.288
+  },
+  "1.00_1.00": {
+   "V1": 1.47,
+   "V2": 2.05,
+   "correct": 12,
+   "accuracy": 0.6,
+   "valid": 17,
+   "failures": {
+    "multi_latched": 3
+   },
+   "trips_in_C1": 4,
+   "race_median_us": 167.00900000000001,
+   "race_max_us": 447.208
+  },
+  "1.00_0.70": {
+   "V1": 1.47,
+   "V2": 2.05,
+   "correct": 13,
+   "accuracy": 0.65,
+   "valid": 18,
+   "failures": {
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 558.0535,
+   "race_max_us": 851.73
+  },
+  "1.00_0.50": {
+   "V1": 1.47,
+   "V2": 2.05,
+   "correct": 13,
+   "accuracy": 0.65,
+   "valid": 18,
+   "failures": {
+    "multi_latched": 2
+   },
+   "trips_in_C1": 0,
+   "race_median_us": 981.156,
+   "race_max_us": 1286.057
+  }
+ },
+ "estimates": {
+  "0.65_1.00": {
+   "rep": 0.0,
+   "a1": 0.0,
+   "a2": 0.0
+  },
+  "0.65_0.85": {
+   "rep": 4e-05,
+   "a1": 0.00525,
+   "a2": 0.00178
+  },
+  "0.65_0.70": {
+   "rep": 8e-05,
+   "a1": 0.0109,
+   "a2": 0.00357
+  },
+  "0.65_0.60": {
+   "rep": 0.0001,
+   "a1": 0.01495,
+   "a2": 0.00475
+  },
+  "0.65_0.50": {
+   "rep": 0.00013,
+   "a1": 0.01928,
+   "a2": 0.00582
+  },
+  "0.75_1.00": {
+   "rep": -0.0006,
+   "a1": -0.00166,
+   "a2": -0.00383
+  },
+  "0.75_0.85": {
+   "rep": -0.00054,
+   "a1": 0.00339,
+   "a2": -0.00205
+  },
+  "0.75_0.70": {
+   "rep": -0.00047,
+   "a1": 0.00894,
+   "a2": -0.00034
+  },
+  "0.75_0.60": {
+   "rep": -0.00043,
+   "a1": 0.01296,
+   "a2": 0.0007
+  },
+  "0.75_0.50": {
+   "rep": -0.00039,
+   "a1": 0.01725,
+   "a2": 0.00161
+  },
+  "0.85_1.00": {
+   "rep": -0.00185,
+   "a1": -0.00314,
+   "a2": -0.00998
+  },
+  "0.85_0.85": {
+   "rep": -0.00175,
+   "a1": 0.00181,
+   "a2": -0.00817
+  },
+  "0.85_0.70": {
+   "rep": -0.00165,
+   "a1": 0.00719,
+   "a2": -0.00657
+  },
+  "0.85_0.60": {
+   "rep": -0.00158,
+   "a1": 0.01099,
+   "a2": -0.00573
+  },
+  "0.85_0.50": {
+   "rep": -0.00151,
+   "a1": 0.01493,
+   "a2": -0.00515
+  },
+  "0.95_1.00": {
+   "rep": -0.00441,
+   "a1": -0.00481,
+   "a2": -0.01912
+  },
+  "0.95_0.85": {
+   "rep": -0.00425,
+   "a1": -0.00012,
+   "a2": -0.01751
+  },
+  "0.95_0.70": {
+   "rep": -0.0041,
+   "a1": 0.00485,
+   "a2": -0.01613
+  },
+  "0.95_0.60": {
+   "rep": -0.004,
+   "a1": 0.00827,
+   "a2": -0.01572
+  },
+  "0.95_0.50": {
+   "rep": -0.00389,
+   "a1": 0.01166,
+   "a2": -0.01584
+  },
+  "1.00_1.00": {
+   "rep": -0.00654,
+   "a1": -0.0059,
+   "a2": -0.02494
+  },
+  "1.00_0.85": {
+   "rep": -0.00636,
+   "a1": -0.00139,
+   "a2": -0.02368
+  },
+  "1.00_0.70": {
+   "rep": -0.00618,
+   "a1": 0.00328,
+   "a2": -0.02277
+  },
+  "1.00_0.60": {
+   "rep": -0.00605,
+   "a1": 0.00641,
+   "a2": -0.02265
+  },
+  "1.00_0.50": {
+   "rep": -0.00593,
+   "a1": 0.0094,
+   "a2": -0.02328
+  }
+ }
+}

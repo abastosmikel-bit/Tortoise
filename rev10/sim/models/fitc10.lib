@@ -1,0 +1,9 @@
+* fitc10: C10-DNTT on Si (Kraft 2016) corner for the Tortoise base design, v2 model form.
+* RECONSTRUCTED 2026-10-22 from the values in the fitc10 campaign specification (the original fitted card was lost).
+*   MU 5.87 cm2/Vs, VTH0 0.65 V, SS 112 mV/dec, RCW 490 ohm*cm: from the specification (saturation currents read by eye, +-0.3 uA).
+*   CI 0.70 uF/cm2: lab value (same AlOx/SAM dielectric), per author decision.
+*   JOFF 1e-14 A/um and LOV 2 um: NOT fitted, kept at the lab values (assumption).
+* Measured on a Si substrate, not flexible foil.
+.lib fitc10
+.param MU=5.87 CI=0.70e-6 SS=0.112 RCW=490 JOFF=1e-14 VTH0=0.65 LOV=2
+.endl fitc10

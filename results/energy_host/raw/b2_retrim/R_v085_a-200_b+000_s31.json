@@ -1,0 +1,124 @@
+{
+ "tag": "R_v085_a-200_b+000_s31",
+ "idx": 31,
+ "label": 2,
+ "job": {
+  "tag": "R_v085_a-200_b+000_s31",
+  "idx": 31,
+  "wdir": "b2",
+  "vth": 0.85,
+  "V1": 1.4200000000000002,
+  "V2": 2.2,
+  "inst": false,
+  "vth_metric": 0.85,
+  "offsets_mV": [
+   -200,
+   0
+  ]
+ },
+ "run": {
+  "wall_s": 109.0,
+  "returncode": 0,
+  "warnings": []
+ },
+ "build": {
+  "tC2": 507.5,
+  "t_end": 3008.0,
+  "V1": 1.42,
+  "V2": 2.2,
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "cal_k": 1.0,
+  "rows_off": null,
+  "adaptive": null,
+  "cold": false,
+  "reset_ext": 0.0,
+  "Vcal": null,
+  "phases": {
+   "reset": [
+    0.0,
+    301.0
+   ],
+   "calibration": [
+    301.0,
+    312.5
+   ],
+   "C1": [
+    312.5,
+    507.5
+   ]
+  },
+  "corner": [
+   "/home/user/TRACE-2/results/energy_host/models/eh_v08500_m10000.lib",
+   "eh_v08500_m10000"
+  ],
+  "vth": 0.85,
+  "muf": 1.0
+ },
+ "trip_us": {
+  "2": 467.13,
+  "5": 466.665
+ },
+ "first": 5,
+ "latched": [
+  2,
+  5
+ ],
+ "winner": null,
+ "valid": false,
+ "failure": "multi_latched",
+ "lock_us": 475.611,
+ "lock_latency_us": 8.946,
+ "trip_in_C1": true,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 11.315,
+ "reset_level": {
+  "1": 1.11542,
+  "2": 1.11626,
+  "3": 1.11637,
+  "4": 1.11633,
+  "5": 1.11648
+ },
+ "ref_reset": 1.51207,
+ "ref_308": 1.38693,
+ "ref_309": 1.45462,
+ "ref_settle_mV_308_309": 67.692,
+ "rail_at_C2": {
+  "1": 1.85824,
+  "2": 2.2971,
+  "3": 2.05908,
+  "4": 1.96435,
+  "5": 2.28677
+ },
+ "runner_up": 2,
+ "gap": {
+  "dV_mV": -12.606,
+  "gap_reach_us": 0.0,
+  "gap_slope_us": -4.283
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 401.485,
+   "gap_reach_us": 685.299,
+   "gap_slope_us": 20153.723
+  },
+  "2": {
+   "dV_mV": -12.606,
+   "gap_reach_us": 0.0,
+   "gap_slope_us": -4.283
+  },
+  "3": {
+   "dV_mV": 211.539,
+   "gap_reach_us": 369.121,
+   "gap_slope_us": 167.282
+  },
+  "4": {
+   "dV_mV": 295.952,
+   "gap_reach_us": 518.145,
+   "gap_slope_us": 1216.352
+  }
+ },
+ "race_us": -40.835,
+ "energy": null
+}

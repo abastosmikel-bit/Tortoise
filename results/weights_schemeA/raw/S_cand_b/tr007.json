@@ -1,0 +1,148 @@
+{
+ "tag": "tr007",
+ "split": "train",
+ "idx": 7,
+ "label": 4,
+ "F": [
+  [
+   0,
+   0,
+   27,
+   3,
+   4
+  ],
+  [
+   0,
+   25,
+   0,
+   26,
+   0
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   26
+  ],
+  [
+   0,
+   15,
+   6,
+   0,
+   22
+  ],
+  [
+   0,
+   0,
+   6,
+   25,
+   3
+  ],
+  [
+   51,
+   18,
+   20,
+   6,
+   0
+  ]
+ ],
+ "weights": "cand_b",
+ "prior": "/home/user/TRACE-2/results/weights_schemeA/raw/warm_cand_b/warm",
+ "variant": 3,
+ "trace_us": 2500.0,
+ "corner": null,
+ "mc": null,
+ "levels_vth": null,
+ "timing": {
+  "T1": 170.0,
+  "WMIN": 20.0,
+  "GAP": 5.0,
+  "V1off": 0.83,
+  "V2off": 0.25
+ },
+ "run": {
+  "wall_s": 780.8,
+  "returncode": 0,
+  "warnings": []
+ },
+ "perturb": null,
+ "n_tft": 130,
+ "x": [
+  0.596169,
+  0.580419,
+  0.241027,
+  0.726801,
+  0.731065,
+  0.680299
+ ],
+ "trip_us": {
+  "4": 1317.742
+ },
+ "first": 4,
+ "latched": [
+  4
+ ],
+ "winner": 4,
+ "valid": true,
+ "failure": null,
+ "lock_us": 1337.311,
+ "lock_latency_us": 19.569,
+ "trip_in_C1": false,
+ "tC2_us": 507.5,
+ "t_end_us": 3008.0,
+ "lockb_chain_us": 21.187,
+ "reset_level": {
+  "1": 0.88385,
+  "2": 0.89492,
+  "3": 0.896,
+  "4": 0.89464,
+  "5": 0.89598
+ },
+ "ref_reset": 1.37603,
+ "ref_308": 1.2367,
+ "ref_309": 1.31043,
+ "ref_settle_mV_308_309": 73.733,
+ "rail_at_C2": {
+  "1": 1.60327,
+  "2": 1.67367,
+  "3": 1.69038,
+  "4": 1.70456,
+  "5": 1.48415
+ },
+ "runner_up": 3,
+ "gap": {
+  "dV_mV": 22.341,
+  "gap_reach_us": 32.541,
+  "gap_slope_us": 36.137
+ },
+ "gaps": {
+  "1": {
+   "dV_mV": 167.44,
+   "gap_reach_us": 300.55,
+   "gap_slope_us": 303.241
+  },
+  "2": {
+   "dV_mV": 47.123,
+   "gap_reach_us": 73.045,
+   "gap_slope_us": 77.133
+  },
+  "3": {
+   "dV_mV": 22.341,
+   "gap_reach_us": 32.541,
+   "gap_slope_us": 36.137
+  },
+  "5": {
+   "dV_mV": 261.448,
+   "gap_reach_us": 445.744,
+   "gap_slope_us": 447.64
+  }
+ },
+ "c2_slope_mV_per_us": {
+  "1": 0.55192,
+  "2": 0.61153,
+  "3": 0.61875,
+  "4": 0.63047,
+  "5": 0.58379
+ }
+}

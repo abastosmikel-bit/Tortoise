@@ -1,0 +1,81 @@
+{
+ "v2_s81": {
+  "criteria": {
+   "valid": false,
+   "latched_5": false,
+   "no_C1_trip": true,
+   "lock_15_25us": false
+  },
+  "passed": false,
+  "label": 5,
+  "trip_us": {},
+  "first": null,
+  "latched": [],
+  "valid": false,
+  "failure": "timeout",
+  "lock_latency_us": null,
+  "lockb_chain_us": null,
+  "trip_in_C1": false,
+  "runner_up": null,
+  "gap": null,
+  "reset_level": {
+   "1": 0.90718,
+   "2": 0.90748,
+   "3": 0.90763,
+   "4": 0.9078,
+   "5": 0.90795
+  },
+  "ref_reset": 2.40534,
+  "rail_at_C2": {
+   "1": 1.60338,
+   "2": 1.70309,
+   "3": 1.72122,
+   "4": 1.71438,
+   "5": 1.74236
+  },
+  "run": {
+   "wall_s": 65.3,
+   "returncode": 0,
+   "warnings": []
+  }
+ },
+ "v2_s31": {
+  "criteria": {
+   "valid": false,
+   "latched_2": false
+  },
+  "passed": false,
+  "label": 2,
+  "trip_us": {},
+  "first": null,
+  "latched": [],
+  "valid": false,
+  "failure": "timeout",
+  "lock_latency_us": null,
+  "lockb_chain_us": null,
+  "trip_in_C1": false,
+  "runner_up": null,
+  "gap": null,
+  "reset_level": {
+   "1": 0.90718,
+   "2": 0.90748,
+   "3": 0.90763,
+   "4": 0.9078,
+   "5": 0.90795
+  },
+  "ref_reset": 2.40534,
+  "rail_at_C2": {
+   "1": 1.41122,
+   "2": 1.70385,
+   "3": 1.54525,
+   "4": 1.48217,
+   "5": 1.69729
+  },
+  "run": {
+   "wall_s": 62.1,
+   "returncode": 0,
+   "warnings": []
+  }
+ },
+ "gate_passed": false
+}

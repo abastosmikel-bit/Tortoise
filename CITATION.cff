@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata from this file."
+type: software
+title: "Tortoise: a p-type-only organic thin-film transistor time-race classifier (simulation study)"
+version: v1.0
+date-released: "2026-11-05"
+authors:
+  - family-names: Lopez
+    given-names: Mikel
+    orcid: "https://orcid.org/0009-0003-6281-6566"
+repository-code: "https://example.org/REPLACE-WITH-REPOSITORY-URL"
+abstract: >-
+  Tortoise is a 6-input, 5-class linear classifier designed to be built only from p-type
+  organic thin-film transistors (DNTT-family OTFTs on an AlOx/SAM dielectric, 134 transistors,
+  single 3.3 V rail). Each class integrates its weighted input current onto a rail capacitor;
+  then all rails race to a common threshold and the first to arrive latches and locks out the
+  others. The repository holds the design (netlists, compact-model cards, specification), the
+  simulation tooling, and the protocols, per-run data and reports of the ngspice simulation
+  campaigns. Simulation only: nothing has been fabricated or measured, and the dataset is
+  synthetic.
+keywords:
+  - organic electronics
+  - OTFT
+  - flexible electronics
+  - time-domain computing
+  - neuromorphic
+  - ngspice
+license:
+  - CERN-OHL-S-2.0
+  - Apache-2.0
+  - CC-BY-4.0

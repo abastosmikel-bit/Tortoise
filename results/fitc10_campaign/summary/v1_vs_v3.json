@@ -1,0 +1,272 @@
+{
+ "phase1": {
+  "variant1": {
+   "accuracy": 0.6889,
+   "accuracy_wilson95": [
+    0.5872,
+    0.7751
+   ],
+   "correct": 62,
+   "valid": 87,
+   "validity": 0.9667,
+   "failures": {
+    "multi_latched": 3
+   },
+   "race_time_from_C2_us": {
+    "p0": 922.591,
+    "p5": 1059.771,
+    "p25": 1203.468,
+    "p50": 1300.19,
+    "p75": 1381.99,
+    "p95": 1506.599,
+    "p100": 1583.13
+   },
+   "lock_latency_us": {
+    "p0": 16.761,
+    "p5": 16.771,
+    "p25": 16.823,
+    "p50": 17.049,
+    "p75": 17.464,
+    "p95": 18.287,
+    "p100": 18.784
+   },
+   "runner_up_gap_us": {
+    "p0": 10.742,
+    "p5": 27.51,
+    "p25": 57.187,
+    "p50": 102.968,
+    "p75": 182.328,
+    "p95": 255.855,
+    "p100": 303.693
+   },
+   "margin_gap_minus_latency_us": {
+    "p0": -6.718,
+    "p5": 9.692,
+    "p25": 39.662,
+    "p50": 85.712,
+    "p75": 165.478,
+    "p95": 239.057,
+    "p100": 286.918
+   },
+   "n_valid_gap_below_latency": 3,
+   "spice_vs_schemeA_agreement": 0.9667,
+   "gap_model_vs_spice": {
+    "n": 87,
+    "pearson_r": 0.9999,
+    "median_ratio_spice_over_model": 0.8427,
+    "note": "schemeA is lab-calibrated; only the ratio/ordering is meaningful"
+   },
+   "chain_same_outcome": "10/10",
+   "chain_max_abs_d_first_trip_us": 4.254,
+   "chain_max_abs_d_runner_up_gap_us": 3.869,
+   "chain_max_d_reset_level_mV": 5.49,
+   "chain_max_abs_d_ref_reset_mV": 0.03
+  },
+  "variant3": {
+   "accuracy": 0.6889,
+   "accuracy_wilson95": [
+    0.5872,
+    0.7751
+   ],
+   "correct": 62,
+   "valid": 87,
+   "validity": 0.9667,
+   "failures": {
+    "multi_latched": 3
+   },
+   "race_time_from_C2_us": {
+    "p0": 493.02,
+    "p5": 630.44,
+    "p25": 773.255,
+    "p50": 870.039,
+    "p75": 947.155,
+    "p95": 1075.13,
+    "p100": 1148.108
+   },
+   "lock_latency_us": {
+    "p0": 19.078,
+    "p5": 19.083,
+    "p25": 19.111,
+    "p50": 19.198,
+    "p75": 19.389,
+    "p95": 19.761,
+    "p100": 20.043
+   },
+   "runner_up_gap_us": {
+    "p0": 10.746,
+    "p5": 27.415,
+    "p25": 56.17,
+    "p50": 102.129,
+    "p75": 181.469,
+    "p95": 254.994,
+    "p100": 302.799
+   },
+   "margin_gap_minus_latency_us": {
+    "p0": -8.871,
+    "p5": 7.791,
+    "p25": 36.825,
+    "p50": 82.836,
+    "p75": 162.342,
+    "p95": 235.895,
+    "p100": 283.703
+   },
+   "n_valid_gap_below_latency": 4,
+   "spice_vs_schemeA_agreement": 0.9667,
+   "gap_model_vs_spice": {
+    "n": 87,
+    "pearson_r": 0.9999,
+    "median_ratio_spice_over_model": 0.8354,
+    "note": "schemeA is lab-calibrated; only the ratio/ordering is meaningful"
+   },
+   "chain_same_outcome": "10/10",
+   "chain_max_abs_d_first_trip_us": 4.079,
+   "chain_max_abs_d_runner_up_gap_us": 3.878,
+   "chain_max_d_reset_level_mV": 5.49,
+   "chain_max_abs_d_ref_reset_mV": 0.13
+  },
+  "n_same_outcome": "90/90",
+  "max_abs_runner_up_gap_diff_us": 1.058
+ },
+ "phase2": {
+  "variant1": {
+   "n_devices": 134,
+   "n_over_limit": 0,
+   "worst": "X80",
+   "worst_V": 3.3393,
+   "worst_margin_V": 0.1607,
+   "crossbar_max_V": 2.4294,
+   "X80_max_V": 3.3393
+  },
+  "variant3": {
+   "n_devices": 134,
+   "n_over_limit": 0,
+   "worst": "X80",
+   "worst_V": 3.3394,
+   "worst_margin_V": 0.1606,
+   "crossbar_max_V": 2.4293,
+   "X80_max_V": 3.3394
+  },
+  "n_device_runs_compared": 670,
+  "max_abs_stress_change_V": 0.5278,
+  "at": [
+   "aud_minsum_s61",
+   "X66"
+  ]
+ },
+ "phase3A_shared_points": {
+  "vth065_mu100 (nominal, = Phase 1 runs)": {
+   "variant1": {
+    "n": 20,
+    "accuracy": 0.75,
+    "validity": 1.0,
+    "failures": {},
+    "race_median_us": 1310.779
+   },
+   "variant3": {
+    "n": 20,
+    "accuracy": 0.75,
+    "validity": 1.0,
+    "failures": {},
+    "race_median_us": 878.851
+   }
+  },
+  "vth045": {
+   "variant1": {
+    "n": 20,
+    "accuracy": 0.0,
+    "validity": 0.0,
+    "failures": {
+     "stuck_latched": 20
+    },
+    "race_median_us": null
+   },
+   "variant3": {
+    "n": 20,
+    "accuracy": 0.0,
+    "validity": 0.0,
+    "failures": {
+     "stuck_latched": 20
+    },
+    "race_median_us": null
+   }
+  },
+  "vth055": {
+   "variant1": {
+    "n": 20,
+    "accuracy": 0.75,
+    "validity": 1.0,
+    "failures": {},
+    "race_median_us": 705.991
+   },
+   "variant3": {
+    "n": 20,
+    "accuracy": 0.7,
+    "validity": 0.95,
+    "failures": {
+     "multi_latched": 1
+    },
+    "race_median_us": 424.452
+   }
+  },
+  "vth075": {
+   "variant1": {
+    "n": 20,
+    "accuracy": 0.1,
+    "validity": 0.1,
+    "failures": {
+     "timeout": 18
+    },
+    "race_median_us": 2304.548
+   },
+   "variant3": {
+    "n": 20,
+    "accuracy": 0.65,
+    "validity": 0.9,
+    "failures": {
+     "timeout": 2
+    },
+    "race_median_us": 1983.571
+   }
+  },
+  "vth085": {
+   "variant1": {
+    "n": 20,
+    "accuracy": 0.0,
+    "validity": 0.0,
+    "failures": {
+     "timeout": 20
+    },
+    "race_median_us": null
+   },
+   "variant3": {
+    "n": 20,
+    "accuracy": 0.0,
+    "validity": 0.0,
+    "failures": {
+     "timeout": 20
+    },
+    "race_median_us": null
+   }
+  },
+  "vth095": {
+   "variant1": {
+    "n": 12,
+    "accuracy": 0.0,
+    "validity": 0.0,
+    "failures": {
+     "timeout": 12
+    },
+    "race_median_us": null
+   },
+   "variant3": {
+    "n": 20,
+    "accuracy": 0.0,
+    "validity": 0.0,
+    "failures": {
+     "timeout": 20
+    },
+    "race_median_us": null
+   }
+  }
+ }
+}

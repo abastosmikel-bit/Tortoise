@@ -1,0 +1,234 @@
+{
+ "vth065_mu100 (nominal, = Phase 1 runs)": {
+  "n": 20,
+  "correct": 15,
+  "accuracy": 0.75,
+  "accuracy_wilson95": [
+   0.5313,
+   0.8881
+  ],
+  "valid": 20,
+  "validity": 1.0,
+  "validity_wilson95": [
+   0.8389,
+   1.0
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {
+   "p0": 922.591,
+   "p50": 1310.779,
+   "p100": 1583.13
+  },
+  "lock_latency_us": {
+   "p0": 16.778,
+   "p50": 17.296,
+   "p100": 18.655
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 20
+ },
+ "vth045": {
+  "n": 20,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "valid": 0,
+  "validity": 0.0,
+  "validity_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "failures": {
+   "stuck_latched": 20
+  },
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "vth055": {
+  "n": 20,
+  "correct": 15,
+  "accuracy": 0.75,
+  "accuracy_wilson95": [
+   0.5313,
+   0.8881
+  ],
+  "valid": 20,
+  "validity": 1.0,
+  "validity_wilson95": [
+   0.8389,
+   1.0
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {
+   "p0": 447.202,
+   "p50": 705.991,
+   "p100": 886.686
+  },
+  "lock_latency_us": {
+   "p0": 11.531,
+   "p50": 11.717,
+   "p100": 12.39
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 20
+ },
+ "vth075": {
+  "n": 20,
+  "correct": 2,
+  "accuracy": 0.1,
+  "accuracy_wilson95": [
+   0.0279,
+   0.301
+  ],
+  "valid": 2,
+  "validity": 0.1,
+  "validity_wilson95": [
+   0.0279,
+   0.301
+  ],
+  "failures": {
+   "timeout": 18
+  },
+  "race_time_from_C2_us": {
+   "p0": 2226.492,
+   "p50": 2304.548,
+   "p100": 2382.605
+  },
+  "lock_latency_us": {
+   "p0": 27.896,
+   "p50": 28.5,
+   "p100": 29.103
+  },
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 2
+ },
+ "vth085": {
+  "n": 20,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "valid": 0,
+  "validity": 0.0,
+  "validity_wilson95": [
+   0.0,
+   0.1611
+  ],
+  "failures": {
+   "timeout": 20
+  },
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "vth095": {
+  "n": 12,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+   0.0,
+   0.2425
+  ],
+  "valid": 0,
+  "validity": 0.0,
+  "validity_wilson95": [
+   0.0,
+   0.2425
+  ],
+  "failures": {
+   "timeout": 12
+  },
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "vth105": {
+  "n": 0,
+  "correct": 0,
+  "accuracy": null,
+  "accuracy_wilson95": [
+   null,
+   null
+  ],
+  "valid": 0,
+  "validity": null,
+  "validity_wilson95": [
+   null,
+   null
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "mu050": {
+  "n": 0,
+  "correct": 0,
+  "accuracy": null,
+  "accuracy_wilson95": [
+   null,
+   null
+  ],
+  "valid": 0,
+  "validity": null,
+  "validity_wilson95": [
+   null,
+   null
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "mu075": {
+  "n": 0,
+  "correct": 0,
+  "accuracy": null,
+  "accuracy_wilson95": [
+   null,
+   null
+  ],
+  "valid": 0,
+  "validity": null,
+  "validity_wilson95": [
+   null,
+   null
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ },
+ "mu125": {
+  "n": 0,
+  "correct": 0,
+  "accuracy": null,
+  "accuracy_wilson95": [
+   null,
+   null
+  ],
+  "valid": 0,
+  "validity": null,
+  "validity_wilson95": [
+   null,
+   null
+  ],
+  "failures": {},
+  "race_time_from_C2_us": {},
+  "lock_latency_us": {},
+  "n_trip_in_C1": 0,
+  "n_spice_eq_phase1_nominal": 0
+ }
+}
